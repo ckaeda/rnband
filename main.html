@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            height: 100vh;
+            overflow-y: auto;
+            /* Enable scrolling */
+            position: fixed;
+            /* Fix the sidebar position */
+        }
+
+        .welcome-text {
+            color: #007bff;
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        .song-list {
+            list-style: none;
+            padding: 0;
+            border-top: 1px solid #fff;
+            /* Add a dividing line */
+            padding-top: 20px;
+            /* Add spacing below dividing line */
+        }
+
+        .song-list li {
+            margin-bottom: 10px;
+            cursor: pointer;
+            text-decoration: underline;
+            /* Change cursor to pointer on hover */
+        }
+
+        .song-list li:hover {
+            text-decoration: none;
+        }
+
+        .lyrics-container {
+            padding: 20px;
+            flex: 1;
+            /* Fill remaining space */
+            overflow-y: auto;
+            /* Enable scrolling for lyrics only */
+            margin-left: 300px;
+            /* Adjust for the width of the sidebar */
+        }
+
+        .lyrics-container h1 {
+            margin-top: 0;
+            padding-top: 0;
+            font-size: 24px;
+            color: #333;
+            /* Dark text color */
+        }
+
+        .lyrics-container h2 {
+            margin-top: 10px;
+            /* Add space between h1 and h2 */
+            font-size: 18px;
+            color: #555;
+            /* Medium text color */
+        }
+
+        .lyrics-container p {
+            margin: 10px 0;
+            /* Add space around paragraphs */
+            font-size: 16px;
+            line-height: 1.6;
+            /* Increase line height for better readability */
+            color: #666;
+            /* Light text color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2 class="welcome-text">Welcome, <!-- JavaScript will fill this --></h2>
+        <ul class="song-list">
+            <li data-lyrics="no one">No One</li>
+            <li data-lyrics="Lyrics of Song 2">Song 2</li>
+            <li data-lyrics="Lyrics of Song 3">Song 3</li>
+            <li data-lyrics="Lyrics of Song 4">Song 4</li>
+            <li data-lyrics="Lyrics of Song 5">Song 5</li>
+            <!-- Add more songs as needed -->
+        </ul>
+    </div>
+
+    <div class="lyrics-container" id="lyricsContainer">
+        <!-- Lyrics will be populated here -->
+    </div>
+
+
+
+    <script>
+        // Function to get URL parameter by name
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Get the name parameter from the URL
+        var name = getParameterByName('name');
+
+        // Update welcome text
+        document.querySelector('.welcome-text').innerHTML += name + "!";
+
+        // Get the lyrics container
+        var lyricsContainer = document.getElementById('lyricsContainer');
+
+        // Add click event listener to each song
+        var songs = document.querySelectorAll('.song-list li');
+        songs.forEach(function (song) {
+            song.addEventListener('click', function () {
+                var lyricsFile = this.getAttribute('data-lyrics');
+                fetch('songs/' + lyricsFile + '.json') // Assuming JSON file names are lowercase
+                    .then(response => response.json())
+                    .then(song => {
+                        var title = song.title;
+                        var artist = song.artist;
+                        var lyrics = song.lyrics;
+                        // Update lyrics container with the title and lyrics of the song
+                        lyricsContainer.innerHTML = "<h1>" + title + "</h1><h2>" + artist + "</h2>";
+                        // Split lyrics into paragraphs and add them to the lyrics container
+                        var paragraphs = lyrics.split('\n\n').map(line => "<p>" + line + "</p>").join('');
+                        var lines = paragraphs.split('\n').map(line => line + "<br>").join('');
+                        lyricsContainer.innerHTML += lines;
+                    })
+                    .catch(error => console.error('Error fetching song:', error));
+            });
+        });
+    </script>
+</body>
+
+</html>

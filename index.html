@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RN Band</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form id="nameForm" onsubmit="checkName(event)">
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" name="name" required>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script>
+        function checkName(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Get the input value
+            var nameInput = document.getElementById("name").value;
+
+            // Check if the name is allowed
+            fetch('names.json')
+                .then(response => response.json())
+                .then(jsonData => {
+                    var lowerCaseNames = jsonData.map(name => name.toLowerCase());
+                    var index = lowerCaseNames.indexOf(nameInput.toLowerCase());
+                    if (index !== -1) {
+                        // Get the matched name from the original JSON array
+                        var matchedName = jsonData[index];
+
+                        // Redirect with the matched name
+                        window.location.href = "main.html?name=" + encodeURIComponent(matchedName);
+                    } else {
+                        alert("Name not recognized.");
+                    }
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        }
+    </script>
+
+</body>
+
+</html>
