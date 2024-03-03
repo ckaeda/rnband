@@ -1,5 +1,1373 @@
 {
-    "title" : "No One",
-    "artist" : "Elevation Worship (feat. Chandler Moore & Tiffany Hudson)",
-    "lyrics" : "Yahweh, Yahweh\nHoly is Your name\nI don't want to take it in vain\nYahweh, Yahweh\nHoly is Your name\nI don't want to take it in vain\n\nYahweh, Yahweh\nHoly is Your name\nI don't want to take it in vain\nYahweh, Yahweh\nHoly is Your name\nI don't want to take it in vain\n\nThere will be no other god before You\nThere will be no other god before You\nThere is no one above You, no one beside You, and nobody like You\nThere will be no other god before You\nNo one, no one, no one\n\nYahweh, Yahweh\nHoly is Your name\nI don't want to take it in vain\nYahweh, Yahweh\nHoly is Your name\nI don't want to take it in vain\n\nThere will be no other god before You\nThere will be no other god before You\nThere is no one above You, no one beside You, and nobody like You\nThere will be no other god before You\nNo one, no one, no one\n\nWho else can lead us to freedom? (No one, no one, no one)\nWho else can heal all our sins and diseases? (No one, no one, no one)\nWho else can walk on the water? (No one, no one, no one)\nAnd who else can answer by fire? (No one, no one, no one)\nAnd who else can bring down the tallest of giants? (No one, no one, no one)\nAnd who else can silence the roar of the lion? (No one, no one, no one)\nWho else is worthy, worthy of worship? (No one, no one, no one)\nWho else is worthy, worthy of worship? (No one)\n\nNo one nowhere, no one nowhere\nNo one nowhere, no one nowhere\nNobody like You, nobody like You\nNo one nowhere, no one nowhere\nNo one nowhere, no one nowhere\nNo one nowhere, no one nowhere\nNobody like You, nobody like You\nNo one nowhere, no one nowhere\nAnd there will be no other god before You\nThere will be no other god before You\nAnd there is no one above You, no one beside You, and nobody like You\nThere is no one above You, no one beside You, and nobody like You\nThere is no one above You, no one beside You, and nobody like You\nAnd there will be no other god before You\nNo one, no one, no one"
+    "title": "No One",
+    "artist": "Elevation Worship (feat. Chandler Moore & Tiffany Hudson)",
+    "songbody": {
+        "type": "chordSheet",
+        "lines": [
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "comment",
+                        "value": "Intro"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": "A/"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "D D"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/G",
+                        "chord": null,
+                        "lyrics": " A/"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "G G"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_verse",
+                        "value": "Verse"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": "Holy is your name"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": "I don’t want to take i"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "t in vain"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bm",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D/F#",
+                        "chord": null,
+                        "lyrics": "Holy is your name"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": "I don’t want to take it "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "in vain"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_verse",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "comment",
+                        "value": "Instrumental 2"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "",
+                        "chord": null,
+                        "lyrics": "A/D - D A/G - G"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_verse",
+                        "value": "Verse"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": "Holy is your name"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": "I don’t want to take i"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "t in vain"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bm",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D/F#",
+                        "chord": null,
+                        "lyrics": "Holy is your name"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": "I don’t want to take it "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "in vain"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_verse",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_chorus",
+                        "value": "Chorus"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "There will b"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "e no other god"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": " before You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "There will b"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "e no other god"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": " before You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "There is n"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bm",
+                        "chord": null,
+                        "lyrics": "o one above You"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A",
+                        "chord": null,
+                        "lyrics": "No one beside You"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "And nobo"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D/F# ",
+                        "chord": null,
+                        "lyrics": "dy like You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "There will b"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "e no other god"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/C# ",
+                        "chord": null,
+                        "lyrics": " before You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/B",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "no one, no one"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_chorus",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "comment",
+                        "value": "Instrumental 2"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D",
+                        "chord": null,
+                        "lyrics": " "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/G",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_verse",
+                        "value": "Verse"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": "Holy is your name"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": "I don’t want to take i"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "t in vain"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bm",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "Yahweh"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D/F#",
+                        "chord": null,
+                        "lyrics": "Holy is your name"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": "I don’t want to take it "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "in vain"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_verse",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_chorus",
+                        "value": "Chorus"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "There will b"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "e no other god"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": " before You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "There will b"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "e no other god"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A ",
+                        "chord": null,
+                        "lyrics": " before You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "There is n"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bm",
+                        "chord": null,
+                        "lyrics": "o one above You"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A",
+                        "chord": null,
+                        "lyrics": "No one beside You"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "And nobo"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D/F# ",
+                        "chord": null,
+                        "lyrics": "dy like You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "There will b"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "e no other god"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/C# ",
+                        "chord": null,
+                        "lyrics": " before You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/B",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "no one, no one"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_chorus",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "comment",
+                        "value": "Instrumental 2"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D",
+                        "chord": null,
+                        "lyrics": " "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/G",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "comment",
+                        "value": "Bridge"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "Who else ca"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "n lead us, lead "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "us to"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": " freedom"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "no one, no one"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "Who else ca"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "n heal all our s"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "ins a"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "nd disease"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D",
+                        "chord": null,
+                        "lyrics": "s"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "no one, no one"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "Who else ca"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "n walk, walk on "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "the w"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D",
+                        "chord": null,
+                        "lyrics": "ater"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "no one, no one "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": "A/D"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "Who else ca"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "n answer, answer"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": " by f"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D",
+                        "chord": null,
+                        "lyrics": "ire"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "no one, no one "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": "A/D"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "Who else ca"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "n bring down the"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": " tall"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "est of gia"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D",
+                        "chord": null,
+                        "lyrics": "nts"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "no one, no one"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "Who else ca"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": "n silence the ro"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "ar of"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": " the lion"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "no one, no one"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "Who else is"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": " worthy, worthy "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "of wo"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "rship"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "no one, no one"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "Who else is"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D ",
+                        "chord": null,
+                        "lyrics": " worthy, worthy "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D ",
+                        "chord": null,
+                        "lyrics": "of wo"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "rship"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "A/D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "No one, "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/D ",
+                        "chord": null,
+                        "lyrics": "no one, no one"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "D",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            }
+        ]
+    }
 }

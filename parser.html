@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <span id="container"></span>
+
+    <script src="bundle.js"></script>
+
+    <script>
+
+    </script>
+
+    <script>
+        fetch('toParse.txt')
+            .then(response => response.text())
+            .then(fileContent => {
+                const chordSheet = `${fileContent}`;
+
+                const parser = new ChordSheetJS.UltimateGuitarParser();
+                const song = parser.parse(chordSheet);
+
+                const formatter = new ChordSheetJS.HtmlDivFormatter();
+                const disp = formatter.format(song);
+
+                var container = document.getElementById('container');
+                container.innerHTML = disp;
+
+                const serializedSong = new ChordSheetJS.ChordSheetSerializer().serialize(song);
+                container.innerHTML = JSON.stringify(serializedSong);
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    </script>
+</body>
+
+</html>
