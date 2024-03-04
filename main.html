@@ -104,13 +104,7 @@
 
     <div class="sidebar">
         <h2 class="welcome-text">Welcome, <!-- JavaScript will fill this --></h2>
-        <ul class="song-list">
-            <li data-lyrics="no one">No One</li>
-            <li data-lyrics="Lyrics of Song 2">Song 2</li>
-            <li data-lyrics="Lyrics of Song 3">Song 3</li>
-            <li data-lyrics="Lyrics of Song 4">Song 4</li>
-            <li data-lyrics="Lyrics of Song 5">Song 5</li>
-            <!-- Add more songs as needed -->
+        <ul class="song-list" id="songList">
         </ul>
     </div>
 
@@ -141,28 +135,62 @@
         // Get the lyrics container
         var lyricsContainer = document.getElementById('lyricsContainer');
 
-        // Add click event listener to each song
-        var songs = document.querySelectorAll('.song-list li');
-        songs.forEach(function (song) {
-            song.addEventListener('click', function () {
-                var lyricsFile = this.getAttribute('data-lyrics');
-                fetch('songs/' + lyricsFile + '.json') // Assuming JSON file names are lowercase
-                    .then(response => response.json())
-                    .then(song => {
-                        var title = song.title;
-                        var artist = song.artist;
-                        var songbody = song.songbody;
+        function toTitleCase(str) {
+            return str.replace(
+              /\w\S*/g,
+              function(txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+              }
+            );
+          }
 
-                        const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
-                        const chord = ChordSheetJS.Chord.parse('C');
-                        
-                        const formatter = new ChordSheetJS.HtmlTableFormatter();
-                        const disp = formatter.format(deserializedSong.transpose(2));
+        function fetchSongs() {
+            fetch('songs/')
+                .then(response => response.text())
+                .then(data => {
+                    // Parse the HTML response to extract the song filenames
+                    const parser = new DOMParser();
+                    const htmlDoc = parser.parseFromString(data, 'text/html');
+                    const links = htmlDoc.querySelectorAll('a');
+                    const songList = document.getElementById('songList');
+                    // Iterate through the links and add songs to the list
+                    links.forEach(link => {
+                        const filename = link.getAttribute('href');
+                        if (filename.endsWith('.json')) {
+                            const title = filename.replace('.json', '').replace('/songs/', '');
+                            const li = document.createElement('li');
+                            li.textContent = toTitleCase(title.replace('_', ' - ').replaceAll('%20', ' '));
+                            li.setAttribute('data-lyrics', title);
+                            songList.appendChild(li);
+                        }
+                    });
+                    // Add click event listener to each song
+                    document.querySelectorAll('.song-list li').forEach(function(song) {
+                        song.addEventListener('click', function() {
+                            var lyricsFile = this.getAttribute('data-lyrics');
+                            fetch('songs/' + lyricsFile + '.json') // Assuming JSON file names are lowercase
+                                .then(response => response.json())
+                                .then(song => {
+                                    var title = song.title;
+                                    var artist = song.artist;
+                                    var songbody = song.songbody;
+            
+                                    const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
+                                    
+                                    const formatter = new ChordSheetJS.HtmlTableFormatter();
+                                    const disp = formatter.format(deserializedSong);
+            
+                                    lyricsContainer.innerHTML = disp;
+                                })
+                                .catch(error => console.error('Error fetching song:', error));
+                        });
+                    });
+                })
+                .catch(error => console.error('Error fetching song list:', error));
+        }
 
-                        lyricsContainer.innerHTML = disp;
-                    })
-                    .catch(error => console.error('Error fetching song:', error));
-            });
+        document.addEventListener("DOMContentLoaded", function() {
+            fetchSongs();
         });
     </script>
 </body>

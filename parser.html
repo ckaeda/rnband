@@ -12,17 +12,13 @@
     <script src="bundle.js"></script>
 
     <script>
-
-    </script>
-
-    <script>
         fetch('toParse.txt')
             .then(response => response.text())
             .then(fileContent => {
                 const chordSheet = `${fileContent}`;
 
                 const parser = new ChordSheetJS.UltimateGuitarParser();
-                const song = parser.parse(chordSheet);
+                const song = parser.parse(chordSheet).setKey('D').changeKey('C');
 
                 const formatter = new ChordSheetJS.HtmlDivFormatter();
                 const disp = formatter.format(song);
