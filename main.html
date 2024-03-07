@@ -15,6 +15,7 @@
         }
 
         .sidebar {
+            left: 0;
             margin: 0;
             width: 250px;
             background-color: #333;
@@ -24,6 +25,8 @@
             overflow: auto;
             position: fixed;
             z-index: 1;
+            -webkit-transition: left 0.3s ease-in-out;
+            transition: left 0.3s ease-in-out;
         }
 
         .welcome-text {
@@ -66,6 +69,8 @@
         }
 
         .openbtn {
+            position: sticky;
+            top: 0;
             margin-left: 290px;
             font-size: 20px;
             cursor: pointer;
@@ -75,14 +80,19 @@
             border: none;
             height: 6vh;
             max-height: 6vh;
+            -webkit-transition: margin-left 0.3s ease-in-out;
+            transition: margin-left 0.3s ease-in-out;
+            z-index: 2;
         }
 
         .lyrics-container {
             position: relative;
             padding: 20px;
             flex: 1;
+            min-width: max-content;
+            overflow-x: auto;
             overflow-y: auto;
-            /* margin-left: 300px; */
+            white-space: nowrap;
             z-index: 0;
         }
 
@@ -103,6 +113,7 @@
         }
 
         .lyrics-container p {
+            width: fit-content;
             margin: 10px 0;
             font-size: 16px;
             line-height: 1.6;
@@ -111,10 +122,12 @@
 
         .row {
             border-collapse: collapse;
+            table-layout: fixed;
         }
 
         .lyrics {
             padding: 0px;
+            width: max-content;
             white-space: pre-wrap;
         }
 
@@ -128,6 +141,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            z-index: 1;
             /* Center content horizontally */
         }
 
@@ -181,29 +195,28 @@
         <h1 id="title"></h1>
         <h2 id="artist"></h2>
         <div id="lyricsContainer"></div>
-    </div>
-
-    <div class="transpose-container">
-        <div class="transpose-text">Transpose</div>
-        <div class="toggle-button" id="toggleButton">
-            <div class="plus-sign">+</div>
-            <div class="transpose-value">0</div>
-            <div class="minus-sign">-</div>
+        <div class="transpose-container">
+            <div class="transpose-text">Transpose</div>
+            <div class="toggle-button" id="toggleButton">
+                <div class="minus-sign">-</div>
+                <div class="transpose-value">0</div>
+                <div class="plus-sign">+</div>                
+            </div>
         </div>
     </div>
+
+    
 
     <script>
         function toggleNav() {
             const button = document.getElementById("openbtn");
 
             if (button.style.marginLeft == "0px") {
-                document.getElementById("sidebar").style.width = "250px";
-                document.getElementById("sidebar").style.padding = "20px";
+                document.getElementById("sidebar").style.left = "0px";
                 document.getElementById("openbtn").style.marginLeft = "290px";
                 // document.getElementById("main").style.marginLeft = "100px";
             } else {
-                document.getElementById("sidebar").style.width = "0px";
-                document.getElementById("sidebar").style.padding = "0px";
+                document.getElementById("sidebar").style.left = "-290px";
                 document.getElementById("openbtn").style.marginLeft = "0px";
                 document.getElementById("main").style.marginLeft = "0px";
             }
