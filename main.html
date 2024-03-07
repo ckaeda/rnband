@@ -106,6 +106,9 @@
         <h2 class="welcome-text">Welcome, <!-- JavaScript will fill this --></h2>
         <ul class="song-list" id="songList">
             <li data-lyrics="elevation worship_no one">Elevation Worship - No One</li>
+            <li data-lyrics="maverick city music_rest on us">Maverick City Music - Rest On Us</li>
+            <li data-lyrics="mj flores_banal na apoy">MJ Flores - Banal Na Apoy</li>
+            <li data-lyrics="planetshakers_heaven on earth">Planetshakers - Heaven on Earth</li>
         </ul>
     </div>
 
@@ -148,7 +151,7 @@
         document.querySelectorAll('.song-list li').forEach(function (song) {
             song.addEventListener('click', function () {
                 var lyricsFile = this.getAttribute('data-lyrics');
-                fetch('songs/' + lyricsFile + '.json') // Assuming JSON file names are lowercase
+                fetch('songs/' + lyricsFile + '.json')
                     .then(response => response.json())
                     .then(song => {
                         var title = song.title;
@@ -158,16 +161,26 @@
                         const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
 
                         const formatter = new ChordSheetJS.HtmlTableFormatter();
-                        const disp = formatter.format(deserializedSong);
+                        var disp = formatter.format(deserializedSong);
+
+                        const toHeader = [  'Intro',
+                                            'Pre-Chorus',
+                                            'Chorus 1',
+                                            'Chorus 2',
+                                            'Bridge',
+                                            'Outro',
+                                            'Instrumental 2'
+                                        ];
+
+                        for (let str in toHeader) {
+                            disp = disp.replaceAll('<td class="comment">'+toHeader[str]+'</td>', '<h3 class="label">'+toHeader[str]+'</h3>');
+                            console.log(toHeader[str]);
+                        }
 
                         lyricsContainer.innerHTML = disp;
                     })
                     .catch(error => console.error('Error fetching song:', error));
             });
-        });
-
-        document.addEventListener("DOMContentLoaded", function () {
-            fetchSongs();
         });
     </script>
 </body>

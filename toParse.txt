@@ -1,132 +1,62 @@
 [Intro]
-D  D  A/G  G
-A/D  D  A/G  G
- 
-[Verse]
-D            A
-Yahweh
-G
-Yahweh
-D
-Holy is your name
-A                     G
-I don’t want to take it in vain
-Bm
-Yahweh
-G
-Yahweh
-D/F#
-Holy is your name
-A                       G
-I don’t want to take it in vain
- 
-[Instrumental 2]
-A/D - D  A/G - G
- 
-[Verse]
-D            A
-Yahweh
-G
-Yahweh
-D
-Holy is your name
-A                     G
-I don’t want to take it in vain
-Bm
-Yahweh
-G
-Yahweh
-D/F#
-Holy is your name
-A                       G
-I don’t want to take it in vain
- 
+D G Bm A G-A
+
+[Verse 1]
+          G
+Ako ay naparito
+        Bm
+Upang hipuin Mo
+             G
+Paghilom ng damdamin
+              A
+Ang tanging hiling
+
+[Verse 2]
+           G
+Ako ay maghihintay
+              Bm
+Sa pangakong ibibigay
+                G
+Sa lugar na magtatagpo
+       A
+Punuin Mo
+
 [Chorus]
-            D             A                     G
-There will be no other god before You
-            D             A             G
-There will be no other god before You
-          Bm
-There is no one above You
-A
-No one beside You
-        D/F#            G
-And nobody like You
-            D             A/C#          G/B
-There will be no other god before You
-        G
-No one, no one, no one
- 
-[Instrumental 2]
-A/D D  A/G G
- 
-[Verse]
-D            A
-Yahweh
-G
-Yahweh
-D
-Holy is your name
-A                     G
-I don’t want to take it in vain
-Bm
-Yahweh
-G
-Yahweh
-D/F#
-Holy is your name
-A                       G
-I don’t want to take it in vain
- 
-[Chorus]
-            D             A                     G
-There will be no other god before You
-            D             A             G
-There will be no other god before You
-          Bm
-There is no one above You
-A
-No one beside You
-        D/F#            G
-And nobody like You
-            D             A/C#          G/B
-There will be no other god before You
-        G
-No one, no one, no one
- 
-[Instrumental 2]
-A/D D A/G G
- 
+   D
+Banal na apoy ng Dios
+   G
+Banal na apoy ng Dios
+       Bm
+Dalhin Mo
+       G
+Dalhin Mo
+              A
+Kung san ka patungo
+
 [Bridge]
-A/D        D               A/D  G/D       A/D
-Who else can lead us, lead us to freedom
-        G/D             D
-No one, no one, no one
-A/D        D               A/D  G/D       A/D
-Who else can heal all our sins and diseases
-        G/D             D
-No one, no one, no one
-A/D        D               A/D  G/D
-Who else can walk, walk on the water
-        G/D             D
-No one, no one, no one    A/D
-A/D        D               A/D  G/D
-Who else can answer, answer by fire
-        G/D             D
-No one, no one, no one    A/D
-A/D        D               A/D  G/D       A/D
-Who else can bring down the tallest of giants
-        G/D             D
-No one, no one, no one
-A/D        D               A/D  G/D       A/D
-Who else can silence the roar of the lion
-        G/D             D
-No one, no one, no one
-A/D        D               A/D  G/D       A/D
-Who else is worthy, worthy of worship
-        G/D             D
-No one, no one, no one
-A/D        D               A/D  G/D       A/D
-Who else is worthy, worthy of worship
-        G/D             D
-No one, no one, no one
+            G
+Ikaw ay nandito
+   Bm       A
+Nandito ngayon
+            G
+Hatid ng presenya
+     Bm     A
+Mo'y kalayaan
+
+            G
+Ikaw ay nandito
+   Bm       A
+Nandito ngayon
+            G
+Hatid ng presenya
+     Bm     A
+Mo'y kagalingan
+
+            G
+Ikaw ay nandito
+   Bm       A
+Nandito ngayon
+            G
+Hatid ng presenya
+     Bm     A
+Mo'y kalakasan
