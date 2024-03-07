@@ -34,29 +34,31 @@ Dalhin Mo
 Kung san ka patungo
 
 [Bridge]
-            G
+ D/F#       G
 Ikaw ay nandito
    Bm       A
 Nandito ngayon
-            G
+  D/F#      G
 Hatid ng presenya
      Bm     A
 Mo'y kalayaan
 
-            G
+ D/F#       G
 Ikaw ay nandito
    Bm       A
 Nandito ngayon
-            G
+  D/F#      G
 Hatid ng presenya
      Bm     A
 Mo'y kagalingan
 
-            G
+ D/F#       G
 Ikaw ay nandito
    Bm       A
 Nandito ngayon
-            G
+  D/F#      G
 Hatid ng presenya
      Bm     A
 Mo'y kalakasan
+
+(x2)

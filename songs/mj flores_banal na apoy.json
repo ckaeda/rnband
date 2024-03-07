@@ -371,9 +371,15 @@
                 "items": [
                     {
                         "type": "chordLyricsPair",
-                        "chords": " ",
+                        "chords": "",
                         "chord": null,
-                        "lyrics": "Ikaw ay nand"
+                        "lyrics": "I"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C/E",
+                        "chord": null,
+                        "lyrics": "kaw ay nand"
                     },
                     {
                         "type": "chordLyricsPair",
@@ -413,7 +419,13 @@
                         "type": "chordLyricsPair",
                         "chords": " ",
                         "chord": null,
-                        "lyrics": "Hatid ng pre"
+                        "lyrics": "Ha"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C/E",
+                        "chord": null,
+                        "lyrics": "tid ng pre"
                     },
                     {
                         "type": "chordLyricsPair",
@@ -455,9 +467,15 @@
                 "items": [
                     {
                         "type": "chordLyricsPair",
-                        "chords": " ",
+                        "chords": "",
                         "chord": null,
-                        "lyrics": "Ikaw ay nand"
+                        "lyrics": "I"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C/E",
+                        "chord": null,
+                        "lyrics": "kaw ay nand"
                     },
                     {
                         "type": "chordLyricsPair",
@@ -497,7 +515,13 @@
                         "type": "chordLyricsPair",
                         "chords": " ",
                         "chord": null,
-                        "lyrics": "Hatid ng pre"
+                        "lyrics": "Ha"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C/E",
+                        "chord": null,
+                        "lyrics": "tid ng pre"
                     },
                     {
                         "type": "chordLyricsPair",
@@ -539,9 +563,15 @@
                 "items": [
                     {
                         "type": "chordLyricsPair",
-                        "chords": " ",
+                        "chords": "",
                         "chord": null,
-                        "lyrics": "Ikaw ay nand"
+                        "lyrics": "I"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C/E",
+                        "chord": null,
+                        "lyrics": "kaw ay nand"
                     },
                     {
                         "type": "chordLyricsPair",
@@ -581,7 +611,13 @@
                         "type": "chordLyricsPair",
                         "chords": " ",
                         "chord": null,
-                        "lyrics": "Hatid ng pre"
+                        "lyrics": "Ha"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C/E",
+                        "chord": null,
+                        "lyrics": "tid ng pre"
                     },
                     {
                         "type": "chordLyricsPair",
@@ -611,6 +647,21 @@
                         "chords": "G",
                         "chord": null,
                         "lyrics": "an"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "",
+                        "chord": null,
+                        "lyrics": "(x2)"
                     }
                 ]
             }
