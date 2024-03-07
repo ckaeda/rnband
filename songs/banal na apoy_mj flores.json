@@ -53,7 +53,13 @@
                     },
                     {
                         "type": "chordLyricsPair",
-                        "chords": "G-A",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
                         "chord": null,
                         "lyrics": ""
                     }

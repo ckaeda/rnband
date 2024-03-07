@@ -31,25 +31,49 @@
                         "type": "chordLyricsPair",
                         "chords": "C",
                         "chord": null,
-                        "lyrics": "A/D"
+                        "lyrics": " "
                     },
                     {
                         "type": "chordLyricsPair",
                         "chords": "C",
                         "chord": null,
-                        "lyrics": " D"
+                        "lyrics": ""
                     },
                     {
                         "type": "chordLyricsPair",
                         "chords": "G/F",
                         "chord": null,
-                        "lyrics": " A/G"
+                        "lyrics": ""
                     },
                     {
                         "type": "chordLyricsPair",
                         "chords": "F",
                         "chord": null,
-                        "lyrics": "G"
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/C",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/F",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": ""
                     }
                 ]
             },
@@ -202,9 +226,27 @@
                 "items": [
                     {
                         "type": "chordLyricsPair",
-                        "chords": "",
+                        "chords": "G/C",
                         "chord": null,
-                        "lyrics": "A/D - D A/G - G"
+                        "lyrics": " "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G/F",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": ""
                     }
                 ]
             },
@@ -1377,6 +1419,10 @@
                         "lyrics": ""
                     }
                 ]
+            },
+            {
+                "type": "line",
+                "items": []
             }
         ]
     }

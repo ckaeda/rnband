@@ -151,6 +151,12 @@
             margin-bottom: 5px;
         }
 
+        .transpose-key {
+            color: #000;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
         .toggle-button {
             display: flex;
         }
@@ -182,10 +188,6 @@
     <div class="sidebar" id="sidebar">
         <h2 class="welcome-text">Welcome, <!-- JavaScript will fill this --></h2>
         <ul class="song-list" id="songList">
-            <li data-lyrics="elevation worship_no one">Elevation Worship - No One</li>
-            <li data-lyrics="maverick city music_rest on us">Maverick City Music - Rest On Us</li>
-            <li data-lyrics="mj flores_banal na apoy">MJ Flores - Banal Na Apoy</li>
-            <li data-lyrics="planetshakers_heaven on earth">Planetshakers - Heaven on Earth</li>
         </ul>
     </div>
 
@@ -200,13 +202,62 @@
     <div class="transpose-container">
         <div class="transpose-text">Transpose</div>
         <div class="toggle-button" id="toggleButton">
-            <div class="minus-sign">-</div>
-            <div class="transpose-value">0</div>
-            <div class="plus-sign">+</div>
+            <div class="minus-sign" id="minusSign">-</div>
+            <div class="transpose-value" id="transposeValue">0</div>
+            <div class="plus-sign" id="plusSign">+</div>
         </div>
+        <div class="transpose-key" id="transposeKey">Key: C</div>
     </div>
 
     <script>
+        var transposeValue = 0;
+        var currSong = new ChordSheetJS.Song();
+        var currKey = ChordSheetJS.Chord.parse('C');
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var songlist = document.getElementById("songList");
+            var songArray =
+                [
+                    'no one_elevation worship',
+                    'banal na apoy_mj flores',
+                    'heaven on earth_planetshakers',
+                    'rest on us_maverick city music'
+                ].sort();
+            var songlisthtml = "";
+
+            for (let song in songArray) {
+                let title = toTitleCase(songArray[song].substring(0, songArray[song].indexOf('_')));
+                let artist = toTitleCase(songArray[song].substring(songArray[song].indexOf('_') + 1));
+                songlisthtml += '<li data-lyrics="' + songArray[song] + '">' + title + ' - ' + artist + '</li>';
+            }
+
+            songlist.innerHTML = songlisthtml;
+
+            document.querySelectorAll('.song-list li').forEach(function (song) {
+                song.addEventListener('click', function () {
+                    var lyricsFile = this.getAttribute('data-lyrics');
+                    fetch('songs/' + lyricsFile + '.json')
+                        .then(response => response.json())
+                        .then(song => {
+                            var title = song.title;
+                            var artist = song.artist;
+                            var songbody = song.songbody;
+
+                            const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
+                            currSong = deserializedSong;
+
+                            var lyricsTitle = document.getElementById('title');
+                            var lyricsArtist = document.getElementById('artist');
+
+                            lyricsTitle.textContent = title;
+                            lyricsArtist.textContent = artist;
+                            displaySong(currSong.transpose(transposeValue), currKey.transpose(transposeValue));
+                        })
+                        .catch(error => console.error('Error fetching song:', error));
+                });
+            });
+        });
+
         function toggleNav() {
             const button = document.getElementById("openbtn");
 
@@ -238,11 +289,6 @@
         // Update welcome text
         document.querySelector('.welcome-text').innerHTML += name + "!";
 
-        // Get the lyrics container
-        var lyricsTitle = document.getElementById('title');
-        var lyricsArtist = document.getElementById('artist');
-        var lyricsContainer = document.getElementById('lyricsContainer');
-
         function toTitleCase(str) {
             return str.replace(
                 /\w\S*/g,
@@ -252,40 +298,45 @@
             );
         }
 
-        document.querySelectorAll('.song-list li').forEach(function (song) {
-            song.addEventListener('click', function () {
-                var lyricsFile = this.getAttribute('data-lyrics');
-                fetch('songs/' + lyricsFile + '.json')
-                    .then(response => response.json())
-                    .then(song => {
-                        var title = song.title;
-                        var artist = song.artist;
-                        var songbody = song.songbody;
+        function displaySong(song, key) {
+            // Get the lyrics container
+            var lyricsContainer = document.getElementById('lyricsContainer');
 
-                        const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
+            const formatter = new ChordSheetJS.HtmlTableFormatter();
+            var disp = formatter.format(song);
 
-                        const formatter = new ChordSheetJS.HtmlTableFormatter();
-                        var disp = formatter.format(deserializedSong);
+            const toHeader = ['Intro',
+                'Pre-Chorus',
+                'Chorus 1',
+                'Chorus 2',
+                'Bridge',
+                'Outro',
+                'Instrumental 2'
+            ];
 
-                        const toHeader = ['Intro',
-                            'Pre-Chorus',
-                            'Chorus 1',
-                            'Chorus 2',
-                            'Bridge',
-                            'Outro',
-                            'Instrumental 2'
-                        ];
+            for (let str in toHeader) {
+                disp = disp.replaceAll('<td class="comment">' + toHeader[str] + '</td>', '<h3 class="label">' + toHeader[str] + '</h3>');
+            }
 
-                        for (let str in toHeader) {
-                            disp = disp.replaceAll('<td class="comment">' + toHeader[str] + '</td>', '<h3 class="label">' + toHeader[str] + '</h3>');
-                        }
+            lyricsContainer.innerHTML = disp;
+        }
 
-                        lyricsTitle.textContent = title;
-                        lyricsArtist.textContent = artist;
-                        lyricsContainer.innerHTML = disp;
-                    })
-                    .catch(error => console.error('Error fetching song:', error));
-            });
+        document.getElementById("minusSign").addEventListener("click", function () {
+            transposeValue -= 1;
+            if (transposeValue == -12) transposeValue = 0;
+
+            document.getElementById("transposeValue").textContent = transposeValue;
+            document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
+            displaySong(currSong.transpose(transposeValue), currKey.transpose(transposeValue));
+        });
+
+        document.getElementById("plusSign").addEventListener("click", function () {
+            transposeValue += 1;
+            if (transposeValue == 12) transposeValue = 0;
+
+            document.getElementById("transposeValue").textContent = transposeValue;
+            document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
+            displaySong(currSong.transpose(transposeValue), currKey.transpose(transposeValue));
         });
     </script>
 </body>
