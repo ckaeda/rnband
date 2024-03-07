@@ -281,13 +281,13 @@
                         "type": "chordLyricsPair",
                         "chords": " ",
                         "chord": null,
-                        "lyrics": "Ban"
+                        "lyrics": "Ba"
                     },
                     {
                         "type": "chordLyricsPair",
-                        "chords": "F",
+                        "chords": "Am",
                         "chord": null,
-                        "lyrics": "al na apoy ng Dios"
+                        "lyrics": "nal na apoy ng Dios"
                     }
                 ]
             },
@@ -302,7 +302,7 @@
                     },
                     {
                         "type": "chordLyricsPair",
-                        "chords": "Am",
+                        "chords": "F",
                         "chord": null,
                         "lyrics": "Mo"
                     }
@@ -319,7 +319,7 @@
                     },
                     {
                         "type": "chordLyricsPair",
-                        "chords": "F",
+                        "chords": "Am/E",
                         "chord": null,
                         "lyrics": "Mo"
                     }

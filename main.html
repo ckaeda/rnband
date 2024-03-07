@@ -96,6 +96,40 @@
             padding: 0px;
             white-space: pre-wrap;
         }
+
+        .transpose-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center content horizontally */
+        }
+        
+        .transpose-text {
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .toggle-button {
+            display: flex;
+        }
+        
+        .plus-sign, .minus-sign {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -112,11 +146,19 @@
         </ul>
     </div>
 
-    <div class="lyrics-container" id="lyricsContainer">
-        <!-- Lyrics will be populated here -->
+    <div class="lyrics-container">
+        <h1 id="title"></h1>
+        <h2 id="artist"></h2>
+        <div id="lyricsContainer"></div>
     </div>
 
-
+    <div class="transpose-container">
+        <div class="transpose-text">Transpose</div>
+        <div class="toggle-button" id="toggleButton">
+            <div class="plus-sign">+</div>
+            <div class="minus-sign">-</div>
+        </div>
+    </div>
 
     <script>
         // Function to get URL parameter by name
@@ -137,6 +179,8 @@
         document.querySelector('.welcome-text').innerHTML += name + "!";
 
         // Get the lyrics container
+        var lyricsTitle = document.getElementById('title');
+        var lyricsArtist = document.getElementById('artist');
         var lyricsContainer = document.getElementById('lyricsContainer');
 
         function toTitleCase(str) {
@@ -177,6 +221,8 @@
                             console.log(toHeader[str]);
                         }
 
+                        lyricsTitle.textContent = title;
+                        lyricsArtist.textContent = artist;
                         lyricsContainer.innerHTML = disp;
                     })
                     .catch(error => console.error('Error fetching song:', error));
