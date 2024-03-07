@@ -73,6 +73,8 @@
             color: white;
             padding: 10px 18px;
             border: none;
+            height: 6vh;
+            max-height: 6vh;
         }
 
         .lyrics-container {
@@ -80,7 +82,7 @@
             padding: 20px;
             flex: 1;
             overflow-y: auto;
-            margin-left: 300px;
+            /* margin-left: 300px; */
             z-index: 0;
         }
 
@@ -140,6 +142,7 @@
         }
 
         .plus-sign,
+        .transpose-value,
         .minus-sign {
             width: 20px;
             height: 20px;
@@ -150,6 +153,11 @@
             margin-left: 5px;
             cursor: pointer;
             font-weight: bold;
+        }
+
+        .plus-sign:hover,
+        .minus-sign:hover {
+            background-color: #ddd;
         }
     </style>
 </head>
@@ -179,25 +187,12 @@
         <div class="transpose-text">Transpose</div>
         <div class="toggle-button" id="toggleButton">
             <div class="plus-sign">+</div>
+            <div class="transpose-value">0</div>
             <div class="minus-sign">-</div>
         </div>
     </div>
 
     <script>
-        function openNav() {
-            document.getElementById("sidebar").style.width = "250px";
-            document.getElementById("sidebar").style.padding = "20px";
-            document.getElementById("openbtn").style.marginLeft = "290px";
-            document.getElementById("main").style.marginLeft = "300px";
-        }
-
-        function closeNav() {
-            document.getElementById("sidebar").style.width = "0px";
-            document.getElementById("sidebar").style.padding = "0px";
-            document.getElementById("openbtn").style.marginLeft = "0px";
-            document.getElementById("main").style.marginLeft = "0px";
-        }
-
         function toggleNav() {
             const button = document.getElementById("openbtn");
 
@@ -205,7 +200,7 @@
                 document.getElementById("sidebar").style.width = "250px";
                 document.getElementById("sidebar").style.padding = "20px";
                 document.getElementById("openbtn").style.marginLeft = "290px";
-                document.getElementById("main").style.marginLeft = "300px";
+                // document.getElementById("main").style.marginLeft = "100px";
             } else {
                 document.getElementById("sidebar").style.width = "0px";
                 document.getElementById("sidebar").style.padding = "0px";

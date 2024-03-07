@@ -20,12 +20,6 @@
                 const parser = new ChordSheetJS.UltimateGuitarParser();
                 const song = parser.parse(chordSheet).setKey('D').changeKey('C');
 
-                const formatter = new ChordSheetJS.HtmlDivFormatter();
-                const disp = formatter.format(song);
-
-                var container = document.getElementById('container');
-                container.innerHTML = disp;
-
                 const serializedSong = new ChordSheetJS.ChordSheetSerializer().serialize(song);
                 container.innerHTML = JSON.stringify(serializedSong);
             })
