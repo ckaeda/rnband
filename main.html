@@ -21,9 +21,8 @@
             padding: 20px;
             height: 100vh;
             overflow-y: auto;
-            /* Enable scrolling */
             position: fixed;
-            /* Fix the sidebar position */
+            z-index: 1;
         }
 
         .welcome-text {
@@ -53,13 +52,12 @@
         }
 
         .lyrics-container {
+            position: relative;
             padding: 20px;
             flex: 1;
-            /* Fill remaining space */
             overflow-y: auto;
-            /* Enable scrolling for lyrics only */
             margin-left: 300px;
-            /* Adjust for the width of the sidebar */
+            z-index: 0;
         }
 
         .lyrics-container h1 {
@@ -80,12 +78,9 @@
 
         .lyrics-container p {
             margin: 10px 0;
-            /* Add space around paragraphs */
             font-size: 16px;
             line-height: 1.6;
-            /* Increase line height for better readability */
             color: #666;
-            /* Light text color */
         }
 
         .row {
