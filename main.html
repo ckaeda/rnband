@@ -15,12 +15,13 @@
         }
 
         .sidebar {
+            margin: 0;
             width: 250px;
             background-color: #333;
             color: #fff;
             padding: 20px;
-            height: 100vh;
-            overflow-y: auto;
+            height: 100%;
+            overflow: auto;
             position: fixed;
             z-index: 1;
         }
@@ -49,6 +50,29 @@
 
         .song-list li:hover {
             text-decoration: none;
+        }
+
+        .toggle-sidebar-button {
+            position: absolute;
+            top: 10px;
+            left: 240px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            z-index: 2;
+            /* Ensure the button appears above other content */
+        }
+
+        .openbtn {
+            margin-left: 290px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            padding: 10px 18px;
+            border: none;
         }
 
         .lyrics-container {
@@ -101,20 +125,22 @@
             padding: 5px;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center content horizontally */
+            align-items: center;
+            /* Center content horizontally */
         }
-        
+
         .transpose-text {
             color: #000;
             font-weight: bold;
             margin-bottom: 5px;
         }
-        
+
         .toggle-button {
             display: flex;
         }
-        
-        .plus-sign, .minus-sign {
+
+        .plus-sign,
+        .minus-sign {
             width: 20px;
             height: 20px;
             border: 1px solid #000;
@@ -131,7 +157,7 @@
 <body>
     <script src="bundle.js"></script>
 
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <h2 class="welcome-text">Welcome, <!-- JavaScript will fill this --></h2>
         <ul class="song-list" id="songList">
             <li data-lyrics="elevation worship_no one">Elevation Worship - No One</li>
@@ -141,7 +167,9 @@
         </ul>
     </div>
 
-    <div class="lyrics-container">
+    <button class="openbtn" id="openbtn" onclick="toggleNav()">☰</button>
+
+    <div class="lyrics-container" id="main">
         <h1 id="title"></h1>
         <h2 id="artist"></h2>
         <div id="lyricsContainer"></div>
@@ -156,6 +184,36 @@
     </div>
 
     <script>
+        function openNav() {
+            document.getElementById("sidebar").style.width = "250px";
+            document.getElementById("sidebar").style.padding = "20px";
+            document.getElementById("openbtn").style.marginLeft = "290px";
+            document.getElementById("main").style.marginLeft = "300px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidebar").style.width = "0px";
+            document.getElementById("sidebar").style.padding = "0px";
+            document.getElementById("openbtn").style.marginLeft = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+
+        function toggleNav() {
+            const button = document.getElementById("openbtn");
+
+            if (button.style.marginLeft == "0px") {
+                document.getElementById("sidebar").style.width = "250px";
+                document.getElementById("sidebar").style.padding = "20px";
+                document.getElementById("openbtn").style.marginLeft = "290px";
+                document.getElementById("main").style.marginLeft = "300px";
+            } else {
+                document.getElementById("sidebar").style.width = "0px";
+                document.getElementById("sidebar").style.padding = "0px";
+                document.getElementById("openbtn").style.marginLeft = "0px";
+                document.getElementById("main").style.marginLeft = "0px";
+            }
+        }
+
         // Function to get URL parameter by name
         function getParameterByName(name, url) {
             if (!url) url = window.location.href;
@@ -202,18 +260,17 @@
                         const formatter = new ChordSheetJS.HtmlTableFormatter();
                         var disp = formatter.format(deserializedSong);
 
-                        const toHeader = [  'Intro',
-                                            'Pre-Chorus',
-                                            'Chorus 1',
-                                            'Chorus 2',
-                                            'Bridge',
-                                            'Outro',
-                                            'Instrumental 2'
-                                        ];
+                        const toHeader = ['Intro',
+                            'Pre-Chorus',
+                            'Chorus 1',
+                            'Chorus 2',
+                            'Bridge',
+                            'Outro',
+                            'Instrumental 2'
+                        ];
 
                         for (let str in toHeader) {
-                            disp = disp.replaceAll('<td class="comment">'+toHeader[str]+'</td>', '<h3 class="label">'+toHeader[str]+'</h3>');
-                            console.log(toHeader[str]);
+                            disp = disp.replaceAll('<td class="comment">' + toHeader[str] + '</td>', '<h3 class="label">' + toHeader[str] + '</h3>');
                         }
 
                         lyricsTitle.textContent = title;
