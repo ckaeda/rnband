@@ -225,30 +225,6 @@
         document.addEventListener("DOMContentLoaded", function () {
             updateSongList('');
 
-            document.querySelectorAll('.song-list li').forEach(function (song) {
-                song.addEventListener('click', function () {
-                    var lyricsFile = this.getAttribute('data-lyrics');
-                    fetch('songs/' + lyricsFile + '.json')
-                        .then(response => response.json())
-                        .then(song => {
-                            var title = song.title;
-                            var artist = song.artist;
-                            var songbody = song.songbody;
-
-                            const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
-                            currSong = deserializedSong;
-
-                            var lyricsTitle = document.getElementById('title');
-                            var lyricsArtist = document.getElementById('artist');
-
-                            lyricsTitle.textContent = title;
-                            lyricsArtist.textContent = artist;
-                            displaySong(currSong.transpose(transposeValue), currKey.transpose(transposeValue));
-                        })
-                        .catch(error => console.error('Error fetching song:', error));
-                });
-            });
-
             var searchBar = document.getElementById('searchBar');
             searchBar.addEventListener("input", function () {
                 updateSongList(searchBar.value);
@@ -274,6 +250,30 @@
             }
 
             songlist.innerHTML = songlisthtml;
+
+            document.querySelectorAll('.song-list li').forEach(function (song) {
+                song.addEventListener('click', function () {
+                    var lyricsFile = this.getAttribute('data-lyrics');
+                    fetch('songs/' + lyricsFile + '.json')
+                        .then(response => response.json())
+                        .then(song => {
+                            var title = song.title;
+                            var artist = song.artist;
+                            var songbody = song.songbody;
+
+                            const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
+                            currSong = deserializedSong;
+
+                            var lyricsTitle = document.getElementById('title');
+                            var lyricsArtist = document.getElementById('artist');
+
+                            lyricsTitle.textContent = title;
+                            lyricsArtist.textContent = artist;
+                            displaySong(currSong.transpose(transposeValue), currKey.transpose(transposeValue));
+                        })
+                        .catch(error => console.error('Error fetching song:', error));
+                });
+            });
         }
 
         function toggleNav() {
@@ -282,7 +282,6 @@
             if (button.style.marginLeft == "0px") {
                 document.getElementById("sidebar").style.left = "0px";
                 document.getElementById("openbtn").style.marginLeft = "290px";
-                // document.getElementById("main").style.marginLeft = "100px";
             } else {
                 document.getElementById("sidebar").style.left = "-290px";
                 document.getElementById("openbtn").style.marginLeft = "0px";
@@ -306,15 +305,6 @@
 
         // Update welcome text
         document.querySelector('.welcome-text').innerHTML += name + "!";
-
-        function toTitleCase(str) {
-            return str.replace(
-                /\w\S*/g,
-                function (txt) {
-                    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-                }
-            );
-        }
 
         function displaySong(song, key) {
             // Get the lyrics container
