@@ -35,6 +35,13 @@
             padding-top: 0;
         }
 
+        .search-bar {
+            width: 230px;
+            line-height: 1.5vh;
+            border-radius: 10px;
+            padding: 0.5vh;
+        }
+
         .song-list {
             list-style: none;
             padding: 0;
@@ -187,6 +194,7 @@
 
     <div class="sidebar" id="sidebar">
         <h2 class="welcome-text">Welcome, <!-- JavaScript will fill this --></h2>
+        <input type="text" class="search-bar" id="searchBar" />
         <ul class="song-list" id="songList">
         </ul>
     </div>
@@ -215,23 +223,7 @@
         var currKey = ChordSheetJS.Chord.parse('C');
 
         document.addEventListener("DOMContentLoaded", function () {
-            var songlist = document.getElementById("songList");
-            var songArray =
-                [
-                    'no one_elevation worship',
-                    'banal na apoy_mj flores',
-                    'heaven on earth_planetshakers',
-                    'rest on us_maverick city music'
-                ].sort();
-            var songlisthtml = "";
-
-            for (let song in songArray) {
-                let title = toTitleCase(songArray[song].substring(0, songArray[song].indexOf('_')));
-                let artist = toTitleCase(songArray[song].substring(songArray[song].indexOf('_') + 1));
-                songlisthtml += '<li data-lyrics="' + songArray[song] + '">' + title + ' - ' + artist + '</li>';
-            }
-
-            songlist.innerHTML = songlisthtml;
+            updateSongList('');
 
             document.querySelectorAll('.song-list li').forEach(function (song) {
                 song.addEventListener('click', function () {
@@ -256,7 +248,33 @@
                         .catch(error => console.error('Error fetching song:', error));
                 });
             });
+
+            var searchBar = document.getElementById('searchBar');
+            searchBar.addEventListener("input", function () {
+                updateSongList(searchBar.value);
+            });
         });
+
+        function updateSongList(input) {
+            var songlist = document.getElementById("songList");
+            var songArray =
+                [
+                    'No One - Elevation Worship',
+                    'Banal Na Apoy - MJ Flores',
+                    'Heaven On Earth - Planetshakers',
+                    'Rest On Us - Maverick City Music'
+                ].sort();
+            var songlisthtml = "";
+
+            for (let song in songArray) {
+                if (songArray[song].toLowerCase().includes(input.toLowerCase())) {
+                    let dataLyrics = songArray[song].replace(' - ', '_').toLowerCase();
+                    songlisthtml += '<li data-lyrics="' + dataLyrics + '">' + songArray[song] + '</li>';
+                }
+            }
+
+            songlist.innerHTML = songlisthtml;
+        }
 
         function toggleNav() {
             const button = document.getElementById("openbtn");
