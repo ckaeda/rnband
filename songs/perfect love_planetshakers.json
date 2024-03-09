@@ -1,6 +1,9 @@
 {
     "title": "Perfect Love",
     "artist": "Planetshakers",
+    "defaults": {
+        "Annaree": "G"
+    },
     "songbody": {
         "type": "chordSheet",
         "lines": [

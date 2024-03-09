@@ -1,6 +1,9 @@
 {
     "title": "Heaven On Earth",
     "artist": "Planetshakers",
+    "defaults": {
+        "Annaree": "C"
+    },
     "songbody": {
         "type": "chordSheet",
         "lines": [

@@ -1,6 +1,9 @@
 {
     "title": "Banal Na Apoy",
     "artist": "MJ Flores",
+    "defaults": {
+        "Julia" : "C"
+    },
     "songbody": {
         "type": "chordSheet",
         "lines": [

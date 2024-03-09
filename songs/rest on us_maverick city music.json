@@ -1,6 +1,9 @@
 {
     "title": "Rest On Us",
     "artist": "Maverick City Music",
+    "defaults": {
+        "JJ": "A"
+    },
     "songbody": {
         "type": "chordSheet",
         "lines": [

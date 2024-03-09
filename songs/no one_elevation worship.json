@@ -1,6 +1,9 @@
 {
     "title": "No One",
     "artist": "Elevation Worship (feat. Chandler Moore & Tiffany Hudson)",
+    "defaults": {
+        "JJ": "B"
+    },
     "songbody": {
         "type": "chordSheet",
         "lines": [
