@@ -411,6 +411,9 @@
                     div.textContent = Object.keys(defaults)[obj] + ": " + defaults[Object.keys(defaults)[obj]];
 
                     div.addEventListener('click', function () {
+                        transposeValue = 0;
+                        document.getElementById("transposeValue").textContent = transposeValue;
+
                         currKey = ChordSheetJS.Chord.parse(defaults[Object.keys(defaults)[obj]]);
                         displaySong(currSong.transpose(transposeValue));
                         document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
