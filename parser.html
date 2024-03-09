@@ -18,7 +18,7 @@
                 const chordSheet = `${fileContent}`;
 
                 const parser = new ChordSheetJS.UltimateGuitarParser();
-                const song = parser.parse(chordSheet).setKey('D').changeKey('C');
+                const song = parser.parse(chordSheet).setKey('G').changeKey('C');
 
                 const serializedSong = new ChordSheetJS.ChordSheetSerializer().serialize(song);
                 container.innerHTML = JSON.stringify(serializedSong);

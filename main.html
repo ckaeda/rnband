@@ -238,7 +238,9 @@
                     'No One - Elevation Worship',
                     'Banal Na Apoy - MJ Flores',
                     'Heaven On Earth - Planetshakers',
-                    'Rest On Us - Maverick City Music'
+                    'Rest On Us - Maverick City Music',
+                    'Perfect Love - Planetshakers',
+                    'Reckless Love - Cory Asbury'
                 ].sort();
             var songlisthtml = "";
 
@@ -311,14 +313,17 @@
             var lyricsContainer = document.getElementById('lyricsContainer');
 
             const formatter = new ChordSheetJS.HtmlTableFormatter();
-            var disp = formatter.format(song);
+            var disp = formatter.format(song).replaceAll('ma7', 'maj7');
 
             const toHeader = ['Intro',
                 'Pre-Chorus',
                 'Chorus 1',
                 'Chorus 2',
                 'Bridge',
+                'Bridge 1',
+                'Bridge 2',
                 'Outro',
+                'Instrumental',
                 'Instrumental 2'
             ];
 
