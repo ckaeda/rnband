@@ -42,22 +42,33 @@
             padding: 0.5vh;
         }
 
+        .active-list,
         .song-list {
             list-style: none;
             padding: 0;
             border-top: 1px solid #fff;
-            /* Add a dividing line */
             padding-top: 20px;
-            /* Add spacing below dividing line */
         }
 
+        .active-list[title]::before {
+            content: attr(title);
+            display: block;
+            font-size: 15px;
+            line-height: 30px;
+            color: #aaa;
+            font-weight: bold;
+        }
+
+        .active-list li,
         .song-list li {
+            font-size: 20px;
+            line-height: 30px;
             margin-bottom: 10px;
             cursor: pointer;
             text-decoration: underline;
-            /* Change cursor to pointer on hover */
         }
 
+        .active-list li:hover,
         .song-list li:hover {
             text-decoration: none;
         }
@@ -72,7 +83,6 @@
             padding: 10px 20px;
             cursor: pointer;
             z-index: 2;
-            /* Ensure the button appears above other content */
         }
 
         .openbtn {
@@ -231,6 +241,8 @@
     <div class="sidebar" id="sidebar">
         <h2 class="welcome-text">Welcome, <!-- JavaScript will fill this --></h2>
         <input type="text" class="search-bar" id="searchBar" />
+        <ul class="active-list" id="activeList" title="ACTIVE">
+        </ul>
         <ul class="song-list" id="songList">
         </ul>
     </div>
@@ -271,6 +283,52 @@
             searchBar.addEventListener("input", function () {
                 updateSongList(searchBar.value);
             });
+
+            var activeArray =
+                [
+                    'There\'s Nothing That Our God Can\'t Do - Passion',
+                    'Mahal Na Mahal Kita Panginoon - Rommel Guevarra',
+                    'Banal Na Apoy - MJ Flores',
+                    'Pangako - New Life Music'
+                ]
+            var activelist = document.getElementById("activeList");
+            var activelisthtml = "";
+
+            for (let song in activeArray) {
+                let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').toLowerCase();
+                activelisthtml += '<li data-lyrics="' + dataLyrics + '">' + activeArray[song] + '</li>';
+            }
+
+            activelist.innerHTML = activelisthtml;
+
+            document.querySelectorAll('.active-list li').forEach(function (song) {
+                song.addEventListener('click', function () {
+                    var lyricsFile = this.getAttribute('data-lyrics');
+                    fetch('songs/' + lyricsFile + '.json')
+                        .then(response => response.json())
+                        .then(song => {
+                            var title = song.title;
+                            var artist = song.artist;
+                            var songbody = song.songbody;
+
+                            const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
+                            currSong = deserializedSong;
+
+                            if (song.defaults != null) {
+                                defaults = song.defaults;
+                                updateDefaults();
+                            }
+
+                            var lyricsTitle = document.getElementById('title');
+                            var lyricsArtist = document.getElementById('artist');
+
+                            lyricsTitle.textContent = title;
+                            lyricsArtist.textContent = artist;
+                            displaySong(currSong.transpose(transposeValue));
+                        })
+                        .catch(error => console.error('Error fetching song:', error));
+                });
+            });
         });
 
         function updateSongList(input) {
@@ -282,13 +340,16 @@
                     'Heaven On Earth - Planetshakers',
                     'Rest On Us - Maverick City Music',
                     'Perfect Love - Planetshakers',
-                    'Reckless Love - Cory Asbury'
+                    'Reckless Love - Cory Asbury',
+                    'There\'s Nothing That Our God Can\'t Do - Passion',
+                    'Mahal Na Mahal Kita Panginoon - Rommel Guevarra',
+                    'Pangako - New Life Music'
                 ].sort();
             var songlisthtml = "";
 
             for (let song in songArray) {
                 if (songArray[song].toLowerCase().includes(input.toLowerCase())) {
-                    let dataLyrics = songArray[song].replace(' - ', '_').toLowerCase();
+                    let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').toLowerCase();
                     songlisthtml += '<li data-lyrics="' + dataLyrics + '">' + songArray[song] + '</li>';
                 }
             }
@@ -369,6 +430,7 @@
                 'Bridge',
                 'Bridge 1',
                 'Bridge 2',
+                'Bridge 3',
                 'Outro',
                 'Instrumental',
                 'Instrumental 2'

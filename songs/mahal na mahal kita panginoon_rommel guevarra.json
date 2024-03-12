@@ -1,0 +1,308 @@
+{
+    "title": "Mahal Na Mahal Kita Panginoon",
+    "artist": "Rommel Guevarra",
+    "defaults": {
+        "": "A"
+    },
+    "songbody": {
+        "type": "chordSheet",
+        "lines": [
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_verse",
+                        "value": "Verse"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "key",
+                        "value": "C"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "Mahal na mahal "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "kita Panginoo"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "n"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "Mahal na mahal "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "kita Panginoo"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "n"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Kailan"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "may di kita ipag"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Em",
+                        "chord": null,
+                        "lyrics": "papalit"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Pag"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "kat sa piling "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Em",
+                        "chord": null,
+                        "lyrics": "mo’y langit"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Dm",
+                        "chord": null,
+                        "lyrics": "Mahal na "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Em",
+                        "chord": null,
+                        "lyrics": "mahal ki"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "ta Pangino"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "on"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_verse",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_chorus",
+                        "value": "Chorus"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Habang"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Em",
+                        "chord": null,
+                        "lyrics": "buha"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "y pa"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Dm",
+                        "chord": null,
+                        "lyrics": "pupurihan "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "ka"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Habang"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Em",
+                        "chord": null,
+                        "lyrics": "buha"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "y mag"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Dm",
+                        "chord": null,
+                        "lyrics": "lilingkod say "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "o"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Habang"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Em",
+                        "chord": null,
+                        "lyrics": "buha"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "y pa"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Dm",
+                        "chord": null,
+                        "lyrics": "puri ko say’oy iaa"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "lay"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_chorus",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
