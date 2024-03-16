@@ -4,6 +4,19 @@
     "defaults": {
         "Julia" : "C"
     },
+    "flow": [
+        "Intro",
+        "Verse 1",
+        "Verse 2",
+        "Chorus 2x",
+        "Verse 1",
+        "Verse 2",
+        "Chorus 2x",
+        "Instrumental",
+        "Bridge 2x",
+        "Chorus 3x",
+        "Ending 2x"
+    ],
     "songbody": {
         "type": "chordSheet",
         "lines": [
