@@ -2,7 +2,7 @@
     "title": "Mahal Na Mahal Kita Panginoon",
     "artist": "Rommel Guevarra",
     "defaults": {
-        "": "A"
+        "Julia": "C"
     },
     "songbody": {
         "type": "chordSheet",
@@ -248,7 +248,7 @@
                         "type": "chordLyricsPair",
                         "chords": "Dm",
                         "chord": null,
-                        "lyrics": "lilingkod say "
+                        "lyrics": "lilingkod say"
                     },
                     {
                         "type": "chordLyricsPair",
@@ -277,19 +277,19 @@
                         "type": "chordLyricsPair",
                         "chords": "Am",
                         "chord": null,
-                        "lyrics": "y pa"
+                        "lyrics": "y pag-"
                     },
                     {
                         "type": "chordLyricsPair",
                         "chords": "Dm",
                         "chord": null,
-                        "lyrics": "puri ko say’oy iaa"
+                        "lyrics": "ibig ko sayo'y iaal"
                     },
                     {
                         "type": "chordLyricsPair",
                         "chords": "G",
                         "chord": null,
-                        "lyrics": "lay"
+                        "lyrics": "ay"
                     }
                 ]
             },
