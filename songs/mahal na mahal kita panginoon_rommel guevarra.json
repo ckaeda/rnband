@@ -4,6 +4,21 @@
     "defaults": {
         "Julia": "C"
     },
+    "flow": [
+        "Verse 1",
+        "Verse 2",
+        "Verse 1",
+        "Verse 2",
+        "Chorus",
+        "Verse 1",
+        "Verse 2",
+        "Chorus",
+        "Chorus",
+        "Verse 1",
+        "Verse 1",
+        "Verse 2",
+        "Verse 2"
+    ],
     "songbody": {
         "type": "chordSheet",
         "lines": [
@@ -13,7 +28,7 @@
                     {
                         "type": "tag",
                         "name": "start_of_verse",
-                        "value": "Verse"
+                        "value": "Verse 1"
                     }
                 ]
             },
@@ -82,6 +97,30 @@
                         "chords": "G",
                         "chord": null,
                         "lyrics": "n"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_verse",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_verse",
+                        "value": "Verse 2"
                     }
                 ]
             },
