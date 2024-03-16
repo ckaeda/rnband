@@ -66,7 +66,7 @@
             var nameInput = document.getElementById("name").value;
 
             // Check if the name is allowed
-            fetch('names.json')
+            fetch('src/names.json')
                 .then(response => response.json())
                 .then(jsonData => {
                     var lowerCaseNames = jsonData.map(name => name.toLowerCase());

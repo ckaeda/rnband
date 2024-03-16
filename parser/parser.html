@@ -8,9 +8,9 @@
 </head>
 
 <body>
-    <span id="container"></span>
+    <div id="container" onclick="copyDivToClipboard()"></div>
 
-    <script src="bundle.js"></script>
+    <script src="../src/bundle.js"></script>
 
     <script>
         fetch('toParse.txt')
@@ -27,6 +27,15 @@
             .catch(error => {
                 console.error('There was a problem with the fetch operation:', error);
             });
+
+        function copyDivToClipboard() {
+            var range = document.createRange();
+            range.selectNode(document.getElementById("container"));
+            window.getSelection().removeAllRanges(); // clear current selection
+            window.getSelection().addRange(range); // to select text
+            document.execCommand("copy");
+            window.getSelection().removeAllRanges();// to deselect
+        }
     </script>
 </body>
 
