@@ -1,0 +1,819 @@
+{
+    "title": "I Give You My Heart",
+    "artist": "Hillsong Worship",
+    "defaults": {},
+    "flow": [],
+    "songbody": {
+        "type": "chordSheet",
+        "lines": [
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_verse",
+                        "value": "Verse"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "key",
+                        "value": "C"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Th"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "is is my de"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "sire to ho"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "nour"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": " You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "",
+                        "chord": null,
+                        "lyrics": "L"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "ord with all my h"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "eart I worship Y"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bb",
+                        "chord": null,
+                        "lyrics": "ou"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "All I have wit"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "hin me"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "I "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "give"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": " You praise"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "And "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "all that I a"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "dore is in Y"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bb",
+                        "chord": null,
+                        "lyrics": "ou"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_verse",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_chorus",
+                        "value": "Chorus"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "Lord I give You my he"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "art"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "I give You my s"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Dm",
+                        "chord": null,
+                        "lyrics": "oul"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "I l"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "ive for Y"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "ou al"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "one"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "Every breath that I t"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "ake"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Every moment I'm a"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Dm",
+                        "chord": null,
+                        "lyrics": "wake"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Lord h"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "ave Your w"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "ay in me"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_chorus",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_verse",
+                        "value": "Verse"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Th"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "is is my de"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "sire to ho"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "nour"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": " You"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "",
+                        "chord": null,
+                        "lyrics": "L"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "ord with all my h"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "eart I worship Y"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bb",
+                        "chord": null,
+                        "lyrics": "ou"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "All I have wit"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "hin me"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "I "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "give"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": " You praise"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "And "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "all that I a"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "dore is in Y"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Bb",
+                        "chord": null,
+                        "lyrics": "ou"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_verse",
+                        "value": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "comment",
+                        "value": "Bridge"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "And I will "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "live"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "And I will "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "live for "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "you"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": ""
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "And I will "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "live"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Am",
+                        "chord": null,
+                        "lyrics": "And I will "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "live for "
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "you"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "start_of_chorus",
+                        "value": "Chorus"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "Lord I give You my he"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "art"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "I give You my s"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Dm",
+                        "chord": null,
+                        "lyrics": "oul"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "I l"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "ive for Y"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "ou al"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "one"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": "Every breath that I t"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "ake"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Every moment I'm a"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "Dm",
+                        "chord": null,
+                        "lyrics": "wake"
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": " ",
+                        "chord": null,
+                        "lyrics": "Lord h"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "F",
+                        "chord": null,
+                        "lyrics": "ave Your w"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "G",
+                        "chord": null,
+                        "lyrics": "ay in me"
+                    },
+                    {
+                        "type": "chordLyricsPair",
+                        "chords": "C",
+                        "chord": null,
+                        "lyrics": ""
+                    }
+                ]
+            },
+            {
+                "type": "line",
+                "items": []
+            },
+            {
+                "type": "line",
+                "items": [
+                    {
+                        "type": "tag",
+                        "name": "end_of_chorus",
+                        "value": ""
+                    }
+                ]
+            }
+        ]
+    }
+}

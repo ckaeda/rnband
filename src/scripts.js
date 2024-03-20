@@ -14,10 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'There\'s Nothing That Our God Can\'t Do - Passion',
-            'Mahal Na Mahal Kita Panginoon - Rommel Guevarra',
-            'Banal Na Apoy - MJ Flores',
-            'Pangako - New Life Music'
+            'My Jesus - Anne Wilson',
+            'Graves Into Gardens - Elevation Worship',
+            'Touch of Heaven - Hillsong Worship',
+            'I Give You My Heart - Hillsong Worship',
+            'Pangako - New Life Music',
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
@@ -46,7 +47,11 @@ function updateSongList(input) {
             'Reckless Love - Cory Asbury',
             'There\'s Nothing That Our God Can\'t Do - Passion',
             'Mahal Na Mahal Kita Panginoon - Rommel Guevarra',
-            'Pangako - New Life Music'
+            'Pangako - New Life Music',
+            'Graves Into Gardens - Elevation Worship',
+            'My Jesus - Anne Wilson',
+            'I Give You My Heart - Hillsong Worship',
+            "Touch Of Heaven - Hillsong Worship",
         ].sort();
     var songlisthtml = "";
 
@@ -141,7 +146,9 @@ function displaySong(song) {
         'Bridge 3',
         'Outro',
         'Instrumental',
-        'Instrumental 2'
+        'Instrumental 2',
+        'Post-Chorus',
+        'Interlude'
     ];
 
     for (let str in toHeader) {
