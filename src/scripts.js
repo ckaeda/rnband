@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
             'My Jesus - Anne Wilson',
             'Graves Into Gardens - Elevation Worship',
             'Touch of Heaven - Hillsong Worship',
-            'I Give You My Heart - Hillsong Worship',
             'Pangako - New Life Music',
         ]
     var activelist = document.getElementById("activeList");
