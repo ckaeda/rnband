@@ -52,6 +52,11 @@ function updateSongList(input) {
             'My Jesus - Anne Wilson',
             'I Give You My Heart - Hillsong Worship',
             "Touch Of Heaven - Hillsong Worship",
+            'Praise - Elevation Worship',
+            'The One You Love - Elevation Worship',
+            'Nothing Is Impossible - Planetshakers',
+            'Sabik Sa Presensya Mo - Faithmusic Manila',
+            'I Came For You - Planetshakers',
         ].sort();
     var songlisthtml = "";
 
@@ -148,7 +153,8 @@ function displaySong(song) {
         'Instrumental',
         'Instrumental 2',
         'Post-Chorus',
-        'Interlude'
+        'Interlude',
+        'Tag'
     ];
 
     for (let str in toHeader) {
