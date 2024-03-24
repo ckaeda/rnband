@@ -6,6 +6,10 @@ body {
     display: flex;
 }
 
+.chord {
+    padding-right: 10px;
+}
+
 .sidebar {
     left: 0;
     margin: 0;
