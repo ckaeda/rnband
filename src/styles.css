@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Roboto", sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -140,8 +140,13 @@ body {
     color: #666;
 }
 
+.label {
+    font-family: "Roboto", sans-serif;
+}
+
 .row {
     border-collapse: collapse;
+    font-family: "Roboto Mono", sans-serif;
     table-layout: fixed;
 }
 
