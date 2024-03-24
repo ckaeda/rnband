@@ -153,7 +153,8 @@ function displaySong(song) {
         'Instrumental 2',
         'Post-Chorus',
         'Interlude',
-        'Tag'
+        'Tag',
+        'Ending'
     ];
 
     for (let str in toHeader) {
