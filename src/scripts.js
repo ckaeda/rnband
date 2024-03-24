@@ -14,16 +14,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'My Jesus - Anne Wilson',
-            'Graves Into Gardens - Elevation Worship',
-            'Touch of Heaven - Hillsong Worship',
+            'What I See - Elevation Worship',
+            'God\'s Not Dead - Newsboys',
+            'O Praise The Name - Hillsong Worship',
+            'Agnus Dei - Michael W. Smith',
+            'One Way - Hillsong Worship',
             'Pangako - New Life Music',
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
 
     for (let song in activeArray) {
-        let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').toLowerCase();
+        let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
         activelisthtml += '<li data-lyrics="' + dataLyrics + '">' + activeArray[song] + '</li>';
     }
 
@@ -56,12 +58,17 @@ function updateSongList(input) {
             'Nothing Is Impossible - Planetshakers',
             'Sabik Sa Presensya Mo - Faithmusic Manila',
             'I Came For You - Planetshakers',
+            'What I See - Elevation Worship',
+            'God\'s Not Dead - Newsboys',
+            'O Praise The Name - Hillsong Worship',
+            'Agnus Dei - Michael W. Smith',
+            'One Way - Hillsong Worship',
         ].sort();
     var songlisthtml = "";
 
     for (let song in songArray) {
         if (songArray[song].toLowerCase().includes(input.toLowerCase())) {
-            let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').toLowerCase();
+            let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
             songlisthtml += '<li data-lyrics="' + dataLyrics + '">' + songArray[song] + '</li>';
         }
     }
@@ -144,6 +151,7 @@ function displaySong(song) {
         'Pre-Chorus',
         'Chorus 1',
         'Chorus 2',
+        'Chorus 3',
         'Bridge',
         'Bridge 1',
         'Bridge 2',

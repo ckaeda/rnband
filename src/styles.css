@@ -19,6 +19,12 @@ body {
     z-index: 1;
     -webkit-transition: left 0.3s ease-in-out;
     transition: left 0.3s ease-in-out;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .welcome-text {
@@ -42,6 +48,7 @@ body {
     padding-top: 20px;
 }
 
+.song-list[title]::before,
 .active-list[title]::before {
     content: attr(title);
     display: block;
