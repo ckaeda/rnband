@@ -162,6 +162,7 @@ function displaySong(song) {
         'Post-Chorus',
         'Interlude',
         'Tag',
+        'Coda',
         'Ending'
     ];
 
