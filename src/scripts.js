@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             'O Praise The Name - Hillsong Worship',
             'Agnus Dei - Michael W. Smith',
             'One Way - Hillsong Worship',
+            'Praise - Elevation Worship',
             'Pangako - New Life Music',
         ]
     var activelist = document.getElementById("activeList");
