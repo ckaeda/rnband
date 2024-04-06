@@ -14,13 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'What I See - Elevation Worship',
-            'God\'s Not Dead - Newsboys',
-            'O Praise The Name - Hillsong Worship',
-            'Agnus Dei - Michael W. Smith',
-            'One Way - Hillsong Worship',
-            'Praise - Elevation Worship',
-            'Pangako - New Life Music',
+            'I Thank God - Maverick City Music',
+            'Turn It Up - Planetshakers',
+            'Sabik Sa Presensya Mo - Faithmusic Manila',
+            'Banal Na Apoy - MJ Flores'
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
@@ -107,6 +104,8 @@ function loadSong(li) {
             lyricsTitle.textContent = title;
             lyricsArtist.textContent = artist;
             displaySong(currSong.transpose(transposeValue));
+
+            window.scrollTo(0,0);
         })
         .catch(error => console.error('Error fetching song:', error));
 }
