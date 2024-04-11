@@ -14,10 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'I Thank God - Maverick City Music',
-            'Turn It Up - Planetshakers',
-            'Sabik Sa Presensya Mo - Faithmusic Manila',
-            'Banal Na Apoy - MJ Flores'
+            'Momentum - Planetshakers',
+            'Sing It Again - Planetshakers',
+            'Gratitude - Brandon Lake',
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
@@ -61,6 +60,11 @@ function updateSongList(input) {
             'O Praise The Name - Hillsong Worship',
             'Agnus Dei - Michael W. Smith',
             'One Way - Hillsong Worship',
+            'I Thank God - Maverick City Music',
+            'Turn It Up - Planetshakers',
+            'Momentum - Planetshakers',
+            'Sing It Again - Planetshakers',
+            'Gratitude - Brandon Lake',
         ].sort();
     var songlisthtml = "";
 
@@ -161,6 +165,7 @@ function displaySong(song) {
         'Instrumental 2',
         'Post-Chorus',
         'Interlude',
+        'Interlude 2',
         'Tag',
         'Coda',
         'Ending'
