@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'Momentum - Planetshakers',
-            'My Jesus - Anne Wilson',
+            'Eyes On You - The Belonging Co',
             'Gratitude - Brandon Lake',
         ]
     var activelist = document.getElementById("activeList");
@@ -65,6 +65,7 @@ function updateSongList(input) {
             'Momentum - Planetshakers',
             'Sing It Again - Planetshakers',
             'Gratitude - Brandon Lake',
+            'Eyes On You - The Belonging Co',
         ].sort();
     var songlisthtml = "";
 
