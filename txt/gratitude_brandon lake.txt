@@ -1,3 +1,5 @@
+(note for josh: transpose from C to B)
+
 [Intro]
 B      G#m    F#      E     
  
@@ -73,38 +75,57 @@ E           G#m  F#   B
 Hallelujah, hallelu - jah
  
  
-[Interlude]
- B
- 
- 
-[Bridge]
+[Bridge 1]
    B
 So come on my soul, oh, don't you get shy on me
-B
+                                              E
 Lift up your song, 'cause you've got a lion inside of those lungs
-B
+E                     B
 Get up and praise the Lord
-    B
-Oh, come on my soul, oh, don't you get shy on me
-F#                                            E
-Lift up your song, 'cause you've got a lion inside of those lungs
-                      B  F#
-Get up and praise the Lo-rd
+
+
+[Bridge 2]
 B
 Come on my soul, oh, don't you get shy on me
-F#                                            E
+F#m                                           E
 Lift up your song, 'cause you've got a lion inside of those lungs
-                      G#m   F#
-Get up and praise the Lord, hey
+                      Em 
+Get up and praise the Lord
  
  
-[Interlude 2]
- E      E      G#m    F#     x5
- 
- E      E      E      E     
- 
- 
+[Instrumental]
+ B      F#m      E     Em
+
+
+[Bridge 2]
+B
+Come on my soul, oh, don't you get shy on me
+F#m                                           E
+Lift up your song, 'cause you've got a lion inside of those lungs
+                      Em 
+Get up and praise the Lord
+
+
 [Chorus]
+     B
+So I throw up my hands
+                          F#
+And praise You again and again
+     F#
+'Cause all that I have is a
+E           G#m  F#
+Hallelujah, hallelujah
+      B
+And I know it's not much
+                                F#
+But I've nothing else fit for a King
+     F#
+Except for a heart singing
+E           G#m  F#
+Hallelujah, hallelu - jah
+
+ 
+[Ending]
      B
 So I throw up my hands
                       F#m
@@ -119,5 +140,5 @@ And I know it's not much
 But I've nothing else fit for a King
  
 Except for a heart singing
-E           Em     B
+E           Em         B
 Hallelujah, hallelujah
