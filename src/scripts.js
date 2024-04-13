@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'Momentum - Planetshakers',
-            'Sing It Again - Planetshakers',
+            'My Jesus - Anne Wilson',
             'Gratitude - Brandon Lake',
         ]
     var activelist = document.getElementById("activeList");
@@ -149,7 +149,9 @@ function displaySong(song) {
     var lyricsContainer = document.getElementById('lyricsContainer');
 
     const formatter = new ChordSheetJS.HtmlTableFormatter();
-    var disp = formatter.format(song.transpose(ChordSheetJS.Key.distance('C', currKey.toString()))).replaceAll('ma7', 'maj7');
+    var dist = ChordSheetJS.Key.distance('C', currKey.toString());
+    if (dist == 10) { dist -= 12; }
+    var disp = formatter.format(song.transpose(dist)).replaceAll('ma7', 'maj7');
 
     const toHeader = ['Intro',
         'Pre-Chorus',
