@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             'Momentum - Planetshakers',
             'Eyes On You - The Belonging Co',
             'Gratitude - Brandon Lake',
+            'Mahal Na Mahal Kita Panginoon - Rommel Guevarra',
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
