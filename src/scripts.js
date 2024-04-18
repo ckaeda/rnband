@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Momentum - Planetshakers',
-            'Eyes On You - The Belonging Co',
-            'Gratitude - Brandon Lake',
-            'Mahal Na Mahal Kita Panginoon - Rommel Guevarra',
+            'See The Light - Hillsong Worship',
+            'In Jesus\' Name - Darlene Zschech',
+            'House of Miracles - Brandon Lake',
+            'Sing It Again - Planetshakers',
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
@@ -67,6 +67,9 @@ function updateSongList(input) {
             'Sing It Again - Planetshakers',
             'Gratitude - Brandon Lake',
             'Eyes On You - The Belonging Co',
+            'See The Light - Hillsong Worship',
+            'In Jesus\' Name - Darlene Zschech',
+            'House of Miracles - Brandon Lake',
         ].sort();
     var songlisthtml = "";
 

@@ -2,7 +2,7 @@
     "title": "Sing It Again",
     "artist": "Planetshakers",
     "defaults": {
-        
+        "Julia": "C#"
     },
     "flow": [
 
