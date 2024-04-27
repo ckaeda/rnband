@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'See The Light - Hillsong Worship',
-            'In Jesus\' Name - Darlene Zschech',
-            'House of Miracles - Brandon Lake',
-            'Sing It Again - Planetshakers',
+            'Alive - Hillsong Young and Free',
+            'River - Planetshakers',
+            'Do It Again - Elevation Worship',
+            'Holy Forever - Chris Tomlin'
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
@@ -70,6 +70,10 @@ function updateSongList(input) {
             'See The Light - Hillsong Worship',
             'In Jesus\' Name - Darlene Zschech',
             'House of Miracles - Brandon Lake',
+            'Alive - Hillsong Young and Free',
+            'River - Planetshakers',
+            'Do It Again - Elevation Worship',
+            'Holy Forever - Chris Tomlin'
         ].sort();
     var songlisthtml = "";
 
