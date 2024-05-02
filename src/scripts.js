@@ -15,9 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'Alive - Hillsong Young and Free',
-            'River - Planetshakers',
-            'Do It Again - Elevation Worship',
-            'Holy Forever - Chris Tomlin'
+            'Good News - Maverick City Music',
+            'Extravagant - Bethel Music'
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
@@ -73,7 +72,8 @@ function updateSongList(input) {
             'Alive - Hillsong Young and Free',
             'River - Planetshakers',
             'Do It Again - Elevation Worship',
-            'Holy Forever - Chris Tomlin'
+            'Holy Forever - Chris Tomlin',
+
         ].sort();
     var songlisthtml = "";
 
@@ -178,6 +178,7 @@ function displaySong(song) {
         'Interlude',
         'Interlude 2',
         'Tag',
+        'Turnaround',
         'Coda',
         'Ending'
     ];

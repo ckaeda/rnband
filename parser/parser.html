@@ -13,13 +13,13 @@
     <script src="../src/bundle.js"></script>
 
     <script>
-        fetch('../txt/do it again_elevation worship.txt')
+        fetch('../txt/extravagant_bethel music.txt')
             .then(response => response.text())
             .then(fileContent => {
                 const chordSheet = `${fileContent}`;
 
                 const parser = new ChordSheetJS.UltimateGuitarParser();
-                const song = parser.parse(chordSheet).setKey('G').changeKey('C');
+                const song = parser.parse(chordSheet).setKey('E').changeKey('C');
 
                 const serializedSong = new ChordSheetJS.ChordSheetSerializer().serialize(song);
                 container.innerHTML = JSON.stringify(serializedSong);
