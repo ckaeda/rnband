@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'Alive - Hillsong Young and Free',
             'Good News - Maverick City Music',
-            'Extravagant - Bethel Music'
+            'Been So Good - Elevation Worship'
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
@@ -73,6 +73,9 @@ function updateSongList(input) {
             'River - Planetshakers',
             'Do It Again - Elevation Worship',
             'Holy Forever - Chris Tomlin',
+            'Good News - Maverick City Music',
+            'Extravagant - Bethel Music',
+            'Been So Good - Elevation Worship'
 
         ].sort();
     var songlisthtml = "";
