@@ -178,6 +178,7 @@ function displaySong(song) {
         'Instrumental',
         'Instrumental 2',
         'Post-Chorus',
+        "Refrain",
         'Interlude',
         'Interlude 2',
         'Tag',
@@ -222,11 +223,13 @@ function updateDefaults() {
             div.className = "presets";
             div.textContent = Object.keys(defaults)[obj] + ": " + defaults[Object.keys(defaults)[obj]];
 
+            const key = defaults[Object.keys(defaults)[obj]];
+
             div.addEventListener('click', function () {
                 transposeValue = 0;
                 document.getElementById("transposeValue").textContent = transposeValue;
 
-                currKey = ChordSheetJS.Chord.parse(defaults[Object.keys(defaults)[obj]]);
+                currKey = ChordSheetJS.Chord.parse(key);
                 displaySong(currSong.transpose(transposeValue));
                 document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
             });
