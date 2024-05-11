@@ -166,8 +166,10 @@ function displaySong(song) {
     if (dist == 10) { dist -= 12; }
     var disp = formatter.format(song.transpose(dist)).replaceAll('ma7', 'maj7');
 
-    const toHeader = ['Intro',
+    const toHeader = [
+        'Intro',
         'Pre-Chorus',
+        'Pre-Chorus 2',
         'Chorus 1',
         'Chorus 2',
         'Chorus 3',
