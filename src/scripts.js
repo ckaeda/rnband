@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Alive - Hillsong Young and Free',
-            'Good News - Maverick City Music',
-            'Been So Good - Elevation Worship'
+            'We Raise - Planetshakers',
+            'Battle Belongs - Phil Wickham',
+            'Holy Forever - Chris Tomlin'
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
