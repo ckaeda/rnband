@@ -75,8 +75,9 @@ function updateSongList(input) {
             'Holy Forever - Chris Tomlin',
             'Good News - Maverick City Music',
             'Extravagant - Bethel Music',
-            'Been So Good - Elevation Worship'
-
+            'Been So Good - Elevation Worship',
+            'We Raise - Planetshakers',
+            'Battle Belongs - Phil Wickham',
         ].sort();
     var songlisthtml = "";
 
