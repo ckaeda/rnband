@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'We Raise - Planetshakers',
-            'Battle Belongs - Phil Wickham',
+            'Echo - Tauren Wells',
+            'House Of The Lord - Phil Wickham',
             'Holy Forever - Chris Tomlin'
         ]
     var activelist = document.getElementById("activeList");
@@ -78,6 +78,8 @@ function updateSongList(input) {
             'Been So Good - Elevation Worship',
             'We Raise - Planetshakers',
             'Battle Belongs - Phil Wickham',
+            'Echo - Tauren Wells',
+            'House Of The Lord - Phil Wickham',
         ].sort();
     var songlisthtml = "";
 
@@ -181,6 +183,7 @@ function displaySong(song) {
         'Instrumental',
         'Instrumental 2',
         'Post-Chorus',
+        'Post-Chorus 2',
         "Refrain",
         'Interlude',
         'Interlude 2',
