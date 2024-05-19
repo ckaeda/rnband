@@ -4,6 +4,7 @@
     "defaults": {
         "JJ/Julia": "C"
     },
+    "bpm": 152,
     "flow": [
         "Intro",
         "Verse 1",

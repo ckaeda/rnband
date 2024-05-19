@@ -3,6 +3,7 @@ var currSong = new ChordSheetJS.Song();
 var currKey = ChordSheetJS.Chord.parse('C');
 var defaults = {};
 var flow = [];
+var bpm = null;
 
 document.addEventListener("DOMContentLoaded", function () {
     updateSongList('');
@@ -114,6 +115,9 @@ function loadSong(li) {
                 updateDefaults();
             }
 
+            var bpmCont = document.getElementById("bpm");
+            bpmCont.textContent = "BPM: " + song.bpm;
+
             flow = song.flow;
             updateFlow();
 
@@ -124,7 +128,7 @@ function loadSong(li) {
             lyricsArtist.textContent = artist;
             displaySong(currSong.transpose(transposeValue));
 
-            window.scrollTo(0,0);
+            window.scrollTo(0, 0);
         })
         .catch(error => console.error('Error fetching song:', error));
 }

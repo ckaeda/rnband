@@ -4,6 +4,7 @@
     "defaults": {
         "Julia": "C#"
     },
+    "bpm": 175,
     "flow": [
         "Verse 1",
         "Chorus",
