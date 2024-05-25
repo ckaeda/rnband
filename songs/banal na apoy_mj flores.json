@@ -17,6 +17,7 @@
         "Chorus 3x",
         "Ending 2x"
     ],
+    "bpm": 143,
     "songbody": {
         "type": "chordSheet",
         "lines": [
@@ -669,21 +670,6 @@
                         "chords": "G",
                         "chord": null,
                         "lyrics": "an"
-                    }
-                ]
-            },
-            {
-                "type": "line",
-                "items": []
-            },
-            {
-                "type": "line",
-                "items": [
-                    {
-                        "type": "chordLyricsPair",
-                        "chords": "",
-                        "chord": null,
-                        "lyrics": "(x2)"
                     }
                 ]
             }

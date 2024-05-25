@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Echo - Tauren Wells',
-            'House Of The Lord - Phil Wickham',
-            'Holy Forever - Chris Tomlin'
+            'Salamat Salamat - Malayang Pilipino Music',
+            'Sabik Sa Presensya Mo - Faithmusic Manila',
+            'Banal Na Apoy - MJ Flores'
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";

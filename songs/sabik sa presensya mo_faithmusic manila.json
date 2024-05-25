@@ -2,9 +2,9 @@
     "title": "Sabik Sa Presensya Mo",
     "artist": "Faithmusic Manila",
     "defaults": {
-        "JJ": "A",
-        "": "F"
+        "JJ": "A"
     },
+    "bpm": 148,
     "flow": [
 
     ],
