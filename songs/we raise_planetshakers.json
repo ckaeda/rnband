@@ -2,8 +2,10 @@
     "title": "We Raise",
     "artist": "Planetshakers",
     "defaults": {
+        "JJ": "A",
         "Annaree": "B"
     },
+    "bpm": 120,
     "flow": [
         "Intro",
         "Verse 1",

@@ -4,6 +4,7 @@
     "defaults": {
         "JJ": "B"
     },
+    "bpm": 136,
     "songbody": {
         "type": "chordSheet",
         "lines": [

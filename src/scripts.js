@@ -15,9 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Salamat Salamat - Malayang Pilipino Music',
-            'Sabik Sa Presensya Mo - Faithmusic Manila',
-            'Banal Na Apoy - MJ Flores'
+            'We Raise - Planetshakers',
+            'No One - Elevation Worship',
+            'Worthy - Elevation Worship',
+            'Jehovah - Elevation Worship'
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
