@@ -15,10 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'We Raise - Planetshakers',
-            'No One - Elevation Worship',
-            'Worthy - Elevation Worship',
-            'Jehovah - Elevation Worship'
+            'Jehovah - Elevation Worship',
+            'House Of The Lord - Phil Wickham',
+            'Been So Good - Elevation Worship',
         ]
     var activelist = document.getElementById("activeList");
     var activelisthtml = "";
@@ -82,6 +81,8 @@ function updateSongList(input) {
             'Battle Belongs - Phil Wickham',
             'Echo - Tauren Wells',
             'House Of The Lord - Phil Wickham',
+            'Worthy - Elevation Worship',
+            'Jehovah - Elevation Worship',
         ].sort();
     var songlisthtml = "";
 
