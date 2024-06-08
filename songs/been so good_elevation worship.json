@@ -2,8 +2,10 @@
     "title": "Been So Good",
     "artist": "Elevation Worship",
     "defaults": {
-        "Julia": "B"
+        "Julia": "B",
+        "Annaree": "D"
     },
+    "bpm": 147,
     "flow": [
         "Verse 1",
         "Pre-Chorus",

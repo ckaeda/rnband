@@ -1,6 +1,24 @@
 [Intro]
 C Csus
  
+[Chorus]
+C            F
+Call the Name
+             C
+Call the Name
+             Am
+Call the Name
+   F   C
+Jehovah
+              F
+All our praise
+              C
+All our praise
+              Am
+All our praise
+   F          C
+Belongs to him
+
 [Verse 1]
      C              Csus
 He shames every idol
@@ -71,7 +89,13 @@ Belongs to him
 [Interlude]
 C Csus
  
-[Bridge]
+[Bridge 1]
+C/E            F
+Jehovah Nissi fight your battles
+C/G            F
+Jehovah Nissi fight your battles
+
+[Bridge 2]
 C/E            F
 Jehovah Nissi fight your battles
 C/G            F
