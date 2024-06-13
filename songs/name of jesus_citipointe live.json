@@ -4,9 +4,16 @@
     "defaults": {
         "JJ": "A"
     },
-    "bpm": 0,
+    "bpm": 106,
     "flow": [
-
+        "Verse",
+        "Chorus",
+        "Verse",
+        "Chorus x2",
+        "Instrumental",
+        "Bridge x4",
+        "Chorus x4",
+        "Bridge x2"
     ],
     "songbody": {"type":"chordSheet","lines":[{"type":"line","items":[{"type":"tag","name":"comment","value":"Intro"}]},{"type":"line","items":[{"type":"tag","name":"key","value":"C"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":"C","chord":null,"lyrics":""},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":""},{"type":"chordLyricsPair","chords":"Am","chord":null,"lyrics":""},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":""}]},{"type":"line","items":[]},{"type":"line","items":[{"type":"tag","name":"start_of_verse","value":"Verse"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":" ","chord":null,"lyrics":"Your "},{"type":"chordLyricsPair","chords":"C","chord":null,"lyrics":"Name, is above all "},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":"Names"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":" ","chord":null,"lyrics":"Glorious you are this "},{"type":"chordLyricsPair","chords":"Am","chord":null,"lyrics":"day, forever Your love re"},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":"mains"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":" ","chord":null,"lyrics":"Your "},{"type":"chordLyricsPair","chords":"C","chord":null,"lyrics":"hands have already made the "},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":"way"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":" ","chord":null,"lyrics":"For multitudes to be s"},{"type":"chordLyricsPair","chords":"Am","chord":null,"lyrics":"aved, Lord we cry out in "},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":"praise"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":" ","chord":null,"lyrics":"For "},{"type":"chordLyricsPair","chords":"Am","chord":null,"lyrics":"You, are the Lord of a"},{"type":"chordLyricsPair","chords":"C","chord":null,"lyrics":"ll, You pierce every "},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":"soul, with your love a"},{"type":"chordLyricsPair","chords":"G","chord":null,"lyrics":"lone"}]},{"type":"line","items":[{"type":"tag","name":"end_of_verse","value":""}]},{"type":"line","items":[]},{"type":"line","items":[]},{"type":"line","items":[{"type":"tag","name":"start_of_chorus","value":"Chorus"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":" ","chord":null,"lyrics":"There is "},{"type":"chordLyricsPair","chords":"C","chord":null,"lyrics":"power in the "},{"type":"chordLyricsPair","chords":"G","chord":null,"lyrics":"name"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":" ","chord":null,"lyrics":"There’s "},{"type":"chordLyricsPair","chords":"Am","chord":null,"lyrics":"healing in the "},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":"name of "},{"type":"chordLyricsPair","chords":"C","chord":null,"lyrics":"Jesu"},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":"s, J"},{"type":"chordLyricsPair","chords":"G","chord":null,"lyrics":"esus"}]},{"type":"line","items":[{"type":"tag","name":"end_of_chorus","value":""}]},{"type":"line","items":[]},{"type":"line","items":[]},{"type":"line","items":[{"type":"tag","name":"comment","value":"Bridge"}]},{"type":"line","items":[{"type":"chordLyricsPair","chords":"Am","chord":null,"lyrics":"Jesus, "},{"type":"chordLyricsPair","chords":"F","chord":null,"lyrics":"Jesus, "},{"type":"chordLyricsPair","chords":"C","chord":null,"lyrics":"Jesus, "},{"type":"chordLyricsPair","chords":"G","chord":null,"lyrics":"Jesus"}]}]}
 }
