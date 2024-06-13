@@ -19,19 +19,34 @@ document.addEventListener("DOMContentLoaded", function () {
             'House Of The Lord - Phil Wickham',
             'Been So Good - Elevation Worship',
         ]
+    var TNLArray = 
+        [
+            'Shout - Parachute Band',
+            'Name of Jesus - Citipointe Live'
+        ]
     var activelist = document.getElementById("activeList");
+    var TNLlist = document.getElementById("activeListTNL");
     var activelisthtml = "";
+    var TNLlisthtml = "";
 
     for (let song in activeArray) {
         let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
         activelisthtml += '<li data-lyrics="' + dataLyrics + '">' + activeArray[song] + '</li>';
     }
 
+    for (let song in TNLArray) {
+        let TNLdataLyrics = TNLArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
+        TNLlisthtml += '<li data-lyrics="' + TNLdataLyrics + '">' + TNLArray[song] + '</li>';
+    }
+
     activelist.innerHTML = activelisthtml;
+    TNLlist.innerHTML = TNLlisthtml;
 
     document.querySelectorAll('.active-list li').forEach(function (song) {
         song.addEventListener('click', () => { loadSong(song) });
     });
+
+    updateDates();
 });
 
 function updateSongList(input) {
@@ -265,4 +280,23 @@ function updateFlow() {
     }
 
     flowList.innerHTML = flowlisthtml;
+}
+
+function updateDates() {
+    var activeList = document.getElementById("activeList");
+    var activeListTNL = document.getElementById("activeListTNL");
+    var today = new Date();
+    var dayOfWeek = today.getDay();
+
+    var daysUntilNextSunday = (7 - dayOfWeek) % 7;
+    var nextSunday = new Date(today.getTime() + (daysUntilNextSunday * 24 * 60 * 60 * 1000));
+
+    var daysUntilNextThursday = (11 - dayOfWeek) % 7;
+    var nextThursday = new Date(today.getTime() + (daysUntilNextThursday * 24 * 60 * 60 * 1000));
+
+    var formattedSun = nextSunday.toLocaleDateString('en-US', {month: '2-digit', day: '2-digit', year: '2-digit'});
+    var formattedTh = nextThursday.toLocaleDateString('en-US', {month: '2-digit', day: '2-digit', year: '2-digit'});
+
+    activeList.title += " — " + formattedSun;
+    activeListTNL.title += " — " + formattedTh;
 }
