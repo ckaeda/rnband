@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Jehovah - Elevation Worship',
-            'House Of The Lord - Phil Wickham',
-            'Been So Good - Elevation Worship',
+            'Shout - Parachute Band',
+            'Name of Jesus - Citipointe Live',
+            'I Speak Jesus - Charity Gayle'
         ]
     var TNLArray = 
         [
