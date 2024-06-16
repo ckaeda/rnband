@@ -62,18 +62,6 @@ Break every stronghold
 Shine through the shadows
             E
 Burn like a fire
-             B
-Your name is power
-     E/G#    A
-Your name is healing
-             E    Esus4   E
-Your name is life
-            B
-Break every stronghold
-          E/G#        A
-And shine through the shadows
-            E     Esus4   E    Esus
-Burn like a fire
  
  
 [Bridge]
@@ -86,16 +74,6 @@ And Jesus for my family
                        E
 I speak the holy name, Jesus
  
-Oh-oh-oh-oh
-     E                          Esus4        E
-Shout Jesus from the mountains, Jesus in the streets
-C#m7                      Asus2/C#   C#m7
-Jesus in the darkness over every enemy
- A
-Jesus for my family
-                       E
-I speak the holy name, Jesus
- 
  
 [Chorus]
              B
@@ -103,18 +81,6 @@ Your name is power
      E/G#    A
 Your name is healing
              E    Esus4   E
-Your name is life
-            B
-Break every stronghold
-      E/G#        A
-Shine through the shadows
-            E    Esus4   E
-Burn like a fire
-             B
-Your name is power
-     E/G#    A
-Your name is healing
-            E    Esus4   E
 Your name is life
             B
 Break every stronghold
@@ -144,18 +110,9 @@ Jesus in the darkness over every enemy
 And Jesus for my family
                        E
 I speak the holy name, Jesus
- 
-Oh-oh-oh-oh
- 
-     E                          Esus4        E
-Shout Jesus from the mountains, Jesus in the streets
-C#m7                       Asus2/C#   C#m7
-Jesus in the darkness over every enemy
-A
-Jesus for my family
-                       E
-I speak the holy name, Jesus
- 
+
+
+[Bridge 2] 
       E                                        D#m7   G#7
 Shout Jesus from the mountains, Jesus in the streets
 C#m7                                Bm7  E7
