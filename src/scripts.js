@@ -19,14 +19,31 @@ document.addEventListener("DOMContentLoaded", function () {
             'One Way - Hillsong United',
             'I Came For You - Planetshakers'
         ]
-    var TNLArray = 
+    var TNLArray =
         [
-            
+
+        ]
+    var FCArray =
+        [
+            'Jehovah - Elevation Worship',
+            'Endless Praise - Planetshakers',
+            'Tribes - Victory Worship',
+            'Holy Forever - Chris Tomlin',
+            'Salamat Salamat - Malayang Pilipino Music',
+            'Sabik Sa Presensya Mo - Faithmusic Manila',
+            'Banal Na Apoy - MJ Flores',
+            'Ikaw Ang Tunay Na Diyos - Grace Filipino Worship',
+            'No One - Elevation Worship',
+            'I Thank God - Maverick City Music',
+            'Won\'t Stop Now - Elevation Worship',
+            'Praise - Elevation Worship',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
+    var FClist = document.getElementById("activeListFC");
     var activelisthtml = "";
     var TNLlisthtml = "";
+    var FClisthtml = "";
 
     for (let song in activeArray) {
         let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
@@ -38,8 +55,14 @@ document.addEventListener("DOMContentLoaded", function () {
         TNLlisthtml += '<li data-lyrics="' + TNLdataLyrics + '">' + TNLArray[song] + '</li>';
     }
 
+    for (let song in FCArray) {
+        let FCdataLyrics = FCArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
+        FClisthtml += '<li data-lyrics="' + FCdataLyrics + '">' + FCArray[song] + '</li>';
+    }
+
     activelist.innerHTML = activelisthtml;
     TNLlist.innerHTML = TNLlisthtml;
+    FClist.innerHTML = FClisthtml;
 
     document.querySelectorAll('.active-list li').forEach(function (song) {
         song.addEventListener('click', () => { loadSong(song) });
@@ -102,6 +125,11 @@ function updateSongList(input) {
             'I Speak Jesus - Charity Gayle',
             'Holding Nothing Back - Jesus Culture',
             'One Way - Hillsong United',
+            'Endless Praise - Planetshakers',
+            'Tribes - Victory Worship',
+            'Salamat Salamat - Malayang Pilipino Music',
+            'Ikaw Ang Tunay Na Diyos - Grace Filipino Worship',
+            'Won\'t Stop Now - Elevation Worship',
         ].sort();
     var songlisthtml = "";
 
@@ -298,8 +326,8 @@ function updateDates() {
     var daysUntilNextThursday = (11 - dayOfWeek) % 7;
     var nextThursday = new Date(today.getTime() + (daysUntilNextThursday * 24 * 60 * 60 * 1000));
 
-    var formattedSun = nextSunday.toLocaleDateString('en-US', {month: '2-digit', day: '2-digit', year: '2-digit'});
-    var formattedTh = nextThursday.toLocaleDateString('en-US', {month: '2-digit', day: '2-digit', year: '2-digit'});
+    var formattedSun = nextSunday.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
+    var formattedTh = nextThursday.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
 
     activeList.title += " — " + formattedSun;
     activeListTNL.title += " — " + formattedTh;
