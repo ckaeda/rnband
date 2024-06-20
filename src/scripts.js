@@ -15,14 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Shout - Parachute Band',
-            'Name of Jesus - Citipointe Live',
-            'I Speak Jesus - Charity Gayle'
+            'Holding Nothing Back - Jesus Culture',
+            'One Way - Hillsong United',
+            'I Came For You - Planetshakers'
         ]
     var TNLArray = 
         [
-            'Shout - Parachute Band',
-            'Name of Jesus - Citipointe Live'
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -98,6 +97,11 @@ function updateSongList(input) {
             'House Of The Lord - Phil Wickham',
             'Worthy - Elevation Worship',
             'Jehovah - Elevation Worship',
+            'Shout - Parachute Band',
+            'Name of Jesus - Citipointe Live',
+            'I Speak Jesus - Charity Gayle',
+            'Holding Nothing Back - Jesus Culture',
+            'One Way - Hillsong United',
         ].sort();
     var songlisthtml = "";
 
