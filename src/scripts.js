@@ -15,13 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Holding Nothing Back - Jesus Culture',
-            'One Way - Hillsong United',
-            'I Came For You - Planetshakers'
+            'Jehovah - Elevation Worship',
+            'Endless Praise - Planetshakers',
+            'The Blessing - Elevation Worship'
         ]
     var TNLArray =
         [
-
+            'World Outside Your Window - Hillsong Young and Free',
+            'To the Ends of the Earth - Hillsong United'
         ]
     var FCArray =
         [
@@ -330,5 +331,5 @@ function updateDates() {
     var formattedTh = nextThursday.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
 
     activeList.title += " — " + formattedSun;
-    activeListTNL.title += " — " + formattedTh;
+    // activeListTNL.title += " — " + formattedTh;
 }
