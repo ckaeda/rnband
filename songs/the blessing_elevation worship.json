@@ -2,9 +2,10 @@
     "title": "The Blessing",
     "artist": "Elevation Worship ft. Kari Jobe & Cody Carnes",
     "defaults": {
-        "Orig": "B"
+        "Orig": "B",
+        "JJ/Julia": "G"
     },
-    "bpm": 0,
+    "bpm": 140,
     "flow": [
 
     ],
