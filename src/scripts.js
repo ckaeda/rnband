@@ -324,5 +324,5 @@ function updateDates() {
     var formattedTh = nextThursday.toLocaleDateString('en-US', { month: '2-digit', day: '2-digit', year: '2-digit' });
 
     activeList.title += " — " + formattedSun;
-    // activeListTNL.title += " — " + formattedTh;
+    activeListTNL.title += " — " + formattedTh;
 }

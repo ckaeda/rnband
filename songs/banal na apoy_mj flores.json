@@ -2,7 +2,8 @@
     "title": "Banal Na Apoy",
     "artist": "MJ Flores",
     "defaults": {
-        "Julia" : "C"
+        "Julia" : "C",
+        "Annaree" : "C"
     },
     "flow": [
         "Intro",
