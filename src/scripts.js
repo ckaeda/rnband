@@ -15,14 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Jehovah - Elevation Worship',
-            'Endless Praise - Planetshakers',
-            'The Blessing - Elevation Worship'
+            'Praise - Elevation Worship',
+            'I Thank God - Maverick City Music',
+            'Banal Na Apoy - MJ Flores'
         ]
     var TNLArray =
         [
-            'World Outside Your Window - Hillsong Young and Free',
-            'To the Ends of the Earth - Hillsong United'
+            
         ]
     var FCArray =
         [
@@ -38,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             'I Thank God - Maverick City Music',
             'Won\'t Stop Now - Elevation Worship',
             'Praise - Elevation Worship',
-        ]
+        ].sort();
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
     var FClist = document.getElementById("activeListFC");
@@ -206,12 +205,6 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-
-// Get the name parameter from the URL
-var name = getParameterByName('name');
-
-// Update welcome text
-document.querySelector('.welcome-text').innerHTML += name + "!";
 
 function displaySong(song) {
     // Get the lyrics container
