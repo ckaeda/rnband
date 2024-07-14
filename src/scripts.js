@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            
+
         ]
     var FCArray =
         [
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             'I Thank God - Maverick City Music',
             'Won\'t Stop Now - Elevation Worship',
             'Praise - Elevation Worship',
+            'Oceans - Hillsong United'
         ].sort();
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -97,7 +98,6 @@ function updateSongList(input) {
             'God\'s Not Dead - Newsboys',
             'O Praise The Name - Hillsong Worship',
             'Agnus Dei - Michael W. Smith',
-            'One Way - Hillsong Worship',
             'I Thank God - Maverick City Music',
             'Turn It Up - Planetshakers',
             'Momentum - Planetshakers',
@@ -130,6 +130,7 @@ function updateSongList(input) {
             'Salamat Salamat - Malayang Pilipino Music',
             'Ikaw Ang Tunay Na Diyos - Grace Filipino Worship',
             'Won\'t Stop Now - Elevation Worship',
+            'Oceans - Hillsong United',
         ].sort();
     var songlisthtml = "";
 
@@ -145,6 +146,20 @@ function updateSongList(input) {
     document.querySelectorAll('.song-list li').forEach(function (song) {
         song.addEventListener('click', () => { loadSong(song) });
     });
+
+    if (input != '') {
+        const activeLists = document.querySelectorAll('.active-list');
+
+        activeLists.forEach(element => {
+            element.setAttribute('hidden', '');
+        });
+    } else {
+        const activeLists = document.querySelectorAll('.active-list');
+
+        activeLists.forEach(element => {
+            element.removeAttribute('hidden', '');
+        });
+    }
 }
 
 function loadSong(li) {
