@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
             'I Thank God - Maverick City Music',
             'Won\'t Stop Now - Elevation Worship',
             'Praise - Elevation Worship',
-            'Oceans - Hillsong United'
+            'Oceans - Hillsong United',
+            'Holy Spirit - Jesus Culture'
         ].sort();
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
