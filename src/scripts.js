@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Praise - Elevation Worship',
-            'I Thank God - Maverick City Music',
-            'Banal Na Apoy - MJ Flores'
+            'Won\'t Stop Now - Elevation Worship',
+            'No One - Elevation Worship',
+            'Ikaw Ang Tunay Na Diyos - Grace Filipino Worship',
         ]
     var TNLArray =
         [

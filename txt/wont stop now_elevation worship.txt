@@ -1,6 +1,6 @@
 [Intro]
 A     D   A
- 
+
 F#m   E   D
 
  
@@ -73,7 +73,9 @@ Like never before
  
  
 [Interlude]
-D    F#m  E    A/C#  D    F#m  E     A/C#
+D    F#m  E    A/C#
+
+D    F#m  E    A/C#
  
  
 [Bridge]
