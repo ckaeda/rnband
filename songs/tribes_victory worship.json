@@ -2,9 +2,9 @@
     "title": "Tribes",
     "artist": "Victory Worship",
     "defaults": {
-        
+        "Julia": "D"
     },
-    "bpm": 0,
+    "bpm": 128,
     "flow": [
 
     ],
