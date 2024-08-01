@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
             'Tribes - Victory Worship',
             'Holy Forever - Chris Tomlin',
             'How Great Is Our God - Chris Tomlin',
+            'Hosanna - Hillsong United',
             'Salamat Salamat - Malayang Pilipino Music',
             'Sabik Sa Presensya Mo - Faithmusic Manila',
             'Banal Na Apoy - MJ Flores',
