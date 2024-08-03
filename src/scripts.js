@@ -135,7 +135,8 @@ function updateSongList(input) {
             'Won\'t Stop Now - Elevation Worship',
             'Oceans - Hillsong United',
             'Holy Spirit - Jesus Culture',
-            'The Blessing - Elevation Worship'
+            'The Blessing - Elevation Worship',
+            'Lilim - Victory Worship'
         ].sort();
     var songlisthtml = "";
 
