@@ -133,7 +133,8 @@ function updateSongList(input) {
             'Ikaw Ang Tunay Na Diyos - Grace Filipino Worship',
             'Won\'t Stop Now - Elevation Worship',
             'Oceans - Hillsong United',
-            'Holy Spirit - Jesus Culture'
+            'Holy Spirit - Jesus Culture',
+            'The Blessing - Elevation Worship'
         ].sort();
     var songlisthtml = "";
 
