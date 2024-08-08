@@ -21,26 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-
+            'I Know You Can - Planetshakers',
+            'Abba Father - Planetshakers'
         ]
     var FCArray =
         [
-            'Jehovah - Elevation Worship',
-            'Endless Praise - Planetshakers',
-            'Tribes - Victory Worship',
-            'Holy Forever - Chris Tomlin',
-            'How Great Is Our God - Chris Tomlin',
-            'Hosanna - Hillsong United',
-            'Salamat Salamat - Malayang Pilipino Music',
-            'Sabik Sa Presensya Mo - Faithmusic Manila',
-            'Banal Na Apoy - MJ Flores',
-            'Ikaw Ang Tunay Na Diyos - Grace Filipino Worship',
-            'No One - Elevation Worship',
-            'I Thank God - Maverick City Music',
-            'Won\'t Stop Now - Elevation Worship',
-            'Praise - Elevation Worship',
-            'Holy Spirit - Jesus Culture',
-            'Lilim - Victory Worship'
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -136,7 +122,9 @@ function updateSongList(input) {
             'Oceans - Hillsong United',
             'Holy Spirit - Jesus Culture',
             'The Blessing - Elevation Worship',
-            'Lilim - Victory Worship'
+            'Lilim - Victory Worship',
+            'I Know You Can - Planetshakers',
+            'Abba Father - Planetshakers'
         ].sort();
     var songlisthtml = "";
 
@@ -257,6 +245,7 @@ function displaySong(song) {
         'Interlude 2',
         'Tag',
         'Turnaround',
+        'Hook',
         'Coda',
         'Ending'
     ];
