@@ -26,7 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var FCArray =
         [
-            
+            'We Raise - Planetshakers',
+            'Goodbye Yesterday - Elevation Rhythm',
+            'Jehovah - Elevation Worship',
+            'P E A C E - Hillsong Young and Free'
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -124,7 +127,9 @@ function updateSongList(input) {
             'The Blessing - Elevation Worship',
             'Lilim - Victory Worship',
             'I Know You Can - Planetshakers',
-            'Abba Father - Planetshakers'
+            'Abba Father - Planetshakers',
+            'Goodbye Yesterday - Elevation Rhythm',
+            'P E A C E - Hillsong Young and Free'
         ].sort();
     var songlisthtml = "";
 
@@ -243,6 +248,9 @@ function displaySong(song) {
         "Refrain",
         'Interlude',
         'Interlude 2',
+        'Vamp',
+        'Vamp 2',
+        'Vamp 3',
         'Tag',
         'Turnaround',
         'Hook',
