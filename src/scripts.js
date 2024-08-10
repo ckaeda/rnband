@@ -15,14 +15,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Won\'t Stop Now - Elevation Worship',
-            'No One - Elevation Worship',
-            'Ikaw Ang Tunay Na Diyos - Grace Filipino Worship',
+            'Heaven On Earth - Planetshakers',
+            'Shout - Parachute Band',
+            'Firm Foundation - Maverick City Music',
         ]
     var TNLArray =
         [
-            'I Know You Can - Planetshakers',
-            'Abba Father - Planetshakers'
+            
         ]
     var FCArray =
         [
@@ -252,6 +251,7 @@ function displaySong(song) {
         'Vamp 2',
         'Vamp 3',
         'Tag',
+        'Tag 2',
         'Turnaround',
         'Hook',
         'Coda',
