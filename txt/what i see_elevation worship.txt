@@ -31,11 +31,11 @@ I believe there’s about to be another resurrection
  
  
 [Chorus 1]
-N.C.
+    
 Come alive
-N.C.
+    
 Wake up sleeper
-N.C.
+    
 He is risen
                      C
 We are risen with Him
@@ -61,7 +61,7 @@ Come alive
 Wake up sleeper
             C
 He is risen
-N.C.
+    
 We are risen with Him
 Am
 Paradise
@@ -131,13 +131,13 @@ Am          F            C                              Am    F
  
 [Chorus 3]
  
-N.C.
+    
 Come alive
-N.C.
+    
 Wake up sleeper
-N.C.
+    
 He is risen
-N.C.
+    
 We are risen with Him
 C
 Paradise

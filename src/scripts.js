@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            
+
         ]
     var FCArray =
         [
@@ -128,7 +128,11 @@ function updateSongList(input) {
             'I Know You Can - Planetshakers',
             'Abba Father - Planetshakers',
             'Goodbye Yesterday - Elevation Rhythm',
-            'P E A C E - Hillsong Young and Free'
+            'P E A C E - Hillsong Young and Free',
+            'Firm Foundation - Maverick City Music',
+            'Firm Foundation (ver 2) - Maverick City Music',
+            'To The Ends of The Earth - Hillsong United',
+            'World Outside Your Window - Hillsong Young and Free'
         ].sort();
     var songlisthtml = "";
 
@@ -162,15 +166,24 @@ function updateSongList(input) {
 
 function loadSong(li) {
     var lyricsFile = li.getAttribute('data-lyrics');
-    fetch('songs/' + lyricsFile + '.json')
-        .then(response => response.json())
-        .then(song => {
+
+    // Fetch both the JSON and TXT files concurrently
+    Promise.all([
+        fetch('songs/' + lyricsFile + '.json').then(response => response.json()),
+        fetch('txt/' + lyricsFile + '.txt').then(response => response.text())
+    ])
+        .then(([song, txtData]) => {
             var title = song.title;
             var artist = song.artist;
-            var songbody = song.songbody;
+            var origKey = song.defaults.Orig;
 
-            const deserializedSong = new ChordSheetJS.ChordSheetSerializer().deserialize(songbody);
-            currSong = deserializedSong;
+            const chordSheet = `${txtData}`;
+
+            const parser = new ChordSheetJS.UltimateGuitarParser();
+            const unserializedSong = parser.parse(chordSheet).setKey(origKey).changeKey(currKey.toString());
+
+            currSong = unserializedSong;
+
 
             if (song.defaults != null) {
                 defaults = song.defaults;
@@ -192,8 +205,10 @@ function loadSong(li) {
 
             window.scrollTo(0, 0);
         })
-        .catch(error => console.error('Error fetching song:', error));
+        .catch(error => console.error('Error fetching song or txt file:', error));
 }
+
+
 
 function toggleNav() {
     const button = document.getElementById("openbtn");
@@ -290,22 +305,24 @@ function updateDefaults() {
 
     if (Object.keys(defaults).length !== 0) {
         for (obj in Object.keys(defaults)) {
-            var div = document.createElement("div");
-            div.className = "presets";
-            div.textContent = Object.keys(defaults)[obj] + ": " + defaults[Object.keys(defaults)[obj]];
+            if (Object.keys(defaults)[obj] != "Orig") {
+                var div = document.createElement("div");
+                div.className = "presets";
+                div.textContent = Object.keys(defaults)[obj] + ": " + defaults[Object.keys(defaults)[obj]];
 
-            const key = defaults[Object.keys(defaults)[obj]];
+                const key = defaults[Object.keys(defaults)[obj]];
 
-            div.addEventListener('click', function () {
-                transposeValue = 0;
-                document.getElementById("transposeValue").textContent = transposeValue;
+                div.addEventListener('click', function () {
+                    transposeValue = 0;
+                    document.getElementById("transposeValue").textContent = transposeValue;
 
-                currKey = ChordSheetJS.Chord.parse(key);
-                displaySong(currSong.transpose(transposeValue));
-                document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
-            });
+                    currKey = ChordSheetJS.Chord.parse(key);
+                    displaySong(currSong.transpose(transposeValue));
+                    document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
+                });
 
-            presetContainer.appendChild(div);
+                presetContainer.appendChild(div);
+            }
         }
     } else {
         var div = document.createElement("div");
@@ -345,21 +362,21 @@ function updateDates() {
     activeListTNL.title += " — " + formattedTh;
 }
 
-document.getElementById('hideChordsButton').addEventListener('click', function() {
+document.getElementById('hideChordsButton').addEventListener('click', function () {
     const chords = document.querySelectorAll('.chord');
     const button = this;
-    
+
     // Check if chords are currently hidden
     if (chords[0].style.display === 'none') {
         // Show chords
-        chords.forEach(function(chord) {
+        chords.forEach(function (chord) {
             chord.style.display = 'table-cell';
         });
         // Update button text
         button.textContent = 'Hide Chords';
     } else {
         // Hide chords
-        chords.forEach(function(chord) {
+        chords.forEach(function (chord) {
             chord.style.display = 'none';
         });
         // Update button text
