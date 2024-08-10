@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'Heaven On Earth - Planetshakers',
             'Shout - Parachute Band',
-            'Firm Foundation - Maverick City Music',
+            'Firm Foundation (ver 2) - Maverick City Music',
         ]
     var TNLArray =
         [
@@ -38,17 +38,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var FClisthtml = "";
 
     for (let song in activeArray) {
-        let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
+        let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').toLowerCase();
         activelisthtml += '<li data-lyrics="' + dataLyrics + '">' + activeArray[song] + '</li>';
     }
 
     for (let song in TNLArray) {
-        let TNLdataLyrics = TNLArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
+        let TNLdataLyrics = TNLArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').toLowerCase();
         TNLlisthtml += '<li data-lyrics="' + TNLdataLyrics + '">' + TNLArray[song] + '</li>';
     }
 
     for (let song in FCArray) {
-        let FCdataLyrics = FCArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
+        let FCdataLyrics = FCArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').toLowerCase();
         FClisthtml += '<li data-lyrics="' + FCdataLyrics + '">' + FCArray[song] + '</li>';
     }
 
@@ -134,7 +134,7 @@ function updateSongList(input) {
 
     for (let song in songArray) {
         if (songArray[song].toLowerCase().includes(input.toLowerCase())) {
-            let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').toLowerCase();
+            let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').toLowerCase();
             songlisthtml += '<li data-lyrics="' + dataLyrics + '">' + songArray[song] + '</li>';
         }
     }
