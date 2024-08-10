@@ -2,7 +2,8 @@
     "title": "Shout",
     "artist": "Parachute Band",
     "defaults": {
-        "Julia": "C"
+        "Julia": "C",
+        "Berna": "C"
     },
     "bpm": 150,
     "flow": [

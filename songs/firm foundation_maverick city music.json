@@ -2,7 +2,8 @@
     "title": "Firm Foundation (He Won't)",
     "artist": "Maverick City Music ft. Chandler Moore and Cody Carnes",
     "defaults": {
-        "Orig": "G"
+        "Orig": "G",
+        "JJ": "A"
     },
     "bpm": 0,
     "flow": [
