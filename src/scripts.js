@@ -344,3 +344,25 @@ function updateDates() {
     activeList.title += " — " + formattedSun;
     activeListTNL.title += " — " + formattedTh;
 }
+
+document.getElementById('hideChordsButton').addEventListener('click', function() {
+    const chords = document.querySelectorAll('.chord');
+    const button = this;
+    
+    // Check if chords are currently hidden
+    if (chords[0].style.display === 'none') {
+        // Show chords
+        chords.forEach(function(chord) {
+            chord.style.display = 'table-cell';
+        });
+        // Update button text
+        button.textContent = 'Hide Chords';
+    } else {
+        // Hide chords
+        chords.forEach(function(chord) {
+            chord.style.display = 'none';
+        });
+        // Update button text
+        button.textContent = 'Show Chords';
+    }
+});

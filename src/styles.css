@@ -156,6 +156,10 @@ body {
     white-space: pre-wrap;
 }
 
+.chord {
+    color:#0067d4;
+}
+
 .settings-container {
     position: fixed;
     top: 20px;
@@ -267,4 +271,23 @@ body {
 
 #flowList li {
     padding: 2px 0;
+}
+
+.hide-chords-button {
+    position: relative;
+    top: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    line-height: 3vh;
+    padding: 5px;
+}
+
+.hide-chords-button:hover {
+    cursor: pointer;
+    background: #ddd;
 }
