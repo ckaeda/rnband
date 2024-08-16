@@ -76,18 +76,6 @@ body {
     text-decoration: none;
 }
 
-.toggle-sidebar-button {
-    position: absolute;
-    top: 10px;
-    left: 240px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    z-index: 2;
-}
-
 .openbtn {
     position: sticky;
     top: 0;
@@ -208,7 +196,7 @@ body {
 }
 
 .toggle-settings-button {
-    position: relative;
+    position: fixed;
     top: 10px;
     right: 20px;
     border: 1px solid black;
