@@ -397,3 +397,30 @@ document.getElementById('hideChordsButton').addEventListener('click', function()
         hideChords();
     }
 });
+
+document.getElementById('toggleSettingsButton').addEventListener('click', function() {
+    var settingsContainer = document.getElementById('settingsContainer');
+    var settingsIcon = document.querySelector('.settings-icon');
+    
+    if (settingsContainer.style.display === 'none' || settingsContainer.style.display === '') {
+        settingsContainer.style.display = 'block';
+        settingsContainer.classList.remove('fade-out-up');
+        settingsContainer.classList.add('fade-in-down');
+    } else {
+        settingsContainer.classList.remove('fade-in-down');
+        settingsContainer.classList.add('fade-out-up');
+
+        // Delay hiding the element until the animation finishes
+        setTimeout(function() {
+            settingsContainer.style.display = 'none';
+        }, 500); // Match this with the animation duration
+    }
+
+    // Trigger the rotation animation
+    settingsIcon.classList.add('rotate');
+    
+    // Remove the class after the animation to reset it
+    setTimeout(function() {
+        settingsIcon.classList.remove('rotate');
+    }, 500); // Match this with the animation duration
+});

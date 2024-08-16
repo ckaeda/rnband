@@ -160,15 +160,86 @@ body {
     color:#0067d4;
 }
 
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .settings-container {
     position: fixed;
     top: 20px;
     right: 20px;
+    z-index: 1;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-out-up {
+    animation: fadeOutUp 0.5s forwards;
+}
+
+.fade-in-down {
+    animation: fadeInDown 0.5s forwards;
+}
+
+@keyframes rotateIcon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.toggle-settings-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.toggle-settings-button:hover {
+    background-color: #ddd;
+}
+
+.settings-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.5s ease;
+}
+
+.rotate {
+    animation: rotateIcon 0.5s;
 }
 
 .transpose-container {
     position: relative;
-    top: 0px;
+    top: 25px;
     right: 0px;
     border: 1px solid black;
     border-radius: 10px;
@@ -217,7 +288,7 @@ body {
 
 .presets-container {
     position: relative;
-    top: 5px;
+    top: 30px;
     border: 1px solid black;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -248,7 +319,7 @@ body {
 
 .flow-container {
     position: relative;
-    top: 5px;
+    top: 15px;
     border-radius: 10px;
     margin-bottom: 5px;
 }
@@ -259,6 +330,7 @@ body {
     align-items: center;
     font-weight: bold;
     line-height: 2vh;
+    padding-top: 10px;
     /* padding: 5px; */
 }
 
