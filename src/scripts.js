@@ -4,6 +4,7 @@ var currKey = ChordSheetJS.Chord.parse('C');
 var defaults = {};
 var flow = [];
 var bpm = null;
+var hideChordsSetting = false;
 
 document.addEventListener("DOMContentLoaded", function () {
     updateSongList('');
@@ -15,9 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Heaven On Earth - Planetshakers',
-            'Shout - Parachute Band',
+            'We Raise - Planetshakers',
+            'My Jesus - Anne Wilson',
             'Firm Foundation (ver 2) - Maverick City Music',
+            'Faithful Then / Faithful Now - Elevation Worship'
         ]
     var TNLArray =
         [
@@ -38,17 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
     var FClisthtml = "";
 
     for (let song in activeArray) {
-        let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').toLowerCase();
+        let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
         activelisthtml += '<li data-lyrics="' + dataLyrics + '">' + activeArray[song] + '</li>';
     }
 
     for (let song in TNLArray) {
-        let TNLdataLyrics = TNLArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').toLowerCase();
+        let TNLdataLyrics = TNLArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
         TNLlisthtml += '<li data-lyrics="' + TNLdataLyrics + '">' + TNLArray[song] + '</li>';
     }
 
     for (let song in FCArray) {
-        let FCdataLyrics = FCArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').toLowerCase();
+        let FCdataLyrics = FCArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
         FClisthtml += '<li data-lyrics="' + FCdataLyrics + '">' + FCArray[song] + '</li>';
     }
 
@@ -132,13 +134,14 @@ function updateSongList(input) {
             'Firm Foundation - Maverick City Music',
             'Firm Foundation (ver 2) - Maverick City Music',
             'To The Ends of The Earth - Hillsong United',
-            'World Outside Your Window - Hillsong Young and Free'
+            'World Outside Your Window - Hillsong Young and Free',
+            'Faithful Then / Faithful Now - Elevation Worship'
         ].sort();
     var songlisthtml = "";
 
     for (let song in songArray) {
         if (songArray[song].toLowerCase().includes(input.toLowerCase())) {
-            let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').toLowerCase();
+            let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll('/', '').toLowerCase();
             songlisthtml += '<li data-lyrics="' + dataLyrics + '">' + songArray[song] + '</li>';
         }
     }
@@ -180,7 +183,7 @@ function loadSong(li) {
             const chordSheet = `${txtData}`;
 
             const parser = new ChordSheetJS.UltimateGuitarParser();
-            const unserializedSong = parser.parse(chordSheet).setKey(origKey).changeKey(currKey.toString());
+            const unserializedSong = parser.parse(chordSheet).setKey(origKey).changeKey('C');
 
             currSong = unserializedSong;
 
@@ -202,6 +205,12 @@ function loadSong(li) {
             lyricsTitle.textContent = title;
             lyricsArtist.textContent = artist;
             displaySong(currSong.transpose(transposeValue));
+
+            if (hideChordsSetting) {
+                hideChords();
+            } else {
+                showChords();
+            }
 
             window.scrollTo(0, 0);
         })
@@ -362,24 +371,30 @@ function updateDates() {
     activeListTNL.title += " — " + formattedTh;
 }
 
-document.getElementById('hideChordsButton').addEventListener('click', function () {
+// Function to hide chords
+function hideChords() {
     const chords = document.querySelectorAll('.chord');
-    const button = this;
+    chords.forEach(function(chord) {
+        chord.style.display = 'none';
+    });
+    document.getElementById('hideChordsButton').textContent = 'Show Chords';
+    hideChordsSetting = true;
+}
 
-    // Check if chords are currently hidden
-    if (chords[0].style.display === 'none') {
-        // Show chords
-        chords.forEach(function (chord) {
-            chord.style.display = 'table-cell';
-        });
-        // Update button text
-        button.textContent = 'Hide Chords';
+// Function to show chords
+function showChords() {
+    const chords = document.querySelectorAll('.chord');
+    chords.forEach(function(chord) {
+        chord.style.display = 'table-cell';
+    });
+    document.getElementById('hideChordsButton').textContent = 'Hide Chords';
+    hideChordsSetting = false;
+}
+
+document.getElementById('hideChordsButton').addEventListener('click', function() {
+    if (hideChordsSetting) {
+        showChords();
     } else {
-        // Hide chords
-        chords.forEach(function (chord) {
-            chord.style.display = 'none';
-        });
-        // Update button text
-        button.textContent = 'Show Chords';
+        hideChords();
     }
 });
