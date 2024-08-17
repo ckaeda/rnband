@@ -155,14 +155,14 @@ body {
     }
     100% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-600px);
     }
 }
 
 @keyframes fadeInDown {
     0% {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-600px);
     }
     100% {
         opacity: 1;
