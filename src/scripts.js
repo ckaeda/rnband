@@ -5,6 +5,7 @@ var defaults = {};
 var flow = [];
 var bpm = null;
 var hideChordsSetting = false;
+var numeralsSetting = false;
 
 document.addEventListener("DOMContentLoaded", function () {
     updateSongList('');
@@ -209,6 +210,9 @@ function loadSong(li) {
                 hideChords();
             } else {
                 showChords();
+                if (numeralsSetting) {
+                    convertToRomanNumeral();
+                }
             }
 
             window.scrollTo(0, 0);
@@ -216,6 +220,30 @@ function loadSong(li) {
         .catch(error => console.error('Error fetching song or txt file:', error));
 }
 
+function toggleNumerals() {
+    const button = document.getElementById('romanNumeralsButton');
+    if (numeralsSetting) {
+        if (!hideChordsSetting) displaySong(currSong.transpose(transposeValue));
+        button.textContent = 'Numeral';
+        numeralsSetting = false;
+    } else {
+        convertToRomanNumeral();
+        button.textContent = 'Chords';
+        numeralsSetting = true;
+    }
+}
+
+function convertToRomanNumeral () {
+    [...document.getElementsByClassName('chord')]
+    .filter(elem => elem.textContent.trim() !== '')
+    .forEach(elem => {
+        const numeralString = ChordSheetJS.Chord.parse(elem.textContent)
+            .toNumeralString(currKey.transpose(transposeValue).toString())
+            .replace(/([ivx]+)m/g, '$1') // Remove 'm' after lowercase Roman numerals except when followed by digits
+            .replace('#vi', 'vi') // Replace '#vi' with 'vi'
+        elem.textContent = numeralString;
+    });
+}
 
 
 function toggleNav() {
@@ -229,17 +257,6 @@ function toggleNav() {
         document.getElementById("openbtn").style.marginLeft = "0px";
         document.getElementById("main").style.marginLeft = "0px";
     }
-}
-
-// Function to get URL parameter by name
-function getParameterByName(name, url) {
-    if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 
 function displaySong(song) {
@@ -294,7 +311,7 @@ document.getElementById("minusSign").addEventListener("click", function () {
 
     document.getElementById("transposeValue").textContent = transposeValue;
     document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
-    displaySong(currSong.transpose(transposeValue));
+    if (!numeralsSetting) displaySong(currSong.transpose(transposeValue));
 });
 
 document.getElementById("plusSign").addEventListener("click", function () {
@@ -303,7 +320,7 @@ document.getElementById("plusSign").addEventListener("click", function () {
 
     document.getElementById("transposeValue").textContent = transposeValue;
     document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
-    displaySong(currSong.transpose(transposeValue));
+    if (!numeralsSetting) displaySong(currSong.transpose(transposeValue));
 });
 
 function updateDefaults() {
