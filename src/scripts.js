@@ -144,7 +144,7 @@ function updateSongList(input) {
 
     for (let song in songArray) {
         if (songArray[song].toLowerCase().includes(input.toLowerCase())) {
-            let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll('/', '').toLowerCase();
+            let dataLyrics = songArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
             songlisthtml += '<li data-lyrics="' + dataLyrics + '">' + songArray[song] + '</li>';
         }
     }
