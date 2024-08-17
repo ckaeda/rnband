@@ -30,7 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
             'We Raise - Planetshakers',
             'Goodbye Yesterday - Elevation Rhythm',
             'Jehovah - Elevation Worship',
-            'P E A C E - Hillsong Young and Free'
+            'P E A C E - Hillsong Young and Free',
+            'Alive Again - Planetshakers',
+            'Praise - Elevation Worship'
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -135,7 +137,8 @@ function updateSongList(input) {
             'Firm Foundation (ver 2) - Maverick City Music',
             'To The Ends of The Earth - Hillsong United',
             'World Outside Your Window - Hillsong Young and Free',
-            'Faithful Then / Faithful Now - Elevation Worship'
+            'Faithful Then / Faithful Now - Elevation Worship',
+            'Alive Again - Planetshakers',
         ].sort();
     var songlisthtml = "";
 
@@ -233,16 +236,16 @@ function toggleNumerals() {
     }
 }
 
-function convertToRomanNumeral () {
+function convertToRomanNumeral() {
     [...document.getElementsByClassName('chord')]
-    .filter(elem => elem.textContent.trim() !== '')
-    .forEach(elem => {
-        const numeralString = ChordSheetJS.Chord.parse(elem.textContent)
-            .toNumeralString(currKey.transpose(transposeValue).toString())
-            .replace(/([ivx]+)m/g, '$1') // Remove 'm' after lowercase Roman numerals except when followed by digits
-            .replace('#vi', 'vi') // Replace '#vi' with 'vi'
-        elem.textContent = numeralString;
-    });
+        .filter(elem => elem.textContent.trim() !== '')
+        .forEach(elem => {
+            const numeralString = ChordSheetJS.Chord.parse(elem.textContent)
+                .toNumeralString(currKey.transpose(transposeValue).toString())
+                .replace(/([ivx]+)m/g, '$1') // Remove 'm' after lowercase Roman numerals except when followed by digits
+                .replace('#vi', 'vi') // Replace '#vi' with 'vi'
+            elem.textContent = numeralString;
+        });
 }
 
 
@@ -330,24 +333,23 @@ function updateDefaults() {
 
     if (Object.keys(defaults).length !== 0) {
         for (obj in Object.keys(defaults)) {
-            if (Object.keys(defaults)[obj] != "Orig") {
-                var div = document.createElement("div");
-                div.className = "presets";
-                div.textContent = Object.keys(defaults)[obj] + ": " + defaults[Object.keys(defaults)[obj]];
+            var div = document.createElement("div");
+            div.className = "presets";
+            div.textContent = Object.keys(defaults)[obj] + ": " + defaults[Object.keys(defaults)[obj]];
 
-                const key = defaults[Object.keys(defaults)[obj]];
+            const key = defaults[Object.keys(defaults)[obj]];
 
-                div.addEventListener('click', function () {
-                    transposeValue = 0;
-                    document.getElementById("transposeValue").textContent = transposeValue;
+            div.addEventListener('click', function () {
+                transposeValue = 0;
+                document.getElementById("transposeValue").textContent = transposeValue;
 
-                    currKey = ChordSheetJS.Chord.parse(key);
-                    displaySong(currSong.transpose(transposeValue));
-                    document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
-                });
+                currKey = ChordSheetJS.Chord.parse(key);
+                displaySong(currSong.transpose(transposeValue));
+                document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
+            });
 
-                presetContainer.appendChild(div);
-            }
+            presetContainer.appendChild(div);
+
         }
     } else {
         var div = document.createElement("div");
@@ -390,7 +392,7 @@ function updateDates() {
 // Function to hide chords
 function hideChords() {
     const chords = document.querySelectorAll('.chord');
-    chords.forEach(function(chord) {
+    chords.forEach(function (chord) {
         chord.style.display = 'none';
     });
     document.getElementById('hideChordsButton').textContent = 'Show Chords';
@@ -400,14 +402,14 @@ function hideChords() {
 // Function to show chords
 function showChords() {
     const chords = document.querySelectorAll('.chord');
-    chords.forEach(function(chord) {
+    chords.forEach(function (chord) {
         chord.style.display = 'table-cell';
     });
     document.getElementById('hideChordsButton').textContent = 'Hide Chords';
     hideChordsSetting = false;
 }
 
-document.getElementById('hideChordsButton').addEventListener('click', function() {
+document.getElementById('hideChordsButton').addEventListener('click', function () {
     if (hideChordsSetting) {
         showChords();
     } else {
@@ -415,10 +417,10 @@ document.getElementById('hideChordsButton').addEventListener('click', function()
     }
 });
 
-document.getElementById('toggleSettingsButton').addEventListener('click', function() {
+document.getElementById('toggleSettingsButton').addEventListener('click', function () {
     var settingsContainer = document.getElementById('settingsContainer');
     var settingsIcon = document.querySelector('.settings-icon');
-    
+
     if (settingsContainer.style.display === 'none' || settingsContainer.style.display === '') {
         settingsContainer.style.display = 'block';
         settingsContainer.classList.remove('fade-out-up');
@@ -428,16 +430,16 @@ document.getElementById('toggleSettingsButton').addEventListener('click', functi
         settingsContainer.classList.add('fade-out-up');
 
         // Delay hiding the element until the animation finishes
-        setTimeout(function() {
+        setTimeout(function () {
             settingsContainer.style.display = 'none';
         }, 500); // Match this with the animation duration
     }
 
     // Trigger the rotation animation
     settingsIcon.classList.add('rotate');
-    
+
     // Remove the class after the animation to reset it
-    setTimeout(function() {
+    setTimeout(function () {
         settingsIcon.classList.remove('rotate');
     }, 500); // Match this with the animation duration
 });
