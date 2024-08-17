@@ -1,12 +1,10 @@
 [Intro]
- 
 G  F  C/E  F 
 
 F  F#  G
 
 
 [Verse 1]
-
 G
 Ang kagandahang loob
 G/B
@@ -24,7 +22,6 @@ Dito sa buhay ko
 
 
 [Pre-Chorus]
- 
 Em
 Ang katapatan Mo
 G/B
@@ -40,7 +37,6 @@ Sa bawat araw na kapiling Ka
 
 
 [Chorus]
- 
 C
 Pangako, pangako Mo ay naririto
 G/B

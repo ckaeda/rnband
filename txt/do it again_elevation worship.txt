@@ -1,10 +1,8 @@
 [Intro]
- 
 C     G/B   C6   G/B
  
  
 [Verse 1]
- 
 C  
   Walking around these walls
 G/B
@@ -21,7 +19,6 @@ C6                             G
  
  
 [Chorus]
- 
 C/E                  D/F#
   Your promise still stands
                 G             C
@@ -33,12 +30,10 @@ This is my confidence, you've never failed me yet
  
  
 [Instrumental]
- 
 G/B   C   G/B   C
  
  
 [Verse 2]
- 
 C  
   I know the night won't last
 G/B
@@ -55,7 +50,6 @@ C6                                G
  
  
 [Chorus]
- 
 C/E                  D/F#
   Your promise still stands
                 G             C
@@ -76,19 +70,16 @@ This is my confidence, you've never failed me yet
  
  
 [Instrumental]
- 
 G/B   C   G/B   C
  
  
 [Interlude]
- 
 G/B  C    G/B  C
 
 D/F# G    D/F# G
  
  
 [Bridge]
- 
 G/B  C                 G/B  C                D/F#   G
       I've seen you move,    you move the mountains
             D/F#  G                G/B     C
@@ -117,14 +108,12 @@ You made a way      when there was no way
 And I believe,     I'll see you do it again
  
 [Tag]
- 
 G/B  C                D/F#   G   D/F#  G
       I'll see you do it again
 G/B  C   G/B  C   D/F#  G   D/F#  G
  
  
 [Chorus]
- 
 C/E                  D/F#
   Your promise still stands
                 G             C
@@ -145,7 +134,6 @@ This is my confidence, you've never failed me yet
  
  
 [Ending]
- 
 G/B   C   G/B         C
               You've never failed me yet
 G/B   C

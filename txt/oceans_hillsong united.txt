@@ -1,10 +1,8 @@
 [Intro]
- 
 Bm   A/C#    D      A      G
  
  
 [Verse 1]
- 
 Bm              A/C#       D            
 You call me out upon the waters
            A                       G
@@ -16,7 +14,6 @@ In oceans deep   My faith will stand
  
  
 [Chorus]
- 
 G           D              A
 And I will call upon Your name
 G            D             A
@@ -30,12 +27,10 @@ For I am Yours and You are mine
  
  
 [Interlude]
- 
 Bm A/C#  D  A  Em/G
  
  
 [Verse 2]
- 
 Bm                     A/C#    D       
 Your grace abounds in deepest waters
                 A                G
@@ -46,7 +41,6 @@ Where feet may fail and fear surrounds me
 You've never failed and you won't start now
  
 [Chorus]
- 
 G           D              A
 And I will call upon Your name
 G            D             A
@@ -60,7 +54,6 @@ For I am Yours and You are mine
  
  
 [Instrumental]
- 
 Bm A/C#  D  A  Em/G
 
 Bm A/C#  D  A  Em/G
@@ -71,7 +64,6 @@ Bm  G  D  A
  
  
 [Bridge]
- 
 Bm                        G
 Spirit lead me where my trust is without borders     
         D                          A
@@ -83,7 +75,6 @@ And my faith will be made stronger in the presence of my Saviour
 
 
 [Bridge 2]
-
 G                         D
 Spirit lead me where my trust is without borders     
          A                         Em
@@ -113,14 +104,12 @@ And my faith will be made stronger in the presence of my Saviour
  
  
 [Instrumental]
- 
 Bm  A/C#  D  A  Em
 
 Bm  A/C#  D  A  Em
  
  
 [Chorus]
- 
 G       D              A
 I will call upon Your Name    
 G        D              A

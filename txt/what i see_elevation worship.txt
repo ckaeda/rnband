@@ -1,5 +1,4 @@
 [Intro]
- 
 C
  Do you see what I see
 C
@@ -7,7 +6,6 @@ C
  
  
 [Verse 1]
- 
 C
 I see lightning, I hear thunder
 F
@@ -19,7 +17,6 @@ I believe there’s about to be another resurrection
  
  
 [Verse 2]
- 
 C
 I see signs and I see wonders
 F
@@ -31,7 +28,6 @@ I believe there’s about to be another resurrection
  
  
 [Chorus 1]
-    
 Come alive
     
 Wake up sleeper
@@ -42,7 +38,6 @@ We are risen with Him
  
  
 [Verse 3]
- 
 C
 Hallelujah, it is finished
 F
@@ -54,7 +49,6 @@ I believe there’s about to be another resurrection
  
  
 [Chorus 2]
- 
           C
 Come alive
                 C
@@ -91,12 +85,10 @@ We are risen with Him
  
  
 [Instrumental]
- 
 Am   F   C Am   F   C
  
  
 [Bridge 1]
- 
 Am          F
   If you see what I see
 C
@@ -116,7 +108,6 @@ C
  
  
 [Bridge 2]
- 
 Am          F          C
   Do you see what I see
 Am          F          C
@@ -130,8 +121,6 @@ Am          F            C                              Am    F
  
  
 [Chorus 3]
- 
-    
 Come alive
     
 Wake up sleeper
