@@ -226,7 +226,7 @@ function loadSong(li) {
 function toggleNumerals() {
     const button = document.getElementById('romanNumeralsButton');
     if (numeralsSetting) {
-        if (!hideChordsSetting) displaySong(currSong.transpose(transposeValue));
+        displaySong(currSong.transpose(transposeValue));
         button.textContent = 'Numeral';
         numeralsSetting = false;
     } else {
@@ -397,6 +397,11 @@ function hideChords() {
     });
     document.getElementById('hideChordsButton').textContent = 'Show Chords';
     hideChordsSetting = true;
+
+    document.getElementById('romanNumeralsButton').style.display = 'none';
+    document.getElementById('transposeContainer').style.display = 'none';
+    document.getElementById('presetsContainer').style.display = 'none';
+    document.getElementById('bpm').style.display = 'none';
 }
 
 // Function to show chords
@@ -407,6 +412,11 @@ function showChords() {
     });
     document.getElementById('hideChordsButton').textContent = 'Hide Chords';
     hideChordsSetting = false;
+
+    document.getElementById('romanNumeralsButton').style.display = 'flex';
+    document.getElementById('transposeContainer').style.display = 'flex';
+    document.getElementById('presetsContainer').style.display = 'block';
+    document.getElementById('bpm').style.display = 'flex';
 }
 
 document.getElementById('hideChordsButton').addEventListener('click', function () {

@@ -43,7 +43,7 @@
         <img src="src\settings-icon.png" alt="Settings" class="settings-icon">
     </button>
     <div class="settings-container" id="settingsContainer" style="display: block;">
-        <div class="transpose-container">
+        <div class="transpose-container" id="transposeContainer" style="display: flex;">
             <div class="transpose-text">Transpose</div>
             <div class="toggle-button" id="toggleButton">
                 <div class="minus-sign" id="minusSign">-</div>
@@ -52,16 +52,16 @@
             </div>
             <div class="transpose-key" id="transposeKey">Key: C</div>
         </div>
-        <div class="presets-container" id="presetsContainer">
+        <div class="presets-container" id="presetsContainer" style="display: block;">
             <div class="presets">Presets</div>
         </div>
         <div class="flow-container" id="flowContainer">
             <div class="flow-title">Flow</div>
             <ul id="flowList"></ul>
         </div>
-        <div class="flow-title" id="bpm">BPM: </div>
+        <div class="flow-title" id="bpm" style="display: flex;">BPM: </div>
+        <div class="hide-chords-button" id="romanNumeralsButton" style="display: flex;" onclick="toggleNumerals()">Numeral</div>
         <div class="hide-chords-button" id="hideChordsButton">Hide Chords</div>
-        <div class="hide-chords-button" id="romanNumeralsButton" onclick="toggleNumerals()">Numeral</div>
     </div>
 
     <script src="src/scripts.js"></script>
