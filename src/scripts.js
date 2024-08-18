@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             'We Raise - Planetshakers',
             'My Jesus - Anne Wilson',
             'Firm Foundation (ver 2) - Maverick City Music',
+            'I Came For You - Planetshakers'
         ]
     var TNLArray =
         [
