@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-
+            'Sinking Deep - Hillsong Young and Free',
+            'Build My Life - Housefires',
         ]
     var FCArray =
         [
@@ -140,6 +141,9 @@ function updateSongList(input) {
             'World Outside Your Window - Hillsong Young and Free',
             'Faithful Then / Faithful Now - Elevation Worship',
             'Alive Again - Planetshakers',
+            'See A Victory - Elevation Worship',
+            'Sinking Deep - Hillsong Young and Free',
+            'Build My Life - Housefires',
         ].sort();
     var songlisthtml = "";
 
@@ -245,6 +249,7 @@ function convertToRomanNumeral() {
                 .toNumeralString(currKey.transpose(transposeValue).toString())
                 .replace(/([ivx]+)m/g, '$1') // Remove 'm' after lowercase Roman numerals except when followed by digits
                 .replace('#vi', 'vi') // Replace '#vi' with 'vi'
+                .replace('#iii', 'iii') // Replace '#vi' with 'vi'
             elem.textContent = numeralString;
         });
 }
