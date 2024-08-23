@@ -1,9 +1,9 @@
 [Intro]
-Cadd9   Em7   G   Dsus
+C(add9)   Em7   G   Dsus
  
  
 [Verse 1]
-Cadd9
+C(add9)
   How I live for the moments
 Em7
   Where I'm still in Your presence
@@ -11,7 +11,7 @@ G
   All the noise dies down
 Dsus            G/B
   Lord speak to me now
-Cadd9
+C(add9)
   You have all my attention
 Em7
   I will linger and listen
@@ -53,7 +53,7 @@ Woooh, woooh
  
  
 [Verse 2]
-Cadd9
+C(add9)
   You're the fire in the morning
 Em7
   You're the cool in the evening
@@ -61,7 +61,7 @@ G
   The breath in my soul
 D                G/B
   Or the life in my bones
-Cadd9
+C(add9)
   There is no hesitation
 Em7
   In Your love and affection

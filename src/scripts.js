@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'We Raise - Planetshakers',
-            'My Jesus - Anne Wilson',
-            'Firm Foundation (ver 2) - Maverick City Music',
-            'I Came For You - Planetshakers'
+            'See The Light - Hillsong Worship',
+            'Hindsight - Hillsong Young and Free',
+            "Touch Of Heaven - Hillsong Worship",
         ]
     var TNLArray =
         [
