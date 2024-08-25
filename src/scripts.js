@@ -32,8 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
             'Goodbye Yesterday - Elevation Rhythm',
             'Jehovah - Elevation Worship',
             'P E A C E - Hillsong Young and Free',
+            'Still - Hillsong Worship',
             'Alive Again - Planetshakers',
-            'Praise - Elevation Worship'
+            'Praise - Elevation Worship',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -143,6 +144,7 @@ function updateSongList(input) {
             'See A Victory - Elevation Worship',
             'Sinking Deep - Hillsong Young and Free',
             'Build My Life - Housefires',
+            'Still - Hillsong Worship',
         ].sort();
     var songlisthtml = "";
 
