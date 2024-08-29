@@ -24,7 +24,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            
+            'Glorious Day - Passion',
+            'Goodness of God - Bethel Music'
         ]
     var FCArray =
         [
