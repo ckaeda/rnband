@@ -17,24 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'See The Light - Hillsong Worship',
-            'Hindsight - Hillsong Young and Free',
-            "Touch Of Heaven - Hillsong Worship",
+            'Faithful Then / Faithful Now - Elevation Worship',
+            'Alive - Hillsong Young and Free',
+            'Been So Good - Elevation Worship',
+            'Goodness of God - Bethel Music'
         ]
     var TNLArray =
         [
-            'Sinking Deep - Hillsong Young and Free',
-            'Build My Life - Housefires',
+            
         ]
     var FCArray =
         [
-            'We Raise - Planetshakers',
-            'Goodbye Yesterday - Elevation Rhythm',
-            'Jehovah - Elevation Worship',
-            'P E A C E - Hillsong Young and Free',
-            'Still - Hillsong Worship',
-            'Alive Again - Planetshakers',
-            'Praise - Elevation Worship',
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
