@@ -18,25 +18,24 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'Faithful Then / Faithful Now - Elevation Worship',
-            'Alive - Hillsong Young and Free',
-            'Been So Good - Elevation Worship',
-            'Goodness of God - Bethel Music'
+            'Never Lost - Elevation Worship',
+            'What A Beautiful Name - Hillsong Worship',
         ]
     var TNLArray =
         [
             'Glorious Day - Passion',
             'Goodness of God - Bethel Music'
         ]
-    var FCArray =
+    var eventArray =
         [
-            
+            'Faithful Then / Faithful Now - Elevation Worship',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
-    var FClist = document.getElementById("activeListFC");
+    var eventlist = document.getElementById("activeListEvent");
     var activelisthtml = "";
     var TNLlisthtml = "";
-    var FClisthtml = "";
+    var eventlisthtml = "";
 
     for (let song in activeArray) {
         let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
@@ -48,14 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
         TNLlisthtml += '<li data-lyrics="' + TNLdataLyrics + '">' + TNLArray[song] + '</li>';
     }
 
-    for (let song in FCArray) {
-        let FCdataLyrics = FCArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
-        FClisthtml += '<li data-lyrics="' + FCdataLyrics + '">' + FCArray[song] + '</li>';
+    for (let song in eventArray) {
+        let eventdataLyrics = eventArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
+        eventlisthtml += '<li data-lyrics="' + eventdataLyrics + '">' + eventArray[song] + '</li>';
     }
 
     activelist.innerHTML = activelisthtml;
     TNLlist.innerHTML = TNLlisthtml;
-    FClist.innerHTML = FClisthtml;
+    eventlist.innerHTML = eventlisthtml;
 
     document.querySelectorAll('.active-list li').forEach(function (song) {
         song.addEventListener('click', () => { loadSong(song) });
@@ -140,6 +139,8 @@ function updateSongList(input) {
             'Sinking Deep - Hillsong Young and Free',
             'Build My Life - Housefires',
             'Still - Hillsong Worship',
+            'Never Lost - Elevation Worship',
+            'What A Beautiful Name - Hillsong Worship',
         ].sort();
     var songlisthtml = "";
 
