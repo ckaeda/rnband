@@ -28,6 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
+            'All Of A Sudden - Elevation Worship',
+            'Turn It Up - Planetshakers',
+            'Open Heaven / River Wild - Hillsong Worship',
             'Faithful Then / Faithful Now - Elevation Worship',
         ]
     var activelist = document.getElementById("activeList");
