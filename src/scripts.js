@@ -17,14 +17,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Faithful Then / Faithful Now - Elevation Worship',
-            'Never Lost - Elevation Worship',
-            'What A Beautiful Name - Hillsong Worship',
+            
         ]
     var TNLArray =
         [
-            'Glorious Day - Passion',
-            'Goodness of God - Bethel Music'
+            
         ]
     var eventArray =
         [
