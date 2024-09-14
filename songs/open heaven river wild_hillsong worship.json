@@ -2,7 +2,8 @@
     "title": "Open Heaven / River Wild",
     "artist": "Hillsong Worship",
     "defaults": {
-        "Orig": "C"
+        "Orig": "C",
+        "JJ": "B"
     },
     "bpm": 0,
     "flow": [

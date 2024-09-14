@@ -27,8 +27,10 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'All Of A Sudden - Elevation Worship',
             'Turn It Up - Planetshakers',
+            'Holding Nothing Back - Jesus Culture',
             'Open Heaven / River Wild - Hillsong Worship',
             'Faithful Then / Faithful Now - Elevation Worship',
+            'Praise - Elevation Worship',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -141,6 +143,7 @@ function updateSongList(input) {
             'Still - Hillsong Worship',
             'Never Lost - Elevation Worship',
             'What A Beautiful Name - Hillsong Worship',
+            'All Of A Sudden - Elevation Worship',
         ].sort();
     var songlisthtml = "";
 
