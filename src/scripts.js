@@ -17,20 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            
+            'I Know You Can - Planetshakers',
+            'Battle Belongs - Phil Wickham',
+            'Champion - Bethel Music'
         ]
     var TNLArray =
         [
-            
+            'Spirit Of The Living God - Vertical Worship',
+            'Even Greater - Planetshakers'
         ]
     var eventArray =
         [
-            'All Of A Sudden - Elevation Worship',
-            'Turn It Up - Planetshakers',
-            'Holding Nothing Back - Jesus Culture',
-            'Open Heaven / River Wild - Hillsong Worship',
-            'Faithful Then / Faithful Now - Elevation Worship',
-            'Praise - Elevation Worship',
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -144,6 +142,8 @@ function updateSongList(input) {
             'Never Lost - Elevation Worship',
             'What A Beautiful Name - Hillsong Worship',
             'All Of A Sudden - Elevation Worship',
+            'Spirit Of The Living God - Vertical Worship',
+            'Even Greater - Planetshakers',
         ].sort();
     var songlisthtml = "";
 
