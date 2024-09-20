@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'I Know You Can - Planetshakers',
             'Battle Belongs - Phil Wickham',
-            'Champion - Bethel Music'
+            'Champion - Bethel Music',
+            'Araw Araw - MJ Flores'
         ]
     var TNLArray =
         [
@@ -144,6 +145,7 @@ function updateSongList(input) {
             'All Of A Sudden - Elevation Worship',
             'Spirit Of The Living God - Vertical Worship',
             'Even Greater - Planetshakers',
+            'Araw Araw - MJ Flores',
         ].sort();
     var songlisthtml = "";
 
