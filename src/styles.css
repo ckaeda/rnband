@@ -174,8 +174,13 @@ body {
     position: fixed;
     top: 20px;
     right: 20px;
+    margin-top: 25px;
+    padding: 5px;
     z-index: 1;
     transition: opacity 0.5s ease, transform 0.5s ease;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgba(230, 230, 230, 0.3);
 }
 
 .fade-out-up {
@@ -227,7 +232,6 @@ body {
 
 .transpose-container {
     position: relative;
-    top: 25px;
     right: 0px;
     border: 1px solid black;
     border-radius: 10px;
@@ -236,7 +240,6 @@ body {
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    /* Center content horizontally */
 }
 
 .transpose-text {
@@ -276,7 +279,7 @@ body {
 
 .presets-container {
     position: relative;
-    top: 30px;
+    top: 5px;
     border: 1px solid black;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -307,9 +310,7 @@ body {
 
 .flow-container {
     position: relative;
-    top: 15px;
     border-radius: 10px;
-    margin-bottom: 5px;
 }
 
 .flow-title {
@@ -318,8 +319,7 @@ body {
     align-items: center;
     font-weight: bold;
     line-height: 2vh;
-    padding-top: 10px;
-    /* padding: 5px; */
+    /* padding-top: 10px; */
 }
 
 #flowList {
