@@ -18,14 +18,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'I Know You Can - Planetshakers',
-            'Battle Belongs - Phil Wickham',
-            'Champion - Bethel Music',
-            'Araw Araw - MJ Flores'
+            'Araw Araw - MJ Flores',
+            'I Speak Jesus - Charity Gayle'
         ]
     var TNLArray =
         [
-            'Spirit Of The Living God - Vertical Worship',
-            'Even Greater - Planetshakers'
+            'Make Room - Community Music'
         ]
     var eventArray =
         [
@@ -146,6 +144,7 @@ function updateSongList(input) {
             'Spirit Of The Living God - Vertical Worship',
             'Even Greater - Planetshakers',
             'Araw Araw - MJ Flores',
+            'Make Room - Community Music',
         ].sort();
     var songlisthtml = "";
 

@@ -2,7 +2,8 @@
     "title": "Araw Araw",
     "artist": "MJ Flores",
     "defaults": {
-        "Orig": "D"
+        "Orig": "D",
+        "Julia": "C"
     },
     "bpm": 0,
     "flow": [
