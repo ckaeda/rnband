@@ -17,13 +17,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'I Know You Can - Planetshakers',
             'Araw Araw - MJ Flores',
-            'I Speak Jesus - Charity Gayle'
+            'Tribes - Victory Worship',
+            'All I Need Is You - Hillsong United'
         ]
     var TNLArray =
         [
-            'Make Room - Community Music'
+            'Oceans - Hillsong United',
+            'I Lift My Hands - Chris Tomlin',
+            'Firm Foundation - Maverick City Music',
+            'I Need You More - Kim Walker-Smith',
         ]
     var eventArray =
         [
@@ -145,6 +148,9 @@ function updateSongList(input) {
             'Even Greater - Planetshakers',
             'Araw Araw - MJ Flores',
             'Make Room - Community Music',
+            'All I Need Is You - Hillsong United',
+            'I Lift My Hands - Chris Tomlin',
+            'I Need You More - Kim Walker-Smith',
         ].sort();
     var songlisthtml = "";
 
