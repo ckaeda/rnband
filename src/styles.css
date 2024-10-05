@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    position: relative; /* Set relative positioning for absolute children */
 }
 
 .chord {
@@ -11,6 +12,7 @@ body {
 }
 
 .sidebar {
+    position: absolute;
     left: 0;
     margin: 0;
     width: 250px;
@@ -21,10 +23,22 @@ body {
     overflow: auto;
     position: fixed;
     z-index: 1;
-    -webkit-transition: left 0.3s ease-in-out;
-    transition: left 0.3s ease-in-out;
-    -ms-overflow-style: none;
+    -webkit-transition: transform 0.3s ease-in-out; /* Use transform for smooth transition */
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-100%); /* Start off-screen */
     scrollbar-width: none;
+}
+
+.sidebar.show {
+    transform: translateX(0); /* Slide into view when shown */
+}
+
+.sidebar.show + .openbtn {
+    left: 290px; /* Keep this position when the sidebar is shown */
+}
+
+.sidebar:not(.show) + .openbtn {
+    left: 0px; /* Move the button closer when sidebar is hidden */
 }
 
 .sidebar::-webkit-scrollbar {
@@ -79,7 +93,7 @@ body {
 .openbtn {
     position: sticky;
     top: 0;
-    margin-left: 290px;
+    left: 290px;
     font-size: 20px;
     cursor: pointer;
     background-color: #333;
@@ -88,16 +102,17 @@ body {
     border: none;
     height: 6vh;
     max-height: 6vh;
-    -webkit-transition: margin-left 0.3s ease-in-out;
-    transition: margin-left 0.3s ease-in-out;
+    -webkit-transition: left 0.3s ease-in-out;
+    transition: left 0.3s ease-in-out;
     z-index: 3;
 }
 
 .lyrics-container {
     position: relative;
     padding: 20px;
-    flex: 1;
+    /* flex: 1; */
     min-width: max-content;
+    max-width: 100vw;
     overflow-x: auto;
     overflow-y: auto;
     white-space: nowrap;
@@ -172,9 +187,9 @@ body {
 
 .settings-container {
     position: fixed;
-    top: 20px;
+    top: 47px;
     right: 20px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     padding: 5px;
     z-index: 1;
     transition: opacity 0.5s ease, transform 0.5s ease;
@@ -209,11 +224,11 @@ body {
     padding: 5px;
     cursor: pointer;
     width: 32px;
-    height: 32px;
+    height: 32px;   
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    z-index: 3;
 }
 
 .toggle-settings-button:hover {

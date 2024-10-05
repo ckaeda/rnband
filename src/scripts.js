@@ -263,16 +263,8 @@ function convertToRomanNumeral() {
 
 
 function toggleNav() {
-    const button = document.getElementById("openbtn");
-
-    if (button.style.marginLeft == "0px") {
-        document.getElementById("sidebar").style.left = "0px";
-        document.getElementById("openbtn").style.marginLeft = "290px";
-    } else {
-        document.getElementById("sidebar").style.left = "-290px";
-        document.getElementById("openbtn").style.marginLeft = "0px";
-        document.getElementById("main").style.marginLeft = "0px";
-    }
+    const sidebar = document.getElementById('sidebar');
+    sidebar.classList.toggle('show');
 }
 
 function displaySong(song) {
