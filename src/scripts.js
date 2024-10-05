@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'Araw Araw - MJ Flores',
             'Tribes - Victory Worship',
-            'All I Need Is You - Hillsong United'
+            'I Need You More - Kim Walker-Smith',
         ]
     var TNLArray =
         [
