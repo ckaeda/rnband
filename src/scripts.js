@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Araw Araw - MJ Flores',
-            'Tribes - Victory Worship',
-            'I Need You More - Kim Walker-Smith',
+            'Eyes On You - The Belonging Co',
+            'You Are Life - Hillsong Worship',
+            'Here Again - Elevation Worship'
         ]
     var TNLArray =
         [
@@ -151,6 +151,8 @@ function updateSongList(input) {
             'All I Need Is You - Hillsong United',
             'I Lift My Hands - Chris Tomlin',
             'I Need You More - Kim Walker-Smith',
+            'You Are Life - Hillsong Worship',
+            'Here Again - Elevation Worship',
         ].sort();
     var songlisthtml = "";
 
@@ -231,6 +233,7 @@ function loadSong(li) {
             }
 
             window.scrollTo(0, 0);
+            toggleNav();
         })
         .catch(error => console.error('Error fetching song or txt file:', error));
 }
