@@ -2,7 +2,8 @@
     "title": "Made For Worship",
     "artist": "Planetshakers",
     "defaults": {
-        "Orig": "G"
+        "Orig": "G",
+        "Julia": "C"
     },
     "bpm": 0,
     "flow": [

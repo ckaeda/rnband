@@ -19,7 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'We Raise - Planetshakers',
             'You Are Life - Hillsong Worship',
-            'Your Presence Is Heaven - Israel & New Breed'
+            'Your Presence Is Heaven - Israel & New Breed',
+            'Nothing Is Impossible - Planetshakers'
         ]
     var TNLArray =
         [

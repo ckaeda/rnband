@@ -2,7 +2,8 @@
     "title": "You Are Life",
     "artist": "Hillsong Worship",
     "defaults": {
-        "Orig": "G"
+        "Orig": "G",
+        "JJ/Julia": "A"
     },
     "bpm": 0,
     "flow": [
