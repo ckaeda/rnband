@@ -17,20 +17,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Eyes On You - The Belonging Co',
+            'We Raise - Planetshakers',
             'You Are Life - Hillsong Worship',
-            'Here Again - Elevation Worship'
+            'Your Presence Is Heaven - Israel & New Breed'
         ]
     var TNLArray =
         [
-            'Oceans - Hillsong United',
-            'I Lift My Hands - Chris Tomlin',
-            'Firm Foundation - Maverick City Music',
-            'I Need You More - Kim Walker-Smith',
+            
         ]
     var eventArray =
         [
-            
+            'Turn It Up - Planetshakers',
+            'Araw Araw - MJ Flores',
+            'Waymaker - Leeland',
+            'Here I Am To Worship - Hillsong Worship',
+            'Made For Worship - Planetshakers',
+            'Praise - Elevation Worship',
+            'I Thank God - Maverick City Music',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -153,6 +156,10 @@ function updateSongList(input) {
             'I Need You More - Kim Walker-Smith',
             'You Are Life - Hillsong Worship',
             'Here Again - Elevation Worship',
+            'Your Presence Is Heaven - Israel & New Breed',
+            'Waymaker - Leeland',
+            'Here I Am To Worship - Hillsong Worship',
+            'Made For Worship - Planetshakers',
         ].sort();
     var songlisthtml = "";
 
