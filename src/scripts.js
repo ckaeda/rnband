@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'We Raise - Planetshakers',
-            'You Are Life - Hillsong Worship',
-            'Your Presence Is Heaven - Israel & New Breed',
-            'Nothing Is Impossible - Planetshakers'
+            'Salvation Is Here - Hillsong United',
+            'Take It All - Hillsong United',
+            'Pursue / All I Need Is You - Hillsong Worship / Hillsong Young and Free'
         ]
     var TNLArray =
         [
@@ -28,13 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            'Turn It Up - Planetshakers',
-            'Araw Araw - MJ Flores',
-            'Waymaker - Leeland',
-            'Here I Am To Worship - Hillsong Worship',
-            'Made For Worship - Planetshakers',
-            'Praise - Elevation Worship',
-            'I Thank God - Maverick City Music',
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
