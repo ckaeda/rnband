@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Salvation Is Here - Hillsong United',
-            'Take It All - Hillsong United',
-            'Pursue / All I Need Is You - Hillsong Worship / Hillsong Young and Free'
+            'Jehovah - Elevation Worship',
+            'Tribes - Victory Worship',
+            'Been So Good - Elevation Worship',
+            'This Is The Day - Lakewood Music'
         ]
     var TNLArray =
         [
@@ -27,7 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            
+            'Araw Araw - MJ Flores',
+            'I Thank God - Maverick City Music',
+            'Lilim - Victory Worship'
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
