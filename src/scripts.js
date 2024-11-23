@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Jehovah - Elevation Worship',
-            'Tribes - Victory Worship',
-            'Been So Good - Elevation Worship',
-            'This Is The Day - Lakewood Music'
+            'Sing It Again - Planetshakers',
+            'Pangako - New Life Music',
+            'Wala Kang Katulad / Tunay Na Diyos - Musikatha / Rommel Guevara'
         ]
     var TNLArray =
         [
@@ -28,9 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            'Araw Araw - MJ Flores',
-            'I Thank God - Maverick City Music',
-            'Lilim - Victory Worship'
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -264,6 +261,7 @@ function convertToRomanNumeral() {
                 .replace(/([ivx]+)m/g, '$1') // Remove 'm' after lowercase Roman numerals except when followed by digits
                 .replace('#vi', 'vi') // Replace '#vi' with 'vi'
                 .replace('#iii', 'iii') // Replace '#vi' with 'vi'
+                .replace('#VI', 'bVII') // Replace '#VI' with 'bVII'
             elem.textContent = numeralString;
         });
 }
