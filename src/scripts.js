@@ -23,11 +23,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            
+
         ]
     var eventArray =
         [
-            
+
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -462,4 +462,38 @@ document.getElementById('toggleSettingsButton').addEventListener('click', functi
     setTimeout(function () {
         settingsIcon.classList.remove('rotate');
     }, 500); // Match this with the animation duration
+});
+
+document.getElementById('lyricsContainer').addEventListener('contextmenu', (event) => {
+    event.preventDefault();
+
+    var content = "";
+    [...document.getElementsByClassName('paragraph')]
+        .filter(paragraph => paragraph.innerHTML != '')
+        .filter(paragraph => paragraph.getElementsByClassName('label').length != 0)
+        .filter(paragraph => ['Intro', 'Verse', 'Chorus', 'Bridge', 'Turnaround', 'Outro', 'Hook', 'Ending', 'Coda'].some(keyword => paragraph.getElementsByClassName('label')[0].textContent.includes(keyword)))
+        .filter(paragraph => paragraph.getElementsByClassName('row').length >= 2)
+        .forEach(function (paragraph) {
+            [...paragraph.getElementsByClassName('row')]
+                .forEach(function (row) {
+                    const lyrics = [...row.getElementsByClassName('lyrics')];
+
+                    const allEmpty = lyrics.every(lyric => lyric.textContent.trim() === "");
+
+                    if (allEmpty) return;
+
+                    lyrics.forEach(function (lyric) {
+                        content += lyric.textContent;
+                    });
+                    content += '\n';
+                });
+            content += '\n';
+        });
+    console.log(content);
+
+
+    navigator.clipboard.writeText(content)
+        .catch(err => {
+            alert('Failed to copy lyrics: ', err);
+        });
 });
