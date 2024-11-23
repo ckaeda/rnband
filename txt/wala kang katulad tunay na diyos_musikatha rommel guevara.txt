@@ -18,11 +18,11 @@ Ang kabutihan mo
  
  
 [Chorus]
-            D       Em F#m
+            D
 Wala Kang katulad
           G         A
 Wala nang hihigit Sayo
-            D       Em F#m
+            D
 Wala Kang katulad
           G          A
 Wala nang papantay Sayo
@@ -58,11 +58,11 @@ Ang kabutihan mo
 
 
 [Chorus]
-            D       Em F#m
+            D
 Wala Kang katulad
           G         A
 Wala nang hihigit Sayo
-            D       Em F#m
+            D
 Wala Kang katulad
           G          A
 Wala nang papantay Sayo
@@ -107,11 +107,11 @@ Isisigaw sa buong mundo
 
 
 [Chorus]
-            D       Em F#m
+            D
 Wala Kang katulad
           G         A
 Wala nang hihigit Sayo
-            D       Em F#m
+            D
 Wala Kang katulad
           G          A
 Wala nang papantay Sayo
