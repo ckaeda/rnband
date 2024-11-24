@@ -154,6 +154,8 @@ function updateSongList(input) {
             'Waymaker - Leeland',
             'Here I Am To Worship - Hillsong Worship',
             'Made For Worship - Planetshakers',
+            'This Is The Day - Lakewood Music',
+            'Wala Kang Katulad / Tunay Na Diyos - Musikatha / Rommel Guevara',
         ].sort();
     var songlisthtml = "";
 
