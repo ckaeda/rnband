@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Sing It Again - Planetshakers',
+            'Angels - Phil Wickham',
             'Pangako - New Life Music',
-            'Wala Kang Katulad / Tunay Na Diyos - Musikatha / Rommel Guevara'
+            'Forever YHWH - Elevation Worship'
         ]
     var TNLArray =
         [
@@ -156,6 +156,8 @@ function updateSongList(input) {
             'Made For Worship - Planetshakers',
             'This Is The Day - Lakewood Music',
             'Wala Kang Katulad / Tunay Na Diyos - Musikatha / Rommel Guevara',
+            'Angels - Phil Wickham',
+            'Forever YHWH - Elevation Worship',
         ].sort();
     var songlisthtml = "";
 
