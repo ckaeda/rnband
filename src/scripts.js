@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-
+            'I Surrender - Hillsong Worship'
         ]
     var eventArray =
         [
