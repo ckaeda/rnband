@@ -18,12 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'Angels - Phil Wickham',
-            'Pangako - New Life Music',
-            'Forever YHWH - Elevation Worship'
+            'In Jesus\' Name - Darlene Zschech',
+            
+            'I Surrender - Hillsong Worship'
         ]
     var TNLArray =
         [
-            'I Surrender - Hillsong Worship'
+
         ]
     var eventArray =
         [
@@ -158,6 +159,7 @@ function updateSongList(input) {
             'Wala Kang Katulad / Tunay Na Diyos - Musikatha / Rommel Guevara',
             'Angels - Phil Wickham',
             'Forever YHWH - Elevation Worship',
+            'I Surrender - Hillsong Worship',
         ].sort();
     var songlisthtml = "";
 
