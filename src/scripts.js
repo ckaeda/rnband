@@ -17,10 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Angels - Phil Wickham',
-            'In Jesus\' Name - Darlene Zschech',
             
-            'I Surrender - Hillsong Worship'
         ]
     var TNLArray =
         [
@@ -28,7 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-
+            'Araw Araw - MJ Flores',
+            'Banal Na Apoy - MJ Flores',
+            'I Thank God - Maverick City Music',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
