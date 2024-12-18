@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             'Araw Araw - MJ Flores',
             'Banal Na Apoy - MJ Flores',
             'Joy To The World (Joyful Joyful) - Phil Wickham',
+            'I Thank God - Maverick City Music',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
