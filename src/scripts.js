@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'Araw Araw - MJ Flores',
             'Banal Na Apoy - MJ Flores',
-            'I Thank God - Maverick City Music',
+            'Joy To The World (Joyful Joyful) - Phil Wickham',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -159,6 +159,7 @@ function updateSongList(input) {
             'Angels - Phil Wickham',
             'Forever YHWH - Elevation Worship',
             'I Surrender - Hillsong Worship',
+            'Joy To The World (Joyful Joyful) - Phil Wickham',
         ].sort();
     var songlisthtml = "";
 
