@@ -3,9 +3,10 @@
     "artist": "Hillsong United",
     "defaults": {
         "Orig": "E",
-        "Cara": "D"
+        "Cara": "D",
+        "Annaree": "D"
     },
-    "bpm": 148,
+    "bpm": 144,
     "flow": [
 
     ]

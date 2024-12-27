@@ -25,10 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            'Araw Araw - MJ Flores',
-            'Banal Na Apoy - MJ Flores',
-            'Joy To The World (Joyful Joyful) - Phil Wickham',
+            'No One - Elevation Worship',
             'I Thank God - Maverick City Music',
+            'Goodbye Yesterday - Elevation Rhythm',
+            'Hosanna - Hillsong United',
+            'Make Room - Community Music',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -161,6 +162,7 @@ function updateSongList(input) {
             'Forever YHWH - Elevation Worship',
             'I Surrender - Hillsong Worship',
             'Joy To The World (Joyful Joyful) - Phil Wickham',
+            'Hosanna - Hillsong United',
         ].sort();
     var songlisthtml = "";
 

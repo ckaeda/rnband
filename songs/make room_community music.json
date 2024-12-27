@@ -2,9 +2,10 @@
     "title": "Make Room",
     "artist": "Community Music",
     "defaults": {
-        "Orig": "G"
+        "Orig": "G",
+        "Cara": "F"
     },
-    "bpm": 0,
+    "bpm": 127,
     "flow": [
 
     ]

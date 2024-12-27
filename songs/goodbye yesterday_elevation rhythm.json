@@ -3,9 +3,10 @@
     "artist": "ELEVATION RHYTHM & Gracie Binion",
     "defaults": {
         "Orig": "G",
-        "Mig/Cara": "F"
+        "Mig/Cara": "F",
+        "JJ/Julia": "F#"
     },
-    "bpm": 0,
+    "bpm": 148,
     "flow": [
 
     ]
