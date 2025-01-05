@@ -17,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            
+            'I Thank God - Maverick City Music',
+            'Pangako - New Life Music',
+            'I Need You More - Kim Walker-Smith',
         ]
     var TNLArray =
         [
@@ -25,11 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            'No One - Elevation Worship',
-            'I Thank God - Maverick City Music',
-            'Goodbye Yesterday - Elevation Rhythm',
-            'Hosanna - Hillsong United',
-            'Make Room - Community Music',
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
