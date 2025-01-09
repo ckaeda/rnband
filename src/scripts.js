@@ -17,9 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'I Thank God - Maverick City Music',
-            'Pangako - New Life Music',
-            'I Need You More - Kim Walker-Smith',
+            'This Is Amazing Grace - Phil Wickham',
+            'Echo - Tauren Wells',
+            'Never Lost - Elevation Worship',
+            'Shekinah Glory - Cory Asbury',
         ]
     var TNLArray =
         [
@@ -161,6 +162,8 @@ function updateSongList(input) {
             'I Surrender - Hillsong Worship',
             'Joy To The World (Joyful Joyful) - Phil Wickham',
             'Hosanna - Hillsong United',
+            'This Is Amazing Grace - Phil Wickham',
+            'Shekinah Glory - Cory Asbury',
         ].sort();
     var songlisthtml = "";
 
