@@ -3,7 +3,8 @@
     "artist": "Elevation Worship",
     "defaults": {
         "Orig": "A",
-        "JJ": "A"
+        "JJ": "A",
+        "Berna": "A#"
     },
     "bpm": 0,
     "flow": [

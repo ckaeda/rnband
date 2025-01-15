@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'This Is Amazing Grace - Phil Wickham',
-            'Echo - Tauren Wells',
-            'Never Lost - Elevation Worship',
-            'Shekinah Glory - Cory Asbury',
+            'Limitless - Planetshakers',
+            'Won\'t Stop Now - Elevation Worship',
+            'Trust In God - Elevation Worship',
         ]
     var TNLArray =
         [
@@ -164,6 +163,8 @@ function updateSongList(input) {
             'Hosanna - Hillsong United',
             'This Is Amazing Grace - Phil Wickham',
             'Shekinah Glory - Cory Asbury',
+            'Limitless - Planetshakers',
+            'Trust In God - Elevation Worship',
         ].sort();
     var songlisthtml = "";
 
