@@ -2,7 +2,8 @@
     "title": "I Give You My Heart",
     "artist": "Hillsong Worship",
     "defaults": {
-        "Orig": "G"
+        "Orig": "G",
+        "Julia": "G"
     },
     "flow": []
 }

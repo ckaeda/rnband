@@ -17,17 +17,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Limitless - Planetshakers',
-            'Won\'t Stop Now - Elevation Worship',
+            'You Are Good - Israel & New Breed',
+            'Holding Nothing Back - Jesus Culture',
             'Trust In God - Elevation Worship',
         ]
     var TNLArray =
         [
-
+            'I Give You My Heart - Hillsong Worship',
+            'There\'s Nothing That Our God Can\'t Do - Passion',
         ]
     var eventArray =
         [
-            
+            'Trust In God - Elevation Worship',
+            'I Thank God - Maverick City Music',
+            'Glorious Day - Passion',
+            'Go - Hillsong United',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -165,6 +169,9 @@ function updateSongList(input) {
             'Shekinah Glory - Cory Asbury',
             'Limitless - Planetshakers',
             'Trust In God - Elevation Worship',
+            'Go - Hillsong United',
+            'Glorious Day - Passion',
+            'I Give You My Heart - Hillsong Worship',
         ].sort();
     var songlisthtml = "";
 
