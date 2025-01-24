@@ -23,14 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            'I Give You My Heart - Hillsong Worship',
-            'There\'s Nothing That Our God Can\'t Do - Passion',
+
         ]
     var eventArray =
         [
             'Trust In God - Elevation Worship',
-            'I Thank God - Maverick City Music',
-            'Glorious Day - Passion',
+            'I Thank God / Glorious Day - Maverick City Music / Passion',
             'Go - Hillsong United',
         ]
     var activelist = document.getElementById("activeList");
@@ -172,6 +170,7 @@ function updateSongList(input) {
             'Go - Hillsong United',
             'Glorious Day - Passion',
             'I Give You My Heart - Hillsong Worship',
+            'I Thank God / Glorious Day - Maverick City Music / Passion',
         ].sort();
     var songlisthtml = "";
 
@@ -251,6 +250,26 @@ function loadSong(li) {
                 }
             }
 
+            // Handle the audio element
+            const audioContainer = document.getElementById('lyricsContainer');
+            const existingAudio = document.getElementById('audioPlayer');
+            
+            // Remove any existing audio element
+            if (existingAudio) {
+                existingAudio.remove();
+            }
+
+            // Add audio element if song.audio exists
+            if (song.audio) {
+                const audio = document.createElement('audio');
+                audio.id = 'audioPlayer';
+                audio.controls = true;
+                audio.src = `audios/${song.audio}`;
+                
+                const artistElement = document.getElementById('artist');
+                artistElement.insertAdjacentElement('afterend', audio);
+            }
+
             window.scrollTo(0, 0);
             toggleNav();
         })
@@ -310,6 +329,7 @@ function displaySong(song) {
         'Bridge 1',
         'Bridge 2',
         'Bridge 3',
+        'Bridge 4',
         'Outro',
         'Instrumental',
         'Instrumental 2',

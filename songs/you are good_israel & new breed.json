@@ -6,6 +6,21 @@
     },
     "bpm": 0,
     "flow": [
-
-    ]
+        "Intro",
+        "Verse",
+        "Pre-Chorus",
+        "Chorus",
+        "Instrumental",
+        "Verse x2",
+        "Pre-Chorus",
+        "Chorus",
+        "Instrumental",
+        "Bridge x4",
+        "Instrumental",
+        "Verse x2",
+        "Pre-Chorus",
+        "Chorus x2",
+        "Ending"
+    ],
+    "audio": "you are good.mp3"
 }

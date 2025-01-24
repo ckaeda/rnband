@@ -24,10 +24,10 @@ We worship You Hallelujah Hallelujah
 We worship You for who You are
    E       B   D          A
 We worship You Hallelujah Hallelujah
-   E/G#    Bm7             C    D
+   E/G#    Bm7             C
 We worship You for who You are
-        Em7
-You are good!
+               D
+For who You are
  
 [Instrumental]
 Em7   F#m7/E
@@ -59,6 +59,12 @@ We worship You Hallelujah Hallelujah
 We worship You for who You are
  
 You are good!
+
+[Bridge]
+        Em G A
+You are good all the time
+       Em D A              C D
+All the time You are good
 
 [Outro]
             D                C/E
