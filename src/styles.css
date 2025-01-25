@@ -1,10 +1,15 @@
+:root {
+    color-scheme: light dark;
+}
+
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f4f4f4;
+    background-color: light-dark(#f4f4f4, #0c0c0c);
     margin: 0;
     padding: 0;
     display: flex;
-    position: relative; /* Set relative positioning for absolute children */
+    position: relative;
+    /* Set relative positioning for absolute children */
 }
 
 .chord {
@@ -23,22 +28,22 @@ body {
     overflow: auto;
     position: fixed;
     z-index: 1;
-    -webkit-transition: transform 0.3s ease-in-out; /* Use transform for smooth transition */
+    -webkit-transition: transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
-    transform: translateX(-100%); /* Start off-screen */
+    transform: translateX(-100%);
     scrollbar-width: none;
 }
 
 .sidebar.show {
-    transform: translateX(0); /* Slide into view when shown */
+    transform: translateX(0);
 }
 
-.sidebar.show + .openbtn {
-    left: 290px; /* Keep this position when the sidebar is shown */
+.sidebar.show+.openbtn {
+    left: 290px;
 }
 
-.sidebar:not(.show) + .openbtn {
-    left: 0px; /* Move the button closer when sidebar is hidden */
+.sidebar:not(.show)+.openbtn {
+    left: 0px;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -110,7 +115,6 @@ body {
 .lyrics-container {
     position: relative;
     padding: 20px;
-    /* flex: 1; */
     min-width: max-content;
     max-width: 100vw;
     overflow-x: auto;
@@ -123,28 +127,19 @@ body {
     margin-top: 0;
     padding-top: 0;
     font-size: 24px;
-    color: #333;
-    /* Dark text color */
+    color: light-dark(#333, #ddd);
 }
 
 .lyrics-container h2 {
     margin-top: 10px;
     /* Add space between h1 and h2 */
     font-size: 18px;
-    color: #555;
-    /* Medium text color */
-}
-
-.lyrics-container p {
-    width: fit-content;
-    margin: 10px 0;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
+    color: light-dark(#555, #bbb);
 }
 
 .label {
     font-family: "Roboto", sans-serif;
+    color: light-dark(#444, #ccc);
 }
 
 .row {
@@ -157,10 +152,11 @@ body {
     padding: 0px;
     width: max-content;
     white-space: pre-wrap;
+    color: light-dark(#444, #ccc);
 }
 
 .chord {
-    color:#0067d4;
+    color: #0067d4;
 }
 
 @keyframes fadeOutUp {
@@ -168,6 +164,7 @@ body {
         opacity: 1;
         transform: translateY(0);
     }
+
     100% {
         opacity: 0;
         transform: translateY(-600px);
@@ -179,6 +176,7 @@ body {
         opacity: 0;
         transform: translateY(-600px);
     }
+
     100% {
         opacity: 1;
         transform: translateY(0);
@@ -189,13 +187,12 @@ body {
     position: fixed;
     top: 47px;
     right: 20px;
-    /* margin-top: 25px; */
     padding: 5px;
     z-index: 1;
     transition: opacity 0.5s ease, transform 0.5s ease;
-    border: 1px solid black;
+    border: 1px solid light-dark(black, #ccc);
     border-radius: 8px;
-    background-color: rgba(230, 230, 230, 0.3);
+    background-color: light-dark(rgba(230, 230, 230, 0.3), rgba(25, 25, 25, 0.3));
 }
 
 .fade-out-up {
@@ -210,6 +207,7 @@ body {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -219,20 +217,21 @@ body {
     position: fixed;
     top: 10px;
     right: 20px;
-    border: 1px solid black;
+    border: 1px solid light-dark(black, #eee);
     border-radius: 50%;
     padding: 5px;
     cursor: pointer;
     width: 32px;
-    height: 32px;   
+    height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 3;
+    color: light-dark(black, #eee);
 }
 
 .toggle-settings-button:hover {
-    background-color: #ddd;
+    background-color: light-dark(#ddd, #333);
 }
 
 .settings-icon {
@@ -248,23 +247,24 @@ body {
 .transpose-container {
     position: relative;
     right: 0px;
-    border: 1px solid black;
+    border: 1px solid light-dark(black, #ccc);
     border-radius: 10px;
     padding: 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
+    color: light-dark(black, #ccc);
 }
 
 .transpose-text {
-    color: #000;
+    color: light-dark(black, #ccc);
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .transpose-key {
-    color: #000;
+    color: light-dark(black, #ccc);
     font-weight: bold;
     margin-top: 5px;
 }
@@ -278,7 +278,7 @@ body {
 .minus-sign {
     width: 20px;
     height: 20px;
-    border: 1px solid #000;
+    border: 1px solid light-dark(black, #ccc);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,13 +289,13 @@ body {
 
 .plus-sign:hover,
 .minus-sign:hover {
-    background-color: #ddd;
+    background-color: light-dark(#ddd, #333);
 }
 
 .presets-container {
     position: relative;
     top: 5px;
-    border: 1px solid black;
+    border: 1px solid light-dark(black, #ccc);
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -310,7 +310,7 @@ body {
 }
 
 .presets:not(:first-child) {
-    border-top: 1px solid black;
+    border-top: 1px solid light-dark(black, #ccc);
 }
 
 .presets:last-child {
@@ -320,7 +320,7 @@ body {
 
 .presets:not(:first-child):hover {
     cursor: pointer;
-    background: #ddd;
+    background: light-dark(#ddd, #222);
 }
 
 .flow-container {
@@ -351,7 +351,7 @@ body {
 .hide-chords-button {
     position: relative;
     top: 5px;
-    border: 1px solid black;
+    border: 1px solid light-dark(black, #ccc);
     border-radius: 10px;
     margin-bottom: 10px;
     display: flex;
@@ -364,5 +364,5 @@ body {
 
 .hide-chords-button:hover {
     cursor: pointer;
-    background: #ddd;
+    background: light-dark(#ddd, #222);
 }
