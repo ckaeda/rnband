@@ -21,7 +21,7 @@ body {
     left: 0;
     margin: 0;
     width: 250px;
-    background-color: rgba(17, 17, 17, 0.85);
+    background-color: light-dark(rgba(17, 17, 17, 0.85), rgba(25, 25, 25, 0.85));
     color: #fff;
     padding: 20px;
     height: 100%;
@@ -101,7 +101,7 @@ body {
     left: 290px;
     font-size: 20px;
     cursor: pointer;
-    background-color: rgba(17, 17, 17, 0.85);
+    background-color: light-dark(rgba(17, 17, 17, 0.85), rgba(25, 25, 25, 0.85));
     color: white;
     padding: 10px 18px;
     border: none;
@@ -261,17 +261,17 @@ body {
     flex-direction: column;
     align-items: center;
     z-index: 1;
-    color: light-dark(black, #ccc);
+    color: light-dark(black, white);  
 }
 
 .transpose-text {
-    color: light-dark(black, #ccc);
+    color: light-dark(black, white);
     font-weight: bold;
     margin-bottom: 5px;
 }
 
 .transpose-key {
-    color: light-dark(black, #ccc);
+    color: light-dark(black, white);
     font-weight: bold;
     margin-top: 5px;
 }
