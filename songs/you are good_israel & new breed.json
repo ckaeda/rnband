@@ -2,7 +2,8 @@
     "title": "You Are Good",
     "artist": "Israel & New Breed",
     "defaults": {
-        "Orig": "E"
+        "Orig": "E",
+        "Cara": "D"
     },
     "bpm": 0,
     "flow": [
