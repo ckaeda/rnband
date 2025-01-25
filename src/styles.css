@@ -227,7 +227,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 3;
-    color: light-dark(black, #eee);
+    background-color: transparent;
 }
 
 .toggle-settings-button:hover {
@@ -235,9 +235,16 @@ body {
 }
 
 .settings-icon {
-    width: 24px;
+    width: 24px; /* Adjust size as needed */
     height: 24px;
-    transition: transform 0.5s ease;
+    filter: grayscale(1) brightness(0); /* Default for light mode: black */
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    .settings-icon {
+        filter: grayscale(1) brightness(0.8) invert(1); /* #ccc for dark mode */
+    }
 }
 
 .rotate {
