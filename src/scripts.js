@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'You Are Good - Israel & New Breed',
-            'Holding Nothing Back - Jesus Culture',
-            'Trust In God - Elevation Worship',
+            'River - Planetshakers',
+            'I Give You My Heart - Hillsong Worship',
+            'Heart Of Worship - Matt Redman',
         ]
     var TNLArray =
         [
-
+            'More Than Able - Elevation Worship',
         ]
     var eventArray =
         [

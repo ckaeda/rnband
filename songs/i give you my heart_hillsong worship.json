@@ -3,7 +3,8 @@
     "artist": "Hillsong Worship",
     "defaults": {
         "Orig": "G",
-        "Julia": "G"
+        "Julia": "G",
+        "JJ": "G"
     },
     "flow": []
 }
