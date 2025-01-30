@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            'More Than Able - Elevation Worship',
+            'Here Again - Elevation Worship',
         ]
     var eventArray =
         [
