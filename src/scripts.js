@@ -17,19 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'River - Planetshakers',
-            'I Give You My Heart - Hillsong Worship',
-            'Heart Of Worship - Matt Redman',
+            'You Are Good - Israel & New Breed',
+            'No One - Elevation Worship',
+            'All Of A Sudden - Elevation Worship',
         ]
     var TNLArray =
         [
-            'Here Again - Elevation Worship',
+            
         ]
     var eventArray =
         [
-            'Trust In God - Elevation Worship',
-            'I Thank God / Glorious Day - Maverick City Music / Passion',
-            'Go - Hillsong United',
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -171,6 +169,7 @@ function updateSongList(input) {
             'Glorious Day - Passion',
             'I Give You My Heart - Hillsong Worship',
             'I Thank God / Glorious Day - Maverick City Music / Passion',
+            'You Are Good - Israel & New Breed',
         ].sort();
     var songlisthtml = "";
 
