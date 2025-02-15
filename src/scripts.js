@@ -17,8 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'You Are Good - Israel & New Breed',
-            'No One - Elevation Worship',
+            'My Heart Is Alive - Planetshakers',
+            'Heaven On Earth - Planetshakers',
             'All Of A Sudden - Elevation Worship',
         ]
     var TNLArray =
