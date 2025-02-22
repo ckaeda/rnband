@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'My Heart Is Alive - Planetshakers',
-            'Heaven On Earth - Planetshakers',
-            'All Of A Sudden - Elevation Worship',
+            'Let Go - Hillsong Young and Free',
+            'My Jesus - Anne Wilson',
+            'Available - Elevation Worship'
         ]
     var TNLArray =
         [
@@ -27,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            
+            'Real Love - Hillsong Young and Free',
+            'Let Go - Hillsong Young and Free',
+            'The One You Love / Till I See You - Elevation Worship / Hillsong United'
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -331,6 +333,7 @@ function displaySong(song) {
         'Bridge 4',
         'Outro',
         'Instrumental',
+        'Instrumental 1',
         'Instrumental 2',
         'Post-Chorus',
         'Post-Chorus 2',
@@ -342,6 +345,7 @@ function displaySong(song) {
         'Vamp 3',
         'Tag',
         'Tag 2',
+        'Breakdown',
         'Turnaround',
         'Hook',
         'Coda',
