@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'Real Love - Hillsong Young and Free',
             'Let Go - Hillsong Young and Free',
-            'The One You Love / Till I See You - Elevation Worship / Hillsong United'
+            'The One You Love / Till I See You - Elevation Worship / Hillsong United',
+            'Goodbye Yesterday - Elevation Rhythm',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
