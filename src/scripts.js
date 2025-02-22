@@ -171,7 +171,11 @@ function updateSongList(input) {
             'Glorious Day - Passion',
             'I Give You My Heart - Hillsong Worship',
             'I Thank God / Glorious Day - Maverick City Music / Passion',
+            'Let Go - Hillsong Young and Free',
             'You Are Good - Israel & New Breed',
+            'Available - Elevation Worship',
+            'Real Love - Hillsong Young and Free',
+            'The One You Love / Till I See You - Elevation Worship / Hillsong United'
         ].sort();
     var songlisthtml = "";
 
