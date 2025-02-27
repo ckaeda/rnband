@@ -17,13 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Let Go - Hillsong Young and Free',
-            'My Jesus - Anne Wilson',
-            'Available - Elevation Worship'
+            'Araw Araw - MJ Flores',
+            'Pangako - New Life Music',
+            'Aking Panginoon - MJ Flores'
         ]
     var TNLArray =
         [
-            
+            'My Jesus - Anne Wilson',
+            'Another In The Fire - Hillsong United',
         ]
     var eventArray =
         [
@@ -176,7 +177,8 @@ function updateSongList(input) {
             'You Are Good - Israel & New Breed',
             'Available - Elevation Worship',
             'Real Love - Hillsong Young and Free',
-            'The One You Love / Till I See You - Elevation Worship / Hillsong United'
+            'The One You Love / Till I See You - Elevation Worship / Hillsong United',
+            'Aking Panginoon - MJ Flores',
         ].sort();
     var songlisthtml = "";
 
