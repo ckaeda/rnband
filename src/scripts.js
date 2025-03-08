@@ -17,21 +17,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Araw Araw - MJ Flores',
-            'Pangako - New Life Music',
-            'Aking Panginoon - MJ Flores'
+            'I\'m Gonna Praise - Planetshakers',
+            'We Raise - Planetshakers',
+            'Spirit of the Living God - Vertical Worship',
         ]
     var TNLArray =
         [
-            'My Jesus - Anne Wilson',
-            'Another In The Fire - Hillsong United',
+            
         ]
     var eventArray =
         [
-            'Real Love - Hillsong Young and Free',
-            'Let Go - Hillsong Young and Free',
-            'The One You Love / Till I See You - Elevation Worship / Hillsong United',
-            'Goodbye Yesterday - Elevation Rhythm',
+            'Adlaw Adlaw - MJ Flores'
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -179,6 +175,8 @@ function updateSongList(input) {
             'Real Love - Hillsong Young and Free',
             'The One You Love / Till I See You - Elevation Worship / Hillsong United',
             'Aking Panginoon - MJ Flores',
+            'I\'m Gonna Praise - Planetshakers',
+            'Adlaw Adlaw - MJ Flores'
         ].sort();
     var songlisthtml = "";
 
