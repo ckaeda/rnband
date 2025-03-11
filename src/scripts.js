@@ -19,15 +19,22 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             'I\'m Gonna Praise - Planetshakers',
             'We Raise - Planetshakers',
-            'Spirit of the Living God - Vertical Worship',
+            'Name of Jesus - Citipointe Live',
         ]
     var TNLArray =
         [
-            
+            'There\'s Nothing That Our God Can\'t Do - Passion',
+            'Firm Foundation - Maverick City Music',
         ]
     var eventArray =
         [
-            'Adlaw Adlaw - MJ Flores'
+            'I\'m Gonna Praise - Planetshakers',
+            'Won\'t Stop Now - Elevation Worship',
+            'Jesus At The Center - Israel & New Breed',
+            'Araw Araw - MJ Flores',
+            'You Are Good - Israel & New Breed',
+            'Goodness of God - Bethel Music',
+            "How Great Thou Art"
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");

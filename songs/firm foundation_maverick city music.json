@@ -3,7 +3,8 @@
     "artist": "Maverick City Music ft. Chandler Moore and Cody Carnes",
     "defaults": {
         "Orig": "G",
-        "JJ": "A"
+        "JJ": "A",
+        "Cara": "C"
     },
     "bpm": 0,
     "flow": [

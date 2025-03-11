@@ -3,7 +3,9 @@
     "artist": "Planetshakers",
     "defaults": {
         "Orig": "C",
-        "Cara": "C"
+        "Cara": "C",
+        "Julia": "C",
+        "Annaree": "C"
     },
     "bpm": 0,
     "flow": [
