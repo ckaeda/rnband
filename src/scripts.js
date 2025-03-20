@@ -17,24 +17,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'I\'m Gonna Praise - Planetshakers',
-            'We Raise - Planetshakers',
-            'Name of Jesus - Citipointe Live',
+            
         ]
     var TNLArray =
         [
-            'There\'s Nothing That Our God Can\'t Do - Passion',
-            'Firm Foundation - Maverick City Music',
+            
         ]
     var eventArray =
         [
             'I\'m Gonna Praise - Planetshakers',
             'Won\'t Stop Now - Elevation Worship',
             'Jesus At The Center - Israel & New Breed',
+            'All Hail King Jesus - Bethel Music',
             'Araw Araw - MJ Flores',
             'You Are Good - Israel & New Breed',
             'Goodness of God - Bethel Music',
-            "How Great Thou Art"
+            'Thank You Jesus For The Blood - Charity Gayle',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -183,7 +181,9 @@ function updateSongList(input) {
             'The One You Love / Till I See You - Elevation Worship / Hillsong United',
             'Aking Panginoon - MJ Flores',
             'I\'m Gonna Praise - Planetshakers',
-            'Adlaw Adlaw - MJ Flores'
+            'Adlaw Adlaw - MJ Flores',
+            'All Hail King Jesus - Bethel Music',
+            'Thank You Jesus For The Blood - Charity Gayle',
         ].sort();
     var songlisthtml = "";
 
