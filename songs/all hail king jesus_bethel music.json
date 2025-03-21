@@ -2,7 +2,8 @@
     "title": "All Hail King Jesus",
     "artist": "Bethel Music",
     "defaults": {
-        "Orig": "E"
+        "Orig": "E",
+        "Julia": "D"
     },
     "bpm": 0,
     "flow": [
