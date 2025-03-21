@@ -2,7 +2,8 @@
     "title": "Jesus At The Center",
     "artist": "Israel and New Breed",
     "defaults": {
-        "Orig": "D"
+        "Orig": "D",
+        "Julia": "A"
     },
     "bpm": 0,
     "flow": [
