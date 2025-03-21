@@ -2,7 +2,8 @@
     "title": "Thank You Jesus For The Blood",
     "artist": "Charity Gayle",
     "defaults": {
-        "Orig": "Bb"
+        "Orig": "Bb",
+        "Annaree": "A"
     },
     "bpm": 0,
     "flow": [
