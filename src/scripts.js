@@ -26,13 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
     var eventArray =
         [
             'I\'m Gonna Praise - Planetshakers',
-            'Won\'t Stop Now - Elevation Worship',
-            'Jesus At The Center - Israel & New Breed',
-            'All Hail King Jesus - Bethel Music',
             'Araw Araw - MJ Flores',
-            'You Are Good - Israel & New Breed',
-            'Goodness of God - Bethel Music',
+            'Jesus At The Center - Israel & New Breed',
+            'Forever YHWH - Elevation Worship',
+            'All Hail King Jesus - Bethel Music',
             'Thank You Jesus For The Blood - Charity Gayle',
+            'I Thank God - Maverick City Music'
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
