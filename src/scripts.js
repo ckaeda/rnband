@@ -25,13 +25,16 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            'I\'m Gonna Praise - Planetshakers',
             'Araw Araw - MJ Flores',
-            'Jesus At The Center - Israel & New Breed',
-            'Forever YHWH - Elevation Worship',
+            'Adlaw Adlaw - MJ Flores',
+            'Won\'t Stop Now - Elevation Worship',
+            'Worthy - Elevation Worship',
+            'Worthy Of It All - CeCe Winans',
+            'Pangako - New Life Music',
+            'You Are Good - Israel & New Breed',
             'All Hail King Jesus - Bethel Music',
-            'Thank You Jesus For The Blood - Charity Gayle',
-            'I Thank God - Maverick City Music'
+            'What A Beautiful Name - Hillsong Worship',
+            'Our God - Chris Tomlin',
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
