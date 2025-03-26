@@ -186,6 +186,8 @@ function updateSongList(input) {
             'Adlaw Adlaw - MJ Flores',
             'All Hail King Jesus - Bethel Music',
             'Thank You Jesus For The Blood - Charity Gayle',
+            'Worthy Of It All - CeCe Winans',
+            'Our God - Chris Tomlin',
         ].sort();
     var songlisthtml = "";
 
