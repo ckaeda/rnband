@@ -17,24 +17,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            
+            'Tribes - Victory Worship',
+            'No One - Elevation Worship',
+            'Another Like You - Bethel Music',
         ]
     var TNLArray =
         [
-            
+            'My Testimony - Elevation Worship',
+            'Missionary Anthem'
         ]
     var eventArray =
         [
-            'Araw Araw - MJ Flores',
-            'Adlaw Adlaw - MJ Flores',
-            'Won\'t Stop Now - Elevation Worship',
-            'Worthy - Elevation Worship',
-            'Worthy Of It All - CeCe Winans',
-            'Pangako - New Life Music',
-            'You Are Good - Israel & New Breed',
-            'All Hail King Jesus - Bethel Music',
-            'What A Beautiful Name - Hillsong Worship',
-            'Our God - Chris Tomlin',
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
