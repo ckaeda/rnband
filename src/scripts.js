@@ -17,14 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Tribes - Victory Worship',
+            'Tribes (ver 2) - Victory Worship',
             'No One - Elevation Worship',
             'Another Like You - Bethel Music',
         ]
     var TNLArray =
         [
-            'My Testimony - Elevation Worship',
-            'Missionary Anthem'
+            
         ]
     var eventArray =
         [
@@ -354,6 +353,7 @@ function displaySong(song) {
         'Vamp 2',
         'Vamp 3',
         'Tag',
+        'Tag 1',
         'Tag 2',
         'Breakdown',
         'Turnaround',

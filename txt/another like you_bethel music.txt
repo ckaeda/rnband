@@ -44,28 +44,8 @@ G                              C
  Am               C
 Another like You another like You
  
-[Chorus]
-G                          C
-  There is no one like the Lord our God
-Em                           C
-  You've been faithful every day of my life
-G                              C
-  I could search the world and never find
- Am               C
-Another like You another like You
- 
 [Instrumental]
 G  Am  G/B  C
- 
-[Bridge 1]
-G                  Am
-Worthy is the Lamb worthy is the King
-G/B                   C
-Worthy is the One who reigns forever
-G                    Am
-Seated on the throne high above it all
-G/B                       C
-Everyone will know You're like no other
  
 [Bridge 1]
 G                  Am
@@ -86,16 +66,6 @@ Em                    D
 Seated on the throne high above it all
 G/B                       C
 Everyone will know You're like no other
- 
-[Chorus]
-G                          C
-  There is no one like the Lord our God
-Em                           C
-  You've been faithful every day of my life
-G                              C
-  I could search the world and never find
- Am               C
-Another like You another like You
  
 [Chorus]
 G                          C
@@ -131,3 +101,4 @@ Another like You another like You
  
 [Outro]
 G  C/G  C  C/G
+ 
