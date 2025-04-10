@@ -3,7 +3,8 @@
     "artist": "Community Music",
     "defaults": {
         "Orig": "G",
-        "Cara": "F"
+        "Cara": "F",
+        "Julia": "C"
     },
     "bpm": 127,
     "flow": [

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta http-equiv='cache-control' content='no-cache'>
     <meta http-equiv='expires' content='0'>
     <meta http-equiv='pragma' content='no-cache'>
@@ -27,7 +27,7 @@
         <input type="text" class="search-bar" id="searchBar" />
         <ul class="active-list" id="activeList" title="SWC"></ul>
         <ul class="active-list" id="activeListTNL" title="TNL"></ul>
-        <ul class="active-list" id="activeListEvent" title="GMC DAVAO & SOLID ROCK"></ul>
+        <ul class="active-list" id="activeListEvent" title="SWC — 04/20/25"></ul>
         <ul class="song-list" id="songList" title="SONG LIBRARY"></ul>
     </div>
 
@@ -39,9 +39,10 @@
         <div id="lyricsContainer"></div>
     </div>
 
-    <button class="toggle-settings-button" id="toggleSettingsButton">
+    <button class="toggle-settings-button" id="toggleSettingsButton" onclick="toggleSettings()">
         <img src="src\settings-icon.png" alt="Settings" class="settings-icon">
     </button>
+
     <div class="settings-container" id="settingsContainer" style="display: block;">
         <div class="transpose-container" id="transposeContainer" style="display: flex;">
             <div class="transpose-text">Transpose</div>
@@ -60,7 +61,8 @@
             <ul id="flowList"></ul>
         </div>
         <div class="flow-title" id="bpm" style="display: flex;">BPM: </div>
-        <div class="hide-chords-button" id="romanNumeralsButton" style="display: flex;" onclick="toggleNumerals()">Numeral</div>
+        <div class="hide-chords-button" id="romanNumeralsButton" style="display: flex;" onclick="toggleNumerals()">
+            Numeral</div>
         <div class="hide-chords-button" id="hideChordsButton">Hide Chords</div>
     </div>
 

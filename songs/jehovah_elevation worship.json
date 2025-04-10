@@ -4,7 +4,8 @@
     "defaults": {
         "Orig": "C",
         "JJ": "B",
-        "Mig": "B"
+        "Mig": "B",
+        "Cara": "D"
     },
     "bpm": 100,
     "flow": [

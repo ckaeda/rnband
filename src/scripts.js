@@ -17,17 +17,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Tribes (ver 2) - Victory Worship',
-            'No One - Elevation Worship',
-            'Another Like You - Bethel Music',
+            'All Hail King Jesus - Bethel Music',
+            'Jehovah - Elevation Worship',
+            'Nobody Like You - Planetshakers',
+            'Another Like You - Bethel Music'
         ]
     var TNLArray =
         [
-            
+            'This Is Living - Hillsong Young and Free',
+            'Make Room - Community Music',
         ]
     var eventArray =
         [
-            
+            'What I See - Elevation Worship',
+            'In Jesus\' Name - Darlene Zschech',
+            'Name Above All Names - Charity Gayle'
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -181,6 +185,7 @@ function updateSongList(input) {
             'Thank You Jesus For The Blood - Charity Gayle',
             'Worthy Of It All - CeCe Winans',
             'Our God - Chris Tomlin',
+            'Another Like You - Bethel Music'
         ].sort();
     var songlisthtml = "";
 
@@ -261,9 +266,8 @@ function loadSong(li) {
             }
 
             // Handle the audio element
-            const audioContainer = document.getElementById('lyricsContainer');
             const existingAudio = document.getElementById('audioPlayer');
-            
+
             // Remove any existing audio element
             if (existingAudio) {
                 existingAudio.remove();
@@ -275,7 +279,7 @@ function loadSong(li) {
                 audio.id = 'audioPlayer';
                 audio.controls = true;
                 audio.src = `audios/${song.audio}`;
-                
+
                 const artistElement = document.getElementById('artist');
                 artistElement.insertAdjacentElement('afterend', audio);
             }
@@ -407,10 +411,11 @@ function updateDefaults() {
                 currKey = ChordSheetJS.Chord.parse(key);
                 displaySong(currSong.transpose(transposeValue));
                 document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
+
+                toggleSettings();
             });
 
             presetContainer.appendChild(div);
-
         }
     } else {
         var div = document.createElement("div");
@@ -480,15 +485,7 @@ function showChords() {
     document.getElementById('bpm').style.display = 'flex';
 }
 
-document.getElementById('hideChordsButton').addEventListener('click', function () {
-    if (hideChordsSetting) {
-        showChords();
-    } else {
-        hideChords();
-    }
-});
-
-document.getElementById('toggleSettingsButton').addEventListener('click', function () {
+function toggleSettings() {
     var settingsContainer = document.getElementById('settingsContainer');
     var settingsIcon = document.querySelector('.settings-icon');
 
@@ -513,6 +510,14 @@ document.getElementById('toggleSettingsButton').addEventListener('click', functi
     setTimeout(function () {
         settingsIcon.classList.remove('rotate');
     }, 500); // Match this with the animation duration
+}
+
+document.getElementById('hideChordsButton').addEventListener('click', function () {
+    if (hideChordsSetting) {
+        showChords();
+    } else {
+        hideChords();
+    }
 });
 
 document.getElementById('lyricsContainer').addEventListener('contextmenu', (event) => {
