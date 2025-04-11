@@ -24,13 +24,12 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            'This Is Living - Hillsong Young and Free',
-            'Make Room - Community Music',
+            
         ]
     var eventArray =
         [
             'What I See - Elevation Worship',
-            'In Jesus\' Name - Darlene Zschech',
+            'In Jesus\' Name - Israel and New Breed',
             'Name Above All Names - Charity Gayle'
         ]
     var activelist = document.getElementById("activeList");
@@ -185,7 +184,9 @@ function updateSongList(input) {
             'Thank You Jesus For The Blood - Charity Gayle',
             'Worthy Of It All - CeCe Winans',
             'Our God - Chris Tomlin',
-            'Another Like You - Bethel Music'
+            'Another Like You - Bethel Music',
+            'Name Above All Names - Charity Gayle',
+            'Nobody Like You - Planetshakers',
         ].sort();
     var songlisthtml = "";
 
