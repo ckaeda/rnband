@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'All Hail King Jesus - Bethel Music',
-            'Jehovah - Elevation Worship',
-            'Nobody Like You - Planetshakers',
-            'Another Like You - Bethel Music'
+            'What I See - Elevation Worship',
+            'In Jesus\' Name - Israel and New Breed',
+            'Name Above All Names - Charity Gayle'
         ]
     var TNLArray =
         [
@@ -28,9 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            'What I See - Elevation Worship',
-            'In Jesus\' Name - Israel and New Breed',
-            'Name Above All Names - Charity Gayle'
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
