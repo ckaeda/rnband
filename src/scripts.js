@@ -3,7 +3,7 @@ var currSong = new ChordSheetJS.Song();
 var currKey = ChordSheetJS.Chord.parse('C');
 var defaults = {};
 var flow = [];
-var bpm = null;
+var bpm = 0;
 var hideChordsSetting = false;
 var numeralsSetting = false;
 
@@ -17,13 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'What I See - Elevation Worship',
-            'In Jesus\' Name - Israel and New Breed',
-            'Name Above All Names - Charity Gayle'
+            'Shout - Parachute Band',
+            'Holding Nothing Back - Jesus Culture',
+            'God of Miracles - Chris McClarney'
         ]
     var TNLArray =
         [
-            
+            'God\'s Not Dead - Newsboys',
+            'Living Hope - Phil Wickham'
         ]
     var eventArray =
         [
@@ -184,6 +185,7 @@ function updateSongList(input) {
             'Another Like You - Bethel Music',
             'Name Above All Names - Charity Gayle',
             'Nobody Like You - Planetshakers',
+            'God of Miracles - Chris McClarney'
         ].sort();
     var songlisthtml = "";
 
