@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var TNLArray =
         [
             'God\'s Not Dead - Newsboys',
-            'Living Hope - Phil Wickham'
+            'Lead Me To The Cross - Hillsong United'
         ]
     var eventArray =
         [
@@ -185,7 +185,8 @@ function updateSongList(input) {
             'Another Like You - Bethel Music',
             'Name Above All Names - Charity Gayle',
             'Nobody Like You - Planetshakers',
-            'God of Miracles - Chris McClarney'
+            'God of Miracles - Chris McClarney',
+            'Living Hope - Phil Wickham',
         ].sort();
     var songlisthtml = "";
 
