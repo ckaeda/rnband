@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'Shout - Parachute Band',
-            'Holding Nothing Back - Jesus Culture',
+            'My Jesus - Anne Wilson',
             'God of Miracles - Chris McClarney'
         ]
     var TNLArray =
