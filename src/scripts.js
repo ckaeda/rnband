@@ -17,14 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Shout - Parachute Band',
-            'My Jesus - Anne Wilson',
-            'God of Miracles - Chris McClarney'
+            'This Is The Day - Lakewood Music',
+            'This Love - Planetshakers',
+            'At The Cross - Hillsong Worship'
         ]
     var TNLArray =
         [
-            'God\'s Not Dead - Newsboys',
-            'Lead Me To The Cross - Hillsong United'
+            
         ]
     var eventArray =
         [
@@ -187,6 +186,8 @@ function updateSongList(input) {
             'Nobody Like You - Planetshakers',
             'God of Miracles - Chris McClarney',
             'Living Hope - Phil Wickham',
+            'This Love - Planetshakers',
+            'At The Cross - Hillsong Worship'
         ].sort();
     var songlisthtml = "";
 
