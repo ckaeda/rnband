@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            
+            'Glorious Day - Passion',
+            'O Come To The Altar - Elevation Worship'
         ]
     var eventArray =
         [
