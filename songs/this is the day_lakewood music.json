@@ -3,7 +3,8 @@
     "artist": "Lakewood Music",
     "defaults": {
         "Orig": "F",
-        "Cara": "E"
+        "Cara": "E",
+        "Annaree": "E"
     },
     "bpm": 0,
     "flow": [

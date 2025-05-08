@@ -3,7 +3,8 @@
     "artist": "Hillsong Worship",
     "defaults": {
         "Orig": "G",
-        "Annaree": "A"
+        "Annaree": "A",
+        "Cara": "A"
     },
     "flow": [
         "Verse 1",

@@ -18,13 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'This Is The Day - Lakewood Music',
-            'This Love - Planetshakers',
-            'At The Cross - Hillsong Worship'
+            'I Know You Can - Planetshakers',
+            'I Speak Jesus - Charity Gayle',
         ]
     var TNLArray =
         [
-            'Glorious Day - Passion',
-            'O Come To The Altar - Elevation Worship'
+            'House Of The Lord - Phil Wickham',
+            "Touch Of Heaven - Hillsong Worship",
         ]
     var eventArray =
         [
