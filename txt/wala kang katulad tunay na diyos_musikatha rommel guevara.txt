@@ -1,12 +1,18 @@
+[Intro]
+D  G  A
+
+D  G  Asus  A
+ 
+
 [Verse]
  D        A
 Awitin ko man
          F#m        Bm
 Lahat ng awit sa mundo
-      G         Em
+      G
 Ay di kayang ilarawan
-      E        A
-Ang Kadakilaan mo
+      A
+Ang Kadakilaan Mo
        G              A
 Kulang ang lahat ng tula
          F#m          Bm
@@ -14,9 +20,47 @@ Kulang maging mga salita
       G
 Upang ihayag
     E         A
-Ang kabutihan mo
+Ang kabutihan Mo
  
  
+[Chorus]
+            D     D/F#
+Wala Kang katulad
+          G         A
+Wala nang hihigit Sayo
+            D     D/F#
+Wala Kang katulad
+          G          A
+Wala nang papantay Sayo
+         F#m           Bm
+Ikaw ang Diyos noon pa man
+          F#m          Bm
+Maging ngayon at kailanman
+          G
+Sa habang panahon
+  A         D
+Wala Kang katulad
+
+
+[Verse]
+ D        A
+Awitin ko man
+         F#m        Bm
+Lahat ng awit sa mundo
+      G
+Ay di kayang ilarawan
+      A
+Ang Kadakilaan Mo
+       G              A
+Kulang ang lahat ng tula
+         F#m          Bm
+Kulang maging mga salita
+      G
+Upang ihayag
+    E         A
+Ang kabutihan Mo
+
+
 [Chorus]
             D
 Wala Kang katulad
@@ -33,48 +77,6 @@ Maging ngayon at kailanman
           G
 Sa habang panahon
   A         D
-Wala Kang katulad
-  A  D      A
-Wala Kang katulad
-
-
-[Verse]
- D        A
-Awitin ko man
-         F#m        Bm
-Lahat ng awit sa mundo
-      G         Em
-Ay di kayang ilarawan
-      E        A
-Ang Kadakilaan mo
-       G              A
-Kulang ang lahat ng tula
-         F#m          Bm
-Kulang maging mga salita
-      G
-Upang ihayag
-    E         A
-Ang kabutihan mo
-
-
-[Chorus]
-            D
-Wala Kang katulad
-          G         A
-Wala nang hihigit Sayo
-            D
-Wala Kang katulad
-          G          A
-Wala nang papantay Sayo
-         F#m           Bm
-Ikaw ang Diyos noon pa man
-          F#m          Bm
-Maging ngayon at kailanman
-          G
-Sa habang panahon
-  A         D
-Wala Kang katulad
-  A  D      A
 Wala Kang katulad
  
  
@@ -83,14 +85,14 @@ Wala Kang katulad
 Sa habang panahon
           F#m    Bm
 Sa habang panahon
-          G      Em  F#m  G  A
+          G
 Sa habang panahon
-            D   Bm  G  A
+  A         D
 Wala Kang katulad
 
 
 [Chorus 2]
-D
+D              A/C#
 Ikaw ang tunay na Diyos
 Bm
 Ikay walang katulad
@@ -98,11 +100,11 @@ G
 Ikay nag-iisa
 A
 Ikaw lamang wala nang iba
-D
+D              A/C#
 Sayo ang aming awit
 Bm
 Dinggin aming tinig
-G                         A
+G                    A
 Isisigaw sa buong mundo
 
 
@@ -123,5 +125,13 @@ Maging ngayon at kailanman
 Sa habang panahon
   A         D
 Wala Kang katulad
-  A  D      A
+
+[Outro]
+          G      A
+Sa habang panahon
+          F#m    Bm
+Sa habang panahon
+          G
+Sa habang panahon
+  A         D     G  A
 Wala Kang katulad

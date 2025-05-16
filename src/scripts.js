@@ -17,14 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'This Is The Day - Lakewood Music',
-            'I Know You Can - Planetshakers',
-            'I Speak Jesus - Charity Gayle',
+            'Papuri Kay Yahweh - Hope Filipino Worship',
+            'Pangako - New Life Music',
+            'Wala Kang Katulad / Tunay Na Diyos - Musikatha / Rommel Guevara',
         ]
     var TNLArray =
         [
-            'House Of The Lord - Phil Wickham',
-            "Touch Of Heaven - Hillsong Worship",
+            
         ]
     var eventArray =
         [
