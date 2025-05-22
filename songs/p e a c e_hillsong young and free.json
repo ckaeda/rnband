@@ -3,7 +3,8 @@
     "artist": "Hillsong Young and Free",
     "defaults": {
         "Orig": "D",
-        "Julia": "B"
+        "Julia": "B",
+        "Cara": "C"
     },
     "bpm": 0,
     "flow": [

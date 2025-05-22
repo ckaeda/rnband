@@ -2,7 +2,8 @@
     "title": "Build My Life",
     "artist": "Housefires",
     "defaults": {
-        "Orig": "C"
+        "Orig": "C",
+        "Julia": "B"
     },
     "bpm": 0,
     "flow": [

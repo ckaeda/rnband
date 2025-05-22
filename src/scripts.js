@@ -18,12 +18,13 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             'Papuri Kay Yahweh - Hope Filipino Worship',
-            'Pangako - New Life Music',
-            'Wala Kang Katulad / Tunay Na Diyos - Musikatha / Rommel Guevara',
+            'I\'m Gonna Praise - Planetshakers',
+            'P E A C E - Hillsong Young and Free',
         ]
     var TNLArray =
         [
-            
+            'Perfect Love - Planetshakers',
+            'Build My Life - Housefires',
         ]
     var eventArray =
         [
@@ -187,7 +188,8 @@ function updateSongList(input) {
             'God of Miracles - Chris McClarney',
             'Living Hope - Phil Wickham',
             'This Love - Planetshakers',
-            'At The Cross - Hillsong Worship'
+            'At The Cross - Hillsong Worship',
+            'Papuri Kay Yahweh - Hope Filipino Worship'
         ].sort();
     var songlisthtml = "";
 
