@@ -17,18 +17,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
     var activeArray =
         [
-            'Papuri Kay Yahweh - Hope Filipino Worship',
-            'I\'m Gonna Praise - Planetshakers',
-            'P E A C E - Hillsong Young and Free',
+            {
+                title: 'Papuri Kay Yahweh - Hope Filipino Worship',
+                singer: "Julia"
+            },
+            {
+                title: 'I\'m Gonna Praise - Planetshakers',
+                singer: "Cara"
+            },
+            {
+                title: 'P E A C E - Hillsong Young and Free',
+                singer: "Cara"
+            }
         ]
     var TNLArray =
         [
-            'Perfect Love - Planetshakers',
-            'Build My Life - Housefires',
+            
         ]
     var eventArray =
         [
-            
+
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -37,19 +45,19 @@ document.addEventListener("DOMContentLoaded", function () {
     var TNLlisthtml = "";
     var eventlisthtml = "";
 
-    for (let song in activeArray) {
-        let dataLyrics = activeArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
-        activelisthtml += '<li data-lyrics="' + dataLyrics + '">' + activeArray[song] + '</li>';
+    for (let song of activeArray) {
+        let dataLyrics = song.title.replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
+        activelisthtml += '<li data-lyrics="' + dataLyrics + '" data-singer="' + song.singer + '">' + `${song.title} (${song.singer})` + '</li>';
     }
 
-    for (let song in TNLArray) {
-        let TNLdataLyrics = TNLArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
-        TNLlisthtml += '<li data-lyrics="' + TNLdataLyrics + '">' + TNLArray[song] + '</li>';
+    for (let song of TNLArray) {
+        let TNLdataLyrics = song.title.replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
+        TNLlisthtml += '<li data-lyrics="' + TNLdataLyrics + '" data-singer="' + song.singer + '">' + `${song.title} (${song.singer})` + '</li>';
     }
 
-    for (let song in eventArray) {
-        let eventdataLyrics = eventArray[song].replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
-        eventlisthtml += '<li data-lyrics="' + eventdataLyrics + '">' + eventArray[song] + '</li>';
+    for (let song of eventArray) {
+        let eventdataLyrics = song.title.replaceAll(' - ', '_').replaceAll('\'', '').replaceAll('.', '').replaceAll('(', '').replaceAll(')', '').replaceAll(' /', '').toLowerCase();
+        eventlisthtml += '<li data-lyrics="' + eventdataLyrics + '" data-singer="' + song.singer + '">' + `${song.title} (${song.singer})` + '</li>';
     }
 
     activelist.innerHTML = activelisthtml;
@@ -223,6 +231,7 @@ function updateSongList(input) {
 
 function loadSong(li) {
     var lyricsFile = li.getAttribute('data-lyrics');
+    var singer = li.getAttribute('data-singer');
 
     // Fetch both the JSON and TXT files concurrently
     Promise.all([
@@ -258,7 +267,17 @@ function loadSong(li) {
 
             lyricsTitle.textContent = title;
             lyricsArtist.textContent = artist;
-            displaySong(currSong.transpose(transposeValue));
+
+            if (singer) {
+                transposeValue = 0;
+                document.getElementById("transposeValue").textContent = transposeValue;
+
+                currKey = ChordSheetJS.Chord.parse(song.defaults[singer]);
+                displaySong(currSong.transpose(transposeValue));
+                document.getElementById('transposeKey').textContent = 'Key: ' + currKey.transpose(transposeValue).toString();
+            } else {
+                displaySong(currSong.transpose(transposeValue));
+            }
 
             if (hideChordsSetting) {
                 hideChords();
