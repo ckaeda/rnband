@@ -2,7 +2,8 @@
     "title": "How Great Is Our God",
     "artist": "Chris Tomlin",
     "defaults": {
-        "Orig": "G"
+        "Orig": "G",
+        "Annaree": "E"
     },
     "bpm": 0,
     "flow": [

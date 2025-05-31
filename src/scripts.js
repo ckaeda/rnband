@@ -18,16 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'Papuri Kay Yahweh - Hope Filipino Worship',
+                title: 'We Will Run - Jesus Culture',
                 singer: "Julia"
             },
             {
-                title: 'I\'m Gonna Praise - Planetshakers',
-                singer: "Cara"
+                title: 'You Are Good - Israel & New Breed',
+                singer: "Julia"
             },
             {
-                title: 'P E A C E - Hillsong Young and Free',
-                singer: "Cara"
+                title: 'How Great Is Our God - Chris Tomlin',
+                singer: "Annaree"
+            },
+            {
+                title: 'Heart of Worship - Matt Redman',
+                singer: "Annaree"
             }
         ]
     var TNLArray =
@@ -197,7 +201,10 @@ function updateSongList(input) {
             'Living Hope - Phil Wickham',
             'This Love - Planetshakers',
             'At The Cross - Hillsong Worship',
-            'Papuri Kay Yahweh - Hope Filipino Worship'
+            'Papuri Kay Yahweh - Hope Filipino Worship',
+            'We Will Run - Jesus Culture',
+            'Heart of Worship - Matt Redman',
+            'How Great Is Our God - Chris Tomlin'
         ].sort();
     var songlisthtml = "";
 
