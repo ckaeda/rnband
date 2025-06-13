@@ -18,20 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'We Will Run - Jesus Culture',
+                title: 'House Of The Lord - Phil Wickham',
                 singer: "Julia"
             },
             {
-                title: 'You Are Good - Israel & New Breed',
-                singer: "Julia"
+                title: 'The Joy - The Belonging Co',
+                singer: "JJ"
             },
             {
-                title: 'How Great Is Our God - Chris Tomlin',
-                singer: "Annaree"
-            },
-            {
-                title: 'Heart of Worship - Matt Redman',
-                singer: "Annaree"
+                title: 'Do It Again - Elevation Worship',
+                singer: "JJ"
             }
         ]
     var TNLArray =
@@ -275,7 +271,7 @@ function loadSong(li) {
             lyricsTitle.textContent = title;
             lyricsArtist.textContent = artist;
 
-            if (singer) {
+            if (singer && song.defaults[singer]) {
                 transposeValue = 0;
                 document.getElementById("transposeValue").textContent = transposeValue;
 
