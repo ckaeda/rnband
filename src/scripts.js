@@ -18,16 +18,16 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'House Of The Lord - Phil Wickham',
-                singer: "Julia"
-            },
-            {
                 title: 'The Joy - The Belonging Co',
                 singer: "JJ"
             },
             {
-                title: 'Do It Again - Elevation Worship',
-                singer: "JJ"
+                title: 'Jehovah - Elevation Worship',
+                singer: "Berna"
+            },
+            {
+                title: 'What A Beautiful Name - Hillsong Worship',
+                singer: "Annaree"
             }
         ]
     var TNLArray =
