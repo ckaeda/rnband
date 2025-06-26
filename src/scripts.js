@@ -18,25 +18,43 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'The Joy - The Belonging Co',
-                singer: "JJ"
-            },
-            {
-                title: 'Jehovah - Elevation Worship',
-                singer: "Berna"
-            },
-            {
-                title: 'What A Beautiful Name - Hillsong Worship',
+                title: 'This Is The Day - Lakewood Music',
                 singer: "Annaree"
+            },
+            {
+                title: 'Alive Again - Planetshakers',
+                singer: "Cara"
+            },
+            {
+                title: 'Trust In God - Elevation Worship',
+                singer: "Berna"
             }
         ]
     var TNLArray =
         [
-            
+            {
+                title: 'Glorious Day - Passion',
+                singer: "Annaree"
+            },
+            {
+                title: 'Here I Am To Worship - Hillsong Worship',
+                singer: "Cara"
+            }
         ]
     var eventArray =
         [
-
+            {
+                title: 'The Joy - The Belonging Co',
+                singer: "JJ"
+            },
+            {
+                title: 'This Is The Day - Lakewood Music',
+                singer: "Annaree"
+            },
+            {
+                title: 'Holy Spirit - Jesus Culture',
+                singer: "Cara"
+            }
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -200,7 +218,8 @@ function updateSongList(input) {
             'Papuri Kay Yahweh - Hope Filipino Worship',
             'We Will Run - Jesus Culture',
             'Heart of Worship - Matt Redman',
-            'How Great Is Our God - Chris Tomlin'
+            'How Great Is Our God - Chris Tomlin',
+            'The Joy - The Belonging Co',
         ].sort();
     var songlisthtml = "";
 
