@@ -3,7 +3,8 @@
     "artist": "The Belonging Co",
     "defaults": {
         "Orig": "Db",
-        "JJ": "B"
+        "JJ": "B",
+        "Cara": "E"
     },
     "bpm": 0,
     "flow": [

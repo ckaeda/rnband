@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             {
                 title: 'The Joy - The Belonging Co',
-                singer: "JJ"
+                singer: "Cara"
             },
             {
                 title: 'This Is The Day - Lakewood Music',
