@@ -18,43 +18,32 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'This Is The Day - Lakewood Music',
-                singer: "Annaree"
-            },
-            {
-                title: 'Alive Again - Planetshakers',
-                singer: "Cara"
-            },
-            {
-                title: 'Trust In God - Elevation Worship',
+                title: 'Eyes On You - The Belonging Co',
                 singer: "Berna"
+            },
+            {
+                title: 'Your Presence - Planetshakers',
+                singer: "JJ"
+            },
+            {
+                title: 'Give Me Jesus - UPPERROOM',
+                singer: "Julia"
             }
         ]
     var TNLArray =
         [
             {
-                title: 'Glorious Day - Passion',
+                title: 'Spirit Of The Living God - Vertical Worship',
                 singer: "Annaree"
             },
             {
-                title: 'Here I Am To Worship - Hillsong Worship',
+                title: 'Oceans - Hillsong United',
                 singer: "Cara"
             }
         ]
     var eventArray =
         [
-            {
-                title: 'The Joy - The Belonging Co',
-                singer: "Cara"
-            },
-            {
-                title: 'This Is The Day - Lakewood Music',
-                singer: "Annaree"
-            },
-            {
-                title: 'Holy Spirit - Jesus Culture',
-                singer: "Cara"
-            }
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");

@@ -2,7 +2,8 @@
     "title": "Spirit of the Living God",
     "artist": "Vertical Worship",
     "defaults": {
-        "Orig": "D"
+        "Orig": "D",
+        "Annaree": "D"
     },
     "bpm": 0,
     "flow": [

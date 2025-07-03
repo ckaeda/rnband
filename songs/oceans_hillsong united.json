@@ -2,7 +2,8 @@
     "title": "Oceans (Where Feet May Fail)",
     "artist": "Hillsong United",
     "defaults": {
-        "Orig": "D"
+        "Orig": "D",
+        "Cara": "C"
     },
     "bpm": 0,
     "flow": [
