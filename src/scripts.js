@@ -18,32 +18,39 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'Eyes On You - The Belonging Co',
+                title: 'Praise - Elevation Worship',
+                singer: "Annaree"
+            },
+            {
+                title: 'Pangako - New Life Music',
                 singer: "Berna"
             },
             {
-                title: 'Your Presence - Planetshakers',
-                singer: "JJ"
-            },
-            {
-                title: 'Give Me Jesus - UPPERROOM',
-                singer: "Julia"
+                title: 'Your Presence Is Heaven - Israel & New Breed',
+                singer: "Cara"
             }
         ]
     var TNLArray =
         [
             {
-                title: 'Spirit Of The Living God - Vertical Worship',
-                singer: "Annaree"
+                title: 'Unstoppable God - Elevation Worship',
+                singer: "Julia"
             },
             {
-                title: 'Oceans - Hillsong United',
-                singer: "Cara"
+                title: 'Do It Again - Elevation Worship',
+                singer: "JJ"
             }
         ]
     var eventArray =
         [
-            
+            {
+                title: 'I Thank God / Glorious Day - Maverick City Music / Passion',
+                singer: "Julia"
+            },
+            {
+                title: 'Holy Forever - Chris Tomlin',
+                singer: "JJ"
+            }
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -209,6 +216,7 @@ function updateSongList(input) {
             'Heart of Worship - Matt Redman',
             'How Great Is Our God - Chris Tomlin',
             'The Joy - The Belonging Co',
+            'Unstoppable God - Elevation Worship',
         ].sort();
     var songlisthtml = "";
 
