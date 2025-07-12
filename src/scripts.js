@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 singer: "Annaree"
             },
             {
-                title: 'Pangako - New Life Music',
-                singer: "JJ"
+                title: 'Papuri Kay Yahweh - Hope Filipino Worship',
+                singer: "Julia"
             },
             {
                 title: 'Your Presence Is Heaven - Israel & New Breed',
@@ -32,14 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            {
-                title: 'Unstoppable God - Elevation Worship',
-                singer: "Julia"
-            },
-            {
-                title: 'Do It Again - Elevation Worship',
-                singer: "JJ"
-            }
+            
         ]
     var eventArray =
         [
