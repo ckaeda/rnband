@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             {
                 title: 'Pangako - New Life Music',
-                singer: "Berna"
+                singer: "JJ"
             },
             {
                 title: 'Your Presence Is Heaven - Israel & New Breed',
