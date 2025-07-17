@@ -18,32 +18,32 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'Praise - Elevation Worship',
-                singer: "Annaree"
+                title: 'We Raise - Planetshakers',
+                singer: "Berna"
             },
             {
-                title: 'Papuri Kay Yahweh - Hope Filipino Worship',
+                title: 'Stand In Awe - Bethel Music',
                 singer: "Julia"
             },
             {
-                title: 'Your Presence Is Heaven - Israel & New Breed',
-                singer: "Cara"
+                title: 'Forever - Hillsong Worship',
+                singer: "Annaree"
             }
         ]
     var TNLArray =
         [
-            
-        ]
-    var eventArray =
-        [
             {
-                title: 'I Thank God / Glorious Day - Maverick City Music / Passion',
+                title: 'Sabik Sa Presensya Mo - Faithmusic Manila',
                 singer: "Julia"
             },
             {
-                title: 'Holy Forever - Chris Tomlin',
-                singer: "JJ"
+                title: 'Here As In Heaven - Elevation Worship',
+                singer: "Annaree"
             }
+        ]
+    var eventArray =
+        [
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -210,6 +210,8 @@ function updateSongList(input) {
             'How Great Is Our God - Chris Tomlin',
             'The Joy - The Belonging Co',
             'Unstoppable God - Elevation Worship',
+            'Here As In Heaven - Elevation Worship',
+            'Forever - Hillsong Worship',
         ].sort();
     var songlisthtml = "";
 
