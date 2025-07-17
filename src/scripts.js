@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var TNLArray =
         [
             {
-                title: 'Sabik Sa Presensya Mo - Faithmusic Manila',
+                title: 'Here Again - Elevation Worship',
                 singer: "Julia"
             },
             {
