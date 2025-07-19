@@ -32,14 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var TNLArray =
         [
-            {
-                title: 'Here Again - Elevation Worship',
-                singer: "Julia"
-            },
-            {
-                title: 'Here As In Heaven - Elevation Worship',
-                singer: "Annaree"
-            }
+            
         ]
     var eventArray =
         [
