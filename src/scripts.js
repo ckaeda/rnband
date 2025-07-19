@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 singer: "Berna"
             },
             {
-                title: 'Stand In Awe - Bethel Music',
-                singer: "Julia"
-            },
-            {
                 title: 'Forever - Hillsong Worship',
                 singer: "Annaree"
+            },
+            {
+                title: 'Stand In Awe - Bethel Music',
+                singer: "Julia"
             }
         ]
     var TNLArray =
