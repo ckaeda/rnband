@@ -3,7 +3,8 @@
     "artist": "Elevation Worship",
     "defaults": {
         "Orig": "D",
-        "Julia": "C"
+        "Julia": "C",
+        "Cara": "D"
     },
     "bpm": 134,
     "flow": [
