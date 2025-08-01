@@ -18,28 +18,21 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'Happy Day - Jesus Culture',
+                title: 'This Is Living - Hillsong Young and Free',
+                singer: "Berna"
+            },
+            {
+                title: 'Once And For All - Citipointe Worship',
                 singer: "JJ"
             },
             {
-                title: 'Good News - Maverick City Music',
-                singer: "Cara"
-            },
-            {
-                title: 'Give Me Jesus - UPPERROOM',
-                singer: "Annaree"
+                title: 'Stand In Awe - Bethel Music',
+                singer: "Julia"
             }
         ]
     var TNLArray =
         [
-            {
-                title: 'Beautiful Savior - Planetshakers',
-                singer: "JJ"
-            },
-            {
-                title: 'Worthy - Elevation Worship',
-                singer: "Cara"
-            }
+            
         ]
     var eventArray =
         [
@@ -214,7 +207,9 @@ function updateSongList(input) {
             'Forever - Hillsong Worship',
             'Beautiful Savior - Planetshakers',
             'Happy Day - Jesus Culture',
-            'Give Me Jesus - UPPERROOM'
+            'Give Me Jesus - UPPERROOM',
+            'This Is Living - Hillsong Young and Free',
+            'Stand In Awe - Bethel Music',
         ].sort();
     var songlisthtml = "";
 
