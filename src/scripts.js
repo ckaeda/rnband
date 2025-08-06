@@ -18,21 +18,32 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'This Is Living - Hillsong Young and Free',
+                title: 'The Joy - The Belonging Co',
                 singer: "Berna"
             },
             {
-                title: 'Once And For All - Citipointe Worship',
-                singer: "JJ"
+                title: 'This Is The Day - Lakewood Music',
+                singer: "Annaree"
             },
             {
-                title: 'Stand In Awe - Bethel Music',
-                singer: "Julia"
+                title: 'Name Above All Names - Charity Gayle',
+                singer: "Cara"
             }
         ]
     var TNLArray =
         [
-            
+            {
+                title: 'Holding Nothing Back - Jesus Culture',
+                singer: "Cara"
+            },
+            {
+                title: 'Made For Worship - Planetshakers',
+                singer: "Julia"
+            },
+            {
+                title: 'I Give You My Heart - Hillsong Worship',
+                singer: "Julia"
+            }
         ]
     var eventArray =
         [
