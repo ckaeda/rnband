@@ -47,7 +47,62 @@ document.addEventListener("DOMContentLoaded", function () {
         ]
     var eventArray =
         [
-            
+            {
+                title: 'The Joy - The Belonging Co',
+                singer: "JJ"
+            },
+            {
+                title: 'Pangako - New Life Music',
+                singer: "Julia"
+            },
+            {
+                title: 'You Are Good - Israel & New Breed',
+                singer: "Cara"
+            },
+            {
+                title: 'Waymaker - Leeland',
+                singer: "Annaree"
+            },
+            {
+                title: 'One Way - Hillsong United',
+                singer: "Angelo"
+            },
+            {
+                title: 'Tribes - Victory Worship',
+                singer: "Vanna"
+            },
+            {
+                title: 'Araw Araw - MJ Flores',
+                singer: "Vanna"
+            },
+            {
+                title: 'Christ Is Enough - Chris Tomlin',
+                singer: "Angelo"
+            },
+            {
+                title: 'More Than Able - Elevation Worship',
+                singer: "Yuwi/Vanna"
+            },
+            {
+                title: 'Nothing Is Impossible - Planetshakers',
+                singer: "Cara"
+            },
+            {
+                title: 'Praise - Elevation Worship',
+                singer: "JJ"
+            },
+            {
+                title: 'Pangako - New Life Music',
+                singer: "Julia"
+            },
+            {
+                title: 'I Thank God - Maverick City Music',
+                singer: "JJ"
+            },
+            {
+                title: 'Goodbye Yesterday - Elevation Rhythm',
+                singer: "JJ/Annaree"
+            }
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");
@@ -221,6 +276,8 @@ function updateSongList(input) {
             'Give Me Jesus - UPPERROOM',
             'This Is Living - Hillsong Young and Free',
             'Stand In Awe - Bethel Music',
+            'More Than Able - Elevation Worship',
+            'Christ Is Enough - Chris Tomlin',
         ].sort();
     var songlisthtml = "";
 
@@ -381,6 +438,7 @@ function displaySong(song) {
     const toHeader = [
         'Intro',
         'Pre-Chorus',
+        'Pre-Chorus 1',
         'Pre-Chorus 2',
         'Chorus 1',
         'Chorus 2',
