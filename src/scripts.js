@@ -28,22 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
             {
                 title: 'Name Above All Names - Charity Gayle',
                 singer: "Cara"
+            },
+            {
+                title: 'Faithfulness - Lakewood Music',
+                singer: ""
             }
         ]
     var TNLArray =
         [
-            {
-                title: 'Holding Nothing Back - Jesus Culture',
-                singer: "Cara"
-            },
-            {
-                title: 'Made For Worship - Planetshakers',
-                singer: "Julia"
-            },
-            {
-                title: 'I Give You My Heart - Hillsong Worship',
-                singer: "Julia"
-            }
+            
         ]
     var eventArray =
         [
@@ -278,6 +271,7 @@ function updateSongList(input) {
             'Stand In Awe - Bethel Music',
             'More Than Able - Elevation Worship',
             'Christ Is Enough - Chris Tomlin',
+            'Faithfulness - Lakewood Music',
         ].sort();
     var songlisthtml = "";
 
