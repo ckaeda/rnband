@@ -3,7 +3,8 @@
     "artist": "Hillsong United",
     "defaults": {
         "Orig": "B",
-        "Julia": "D"
+        "Julia": "D",
+        "Angelo": "B"
     },
     "bpm": 148,
     "flow": [

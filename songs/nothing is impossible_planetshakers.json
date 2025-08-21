@@ -3,7 +3,8 @@
     "artist": "Planetshakers",
     "defaults": {
         "Orig": "C",
-        "JJ": "G"
+        "JJ": "G",
+        "Cara": "C"
     },
     "flow": [
 

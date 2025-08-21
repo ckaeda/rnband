@@ -2,7 +2,8 @@
     "title": "Waymaker",
     "artist": "Leeland",
     "defaults": {
-        "Orig": "A"
+        "Orig": "A",
+        "Annaree": "G"
     },
     "bpm": 0,
     "flow": [

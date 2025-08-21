@@ -2,7 +2,8 @@
     "title": "Christ Is Enough",
     "artist": "Chris Tomlin",
     "defaults": {
-        "Orig": "G"
+        "Orig": "G",
+        "Angelo": "B"
     },
     "bpm": 0,
     "flow": [

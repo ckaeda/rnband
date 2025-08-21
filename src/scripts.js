@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", function () {
         [
             {
                 title: 'The Joy - The Belonging Co',
-                singer: "Berna"
+                singer: "JJ"
             },
             {
-                title: 'This Is The Day - Lakewood Music',
-                singer: "Annaree"
+                title: 'You Are Good - Israel & New Breed',
+                singer: "Cara"
             },
             {
-                title: 'Name Above All Names - Charity Gayle',
+                title: 'Lilim - Victory Worship',
                 singer: "Cara"
             },
             {
