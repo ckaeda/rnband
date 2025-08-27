@@ -2,7 +2,8 @@
     "title": "Faithfulness",
     "artist": "Lakewood Music",
     "defaults": {
-        "Orig": "C"
+        "Orig": "C",
+        "Annaree": "D"
     },
     "bpm": 0,
     "flow": [

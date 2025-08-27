@@ -18,84 +18,40 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'The Joy - The Belonging Co',
-                singer: "JJ"
-            },
-            {
-                title: 'You Are Good - Israel & New Breed',
+                title: 'I\'m Gonna Praise - Planetshakers',
                 singer: "Cara"
             },
             {
-                title: 'Lilim - Victory Worship',
+                title: 'We Will Run - Jesus Culture',
+                singer: "Julia"
+            },
+            {
+                title: 'Make Room - Community Music',
+                singer: "JJ"
+            },
+            {
+                title: 'Name Above All Names - Charity Gayle',
                 singer: "Cara"
             },
             {
                 title: 'Faithfulness - Lakewood Music',
-                singer: ""
+                singer: "Annaree"
             }
         ]
     var TNLArray =
         [
-            
+            {
+                title: 'One Way - Hillsong United',
+                singer: "Cara"
+            },
+            {
+                title: 'Available - Elevation Worship',
+                singer: "Julia"
+            }
         ]
     var eventArray =
         [
-            {
-                title: 'The Joy - The Belonging Co',
-                singer: "JJ"
-            },
-            {
-                title: 'Pangako - New Life Music',
-                singer: "Julia"
-            },
-            {
-                title: 'You Are Good - Israel & New Breed',
-                singer: "Cara"
-            },
-            {
-                title: 'Waymaker - Leeland',
-                singer: "Annaree"
-            },
-            {
-                title: 'One Way - Hillsong United',
-                singer: "Angelo"
-            },
-            {
-                title: 'Tribes - Victory Worship',
-                singer: "Vanna"
-            },
-            {
-                title: 'Araw Araw - MJ Flores',
-                singer: "Vanna"
-            },
-            {
-                title: 'Christ Is Enough - Chris Tomlin',
-                singer: "Angelo"
-            },
-            {
-                title: 'More Than Able - Elevation Worship',
-                singer: "Yuwi/Vanna"
-            },
-            {
-                title: 'Nothing Is Impossible - Planetshakers',
-                singer: "Cara"
-            },
-            {
-                title: 'Praise - Elevation Worship',
-                singer: "JJ"
-            },
-            {
-                title: 'Pangako - New Life Music',
-                singer: "Julia"
-            },
-            {
-                title: 'I Thank God - Maverick City Music',
-                singer: "JJ"
-            },
-            {
-                title: 'Goodbye Yesterday - Elevation Rhythm',
-                singer: "JJ/Annaree"
-            }
+            
         ]
     var activelist = document.getElementById("activeList");
     var TNLlist = document.getElementById("activeListTNL");

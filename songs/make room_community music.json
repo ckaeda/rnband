@@ -4,7 +4,8 @@
     "defaults": {
         "Orig": "G",
         "Cara": "F",
-        "Julia": "C"
+        "Julia": "C",
+        "JJ": "G"
     },
     "bpm": 127,
     "flow": [

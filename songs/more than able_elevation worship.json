@@ -2,8 +2,7 @@
     "title": "More Than Able",
     "artist": "Elevation Worship",
     "defaults": {
-        "Orig": "C",
-        "Yuwi/Vanna": "D"
+        "Orig": "C"
     },
     "bpm": 0,
     "flow": [
