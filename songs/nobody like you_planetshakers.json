@@ -3,7 +3,8 @@
     "artist": "Planetshakers",
     "defaults": {
         "Orig": "D",
-        "Annaree": "E"
+        "Annaree": "E",
+        "Julia": "D"
     },
     "bpm": 0,
     "flow": [

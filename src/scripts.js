@@ -18,20 +18,20 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'I\'m Gonna Praise - Planetshakers',
-                singer: "Cara"
-            },
-            {
-                title: 'We Will Run - Jesus Culture',
+                title: 'Nobody Like You - Planetshakers',
                 singer: "Julia"
             },
             {
-                title: 'Make Room - Community Music',
-                singer: "JJ"
+                title: 'No One - Elevation Worship',
+                singer: "Cara"
+            },
+            {
+                title: 'Worthy Of It All - CeCe Winans',
+                singer: "Cara"
             },
             {
                 title: 'Name Above All Names - Charity Gayle',
-                singer: "Cara"
+                singer: "Annaree"
             },
             {
                 title: 'Faithfulness - Lakewood Music',
@@ -41,11 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var TNLArray =
         [
             {
-                title: 'One Way - Hillsong United',
-                singer: "Cara"
+                title: 'In The River - Jesus Culture',
+                singer: "Annaree"
             },
             {
-                title: 'Available - Elevation Worship',
+                title: 'Been So Good - Elevation Worship',
                 singer: "Julia"
             }
         ]

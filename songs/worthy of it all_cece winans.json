@@ -2,7 +2,8 @@
     "title": "Worthy Of It All",
     "artist": "CeCe Winans",
     "defaults": {
-        "Orig": "C"
+        "Orig": "C",
+        "Cara": "D"
     },
     "bpm": 0,
     "flow": [
