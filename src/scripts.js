@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 singer: "Cara"
             },
             {
+                title: 'Worthy - Elevation Worship',
+                singer: "Cara"
+            },
+            {
                 title: 'Worthy Of It All - CeCe Winans',
                 singer: "Cara"
             },
