@@ -3,7 +3,8 @@
     "artist": "MJ Flores",
     "defaults": {
         "Orig": "D",
-        "Julia": "C"
+        "Julia": "C",
+        "Cara": "D"
     },
     "bpm": 0,
     "flow": [

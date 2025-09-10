@@ -18,39 +18,39 @@ document.addEventListener("DOMContentLoaded", function () {
     var activeArray =
         [
             {
-                title: 'Nobody Like You - Planetshakers',
+                title: "Salamat Salamat - Malayang Pilipino Music",
                 singer: "Julia"
             },
             {
-                title: 'No One - Elevation Worship',
+                title: "Araw Araw - Mj Flores",
                 singer: "Cara"
             },
             {
-                title: 'Worthy - Elevation Worship',
-                singer: "Cara"
+                title: "Holy Forever - Chris Tomlin",
+                singer: "JJ"
             },
             {
-                title: 'Worthy Of It All - CeCe Winans',
-                singer: "Cara"
-            },
-            {
-                title: 'Name Above All Names - Charity Gayle',
-                singer: "Annaree"
+                title: "You Are Holy - Jesus Image",
+                singer: "JJ"
             },
             {
                 title: 'Faithfulness - Lakewood Music',
-                singer: "Annaree"
+                singer: "Cara"
             }
         ]
     var TNLArray =
         [
             {
-                title: 'In The River - Jesus Culture',
-                singer: "Annaree"
+                title: "You Are Good - Israel & New Breed",
+                singer: "Cara"
             },
             {
-                title: 'Been So Good - Elevation Worship',
-                singer: "Julia"
+                title: "Holy And Anointed One - Vineyard Music",
+                singer: "JJ"
+            },
+            {
+                title: "You Are Holy - Jesus Image",
+                singer: "JJ"
             }
         ]
     var eventArray =
