@@ -3,7 +3,8 @@
     "artist": "Israel and New Breed",
     "defaults": {
         "Orig": "C",
-        "Annaree": "C"
+        "Annaree": "C",
+        "Cara": "C"
     },
     "bpm": 0,
     "flow": [

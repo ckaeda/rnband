@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var TNLArray =
         [
             {
-                title: "You Are Good - Israel & New Breed",
+                title: "In Jesus Name - Israel And New Breed",
                 singer: "Cara"
             },
             {
@@ -51,6 +51,10 @@ document.addEventListener("DOMContentLoaded", function () {
             {
                 title: "You Are Holy - Jesus Image",
                 singer: "JJ"
+            },
+            {
+                title: "I Speak Jesus - Charity Gayle",
+                singer: "?"
             }
         ]
     var eventArray =
