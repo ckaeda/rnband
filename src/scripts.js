@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             {
                 title: "I Speak Jesus - Charity Gayle",
-                singer: "?"
+                singer: "JJ"
             }
         ]
     var eventArray =
